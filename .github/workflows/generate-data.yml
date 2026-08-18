@@ -1,4 +1,4 @@
-name: Generate data index
+name: Generate derived data
 
 on:
   push:
@@ -11,18 +11,19 @@ on:
       - "liondance/**"
       - "kartz/**"
       - "allianceDefense/**"
-      - ".github/workflows/generate-index.yml"
+      - ".github/scripts/generate-home-stats.mjs"
+      - ".github/workflows/generate-data.yml"
   workflow_dispatch:
 
 permissions:
   contents: write
 
 concurrency:
-  group: generate-data-index
+  group: generate-data-main
   cancel-in-progress: false
 
 jobs:
-  generate-index:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,7 +32,14 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Generate index.json
+      - name: Update checkout to latest main
+        shell: bash
+        run: git pull --ff-only origin main
+
+      - name: Generate home statistics
+        run: node .github/scripts/generate-home-stats.mjs
+
+      - name: Generate data index
         shell: bash
         run: |
           python3 <<'PY'
@@ -51,7 +59,10 @@ jobs:
               if not folder.is_dir():
                   return []
               iterator = folder.rglob("*.json") if recursive else folder.glob("*.json")
-              return sorted((path for path in iterator if path.is_file()), key=lambda path: relative(path))
+              return sorted(
+                  (path for path in iterator if path.is_file()),
+                  key=relative
+              )
 
           def stems(directory: str):
               return [path.stem for path in json_files(directory)]
@@ -98,6 +109,13 @@ jobs:
               "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
               "revision": os.environ.get("GITHUB_SHA", ""),
               "datasets": {
+                  "generated": {
+                      "homeStatistics": (
+                          "generated/homeStatistics.json"
+                          if (root / "generated/homeStatistics.json").is_file()
+                          else None
+                      )
+                  },
                   "power": {
                       "files": power_root_files,
                       "movement": {
@@ -152,16 +170,18 @@ jobs:
               output.write("\n")
           PY
 
-      - name: Commit generated index
+      - name: Commit generated files
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- index.json)" ]; then
-            echo "index.json is already up to date"
+          if [ -z "$(git status --porcelain -- generated/homeStatistics.json index.json)" ]; then
+            echo "Generated files are already up to date"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.json
-          git commit -m "chore(data): update index [skip ci]"
-          git push
+          git add generated/homeStatistics.json index.json
+          git commit -m "chore(data): update generated data [skip ci]"
+
+          git pull --rebase origin main
+          git push origin main
