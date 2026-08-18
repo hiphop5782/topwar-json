@@ -437,6 +437,22 @@ for (
         data.summary ?? {};
 
 
+    // 파일만 존재하고 실제 지도 조사 결과가 없는 빈 서버는
+    // serverActivity.grade가 DEAD로 초기화되어 있어도 분석 대상이 아니다.
+    // 이런 placeholder를 포함하면 미조사 서버 전체가 비활성으로 집계된다.
+    const hasSurveyData =
+        Number(summary.players ?? 0) > 0
+        || Number(summary.mapPlayers ?? 0) > 0
+        || Number(summary.alliances ?? 0) > 0
+        || (Array.isArray(data.players) && data.players.length > 0)
+        || (Array.isArray(data.alliances) && data.alliances.length > 0);
+
+
+    if (!hasSurveyData) {
+        continue;
+    }
+
+
     const grade =
         summary
             .serverActivitySummary
