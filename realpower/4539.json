@@ -1,0 +1,117 @@
+{
+  "exportedAt": "2026-08-16T18:43:35.943Z",
+  "serverId": 4539,
+  "summary": {
+    "players": 0,
+    "mapPlayers": 0,
+    "allianceMemberMergedPlayers": 0,
+    "mapOnlyPlayers": 0,
+    "noAlliancePlayers": 0,
+    "alliances": 0,
+    "allianceDetails": 0,
+    "activity": {
+      "coreCount": 0,
+      "activeCount": 0,
+      "watchCount": 0,
+      "lowCount": 0,
+      "activeTotalCount": 0
+    },
+    "allianceActivitySummary": {
+      "coreAllianceCount": 0,
+      "activeAllianceCount": 0,
+      "watchAllianceCount": 0,
+      "lowAllianceCount": 0,
+      "insufficientAllianceCount": 0,
+      "activeAllianceCountForWar": 0,
+      "meaningfulAllianceCount": 0
+    },
+    "serverActivity": {
+      "grade": "DEAD",
+      "score": 0,
+      "reasons": []
+    },
+    "serverActivitySummary": {
+      "serverActivityGrade": "DEAD",
+      "serverActivityScore": 0,
+      "serverActivityReasons": [],
+      "totalMapPlayers": 0,
+      "coreUsers": 0,
+      "activeGradeUsers": 0,
+      "watchGradeUsers": 0,
+      "lowGradeUsers": 0,
+      "activeUsers": 0,
+      "recentUsers": 0,
+      "sleepyUsers": 0,
+      "inactiveUsers": 0,
+      "quitLikelyUsers": 0,
+      "unknownStatusUsers": 0,
+      "activeUserRate": 0,
+      "quitLikelyRate": 0,
+      "activeAllianceCountForWar": 0,
+      "meaningfulAllianceCount": 0,
+      "coreAllianceCount": 0,
+      "activeAllianceCount": 0,
+      "watchAllianceCount": 0,
+      "lowAllianceCount": 0,
+      "insufficientAllianceCount": 0,
+      "serverPowerTotal": 0,
+      "activePowerTotal": 0,
+      "activePowerRate": 0,
+      "topAlliancePowerRate": 0,
+      "top3AlliancePowerRate": 0
+    },
+    "userStatus": {
+      "activeUsers": 0,
+      "recentUsers": 0,
+      "sleepyUsers": 0,
+      "inactiveUsers": 0,
+      "quitLikelyUsers": 0,
+      "unknownStatusUsers": 0,
+      "activeUserRate": 0,
+      "quitLikelyRate": 0
+    },
+    "activeAllianceCountForWar": 0,
+    "meaningfulAllianceCount": 0,
+    "excluded": "objects, objectsByType, allianceRepresentatives, member-only players"
+  },
+  "activityCriteria": {
+    "grade": {
+      "CORE": "activityScore >= 80",
+      "ACTIVE": "activityScore >= 50",
+      "WATCH": "activityScore >= 30",
+      "LOW": "activityScore < 30"
+    },
+    "score": {
+      "map_found": 30,
+      "online": 30,
+      "recent_login_1d": 25,
+      "recent_login_3d": 20,
+      "recent_login_7d": 10,
+      "top_20_power": 30,
+      "top_50_power": 15,
+      "cumulative_power_80": 25,
+      "high_role": 10,
+      "alliance_member_confirmed": 5
+    },
+    "note": "최종 대상은 지도에서 발견된 유저만 포함합니다. 길드원 목록에만 있는 유저는 보강용이며 최종 players에는 포함하지 않습니다."
+  },
+  "serverActivityCriteria": {
+    "serverGrade": {
+      "VERY_ACTIVE": "serverActivityScore >= 80",
+      "ACTIVE": "serverActivityScore >= 60",
+      "NORMAL": "serverActivityScore >= 40",
+      "QUIET": "serverActivityScore >= 20",
+      "DEAD": "serverActivityScore < 20"
+    },
+    "userStatus": {
+      "ACTIVE": "online or lastLogin <= 1 day",
+      "RECENT": "lastLogin <= 3 days",
+      "SLEEPY": "lastLogin <= 7 days",
+      "INACTIVE": "lastLogin > 7 days or > 14 days",
+      "QUIT_LIKELY": "lastLogin > 30 days or > 14 days and not allianceMember confirmed",
+      "UNKNOWN": "lastLogin missing"
+    }
+  },
+  "players": [],
+  "alliances": []
+}
