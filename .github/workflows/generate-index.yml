@@ -1,0 +1,167 @@
+name: Generate data index
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "power/**"
+      - "realpower/**"
+      - "servers/**"
+      - "liondance/**"
+      - "kartz/**"
+      - "allianceDefense/**"
+      - ".github/workflows/generate-index.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: generate-data-index
+  cancel-in-progress: false
+
+jobs:
+  generate-index:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate index.json
+        shell: bash
+        run: |
+          python3 <<'PY'
+          import json
+          import os
+          import re
+          from datetime import datetime, timezone
+          from pathlib import Path
+
+          root = Path(".")
+
+          def relative(path: Path) -> str:
+              return path.relative_to(root).as_posix()
+
+          def json_files(directory: str, recursive: bool = False):
+              folder = root / directory
+              if not folder.is_dir():
+                  return []
+              iterator = folder.rglob("*.json") if recursive else folder.glob("*.json")
+              return sorted((path for path in iterator if path.is_file()), key=lambda path: relative(path))
+
+          def stems(directory: str):
+              return [path.stem for path in json_files(directory)]
+
+          power_root_files = {
+              path.stem: relative(path)
+              for path in json_files("power")
+          }
+
+          movement_dates = stems("power/movement")
+          nickname_dates = stems("power/nickname")
+
+          realpower_server_ids = sorted(
+              int(path.stem)
+              for path in json_files("realpower")
+              if path.stem.isdigit()
+          )
+
+          server_snapshot_dates = []
+          server_popular_snapshot_dates = []
+          server_snapshot_pattern = re.compile(
+              r"^servers-(\d{4}-\d{2}-\d{2})(-popular)?\.json$"
+          )
+
+          for path in json_files("servers"):
+              match = server_snapshot_pattern.match(path.name)
+              if not match:
+                  continue
+              date = match.group(1)
+              if match.group(2):
+                  server_popular_snapshot_dates.append(date)
+              else:
+                  server_snapshot_dates.append(date)
+
+          server_snapshot_dates = sorted(set(server_snapshot_dates))
+          server_popular_snapshot_dates = sorted(set(server_popular_snapshot_dates))
+
+          liondance_files = [relative(path) for path in json_files("liondance")]
+          kartz_history_months = stems("kartz/history")
+          alliance_defense_dates = stems("allianceDefense")
+
+          index = {
+              "schemaVersion": 1,
+              "generatedAt": datetime.now(timezone.utc).isoformat().replace("+00:00", "Z"),
+              "revision": os.environ.get("GITHUB_SHA", ""),
+              "datasets": {
+                  "power": {
+                      "files": power_root_files,
+                      "movement": {
+                          "pattern": "power/movement/{date}.json",
+                          "dates": movement_dates,
+                          "count": len(movement_dates)
+                      },
+                      "nickname": {
+                          "pattern": "power/nickname/{date}.json",
+                          "dates": nickname_dates,
+                          "count": len(nickname_dates)
+                      }
+                  },
+                  "realpower": {
+                      "pattern": "realpower/{serverId}.json",
+                      "serverIds": realpower_server_ids,
+                      "count": len(realpower_server_ids),
+                      "minimumServerId": min(realpower_server_ids) if realpower_server_ids else None,
+                      "maximumServerId": max(realpower_server_ids) if realpower_server_ids else None
+                  },
+                  "servers": {
+                      "latest": "servers/servers.json" if (root / "servers/servers.json").is_file() else None,
+                      "latestAlias": "servers/servers-latest.json" if (root / "servers/servers-latest.json").is_file() else None,
+                      "popular": "servers/servers-popular.json" if (root / "servers/servers-popular.json").is_file() else None,
+                      "snapshotPattern": "servers/servers-{date}.json",
+                      "popularSnapshotPattern": "servers/servers-{date}-popular.json",
+                      "snapshotDates": server_snapshot_dates,
+                      "popularSnapshotDates": server_popular_snapshot_dates,
+                      "snapshotCount": len(server_snapshot_dates),
+                      "popularSnapshotCount": len(server_popular_snapshot_dates)
+                  },
+                  "liondance": {
+                      "files": liondance_files,
+                      "count": len(liondance_files)
+                  },
+                  "kartz": {
+                      "enemy": "kartz/enemy.json" if (root / "kartz/enemy.json").is_file() else None,
+                      "historyPattern": "kartz/history/{month}.json",
+                      "historyMonths": kartz_history_months,
+                      "historyCount": len(kartz_history_months)
+                  },
+                  "allianceDefense": {
+                      "pattern": "allianceDefense/{date}.json",
+                      "dates": alliance_defense_dates,
+                      "count": len(alliance_defense_dates)
+                  }
+              }
+          }
+
+          with open("index.json", "w", encoding="utf-8", newline="\n") as output:
+              json.dump(index, output, ensure_ascii=False, indent=2)
+              output.write("\n")
+          PY
+
+      - name: Commit generated index
+        shell: bash
+        run: |
+          if [ -z "$(git status --porcelain -- index.json)" ]; then
+            echo "index.json is already up to date"
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add index.json
+          git commit -m "chore(data): update index [skip ci]"
+          git push
