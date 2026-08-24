@@ -474,6 +474,120 @@ for (
 
 }
 
+// ========================================
+// Kartz
+// ========================================
+
+const KARTZ_HISTORY_DIR = path.join(
+    JSON_ROOT,
+    "kartz",
+    "history"
+);
+
+const kartzHistoryFiles =
+    fs.existsSync(KARTZ_HISTORY_DIR)
+        ? fs.readdirSync(KARTZ_HISTORY_DIR)
+            .filter(filename =>
+                /^\d{4}-\d{2}\.json$/.test(filename)
+            )
+            .sort()
+        : [];
+
+const latestKartzFilename =
+    kartzHistoryFiles.at(-1) ?? null;
+
+const latestKartz = latestKartzFilename
+    ? readJson(
+        path.join(
+            KARTZ_HISTORY_DIR,
+            latestKartzFilename
+        )
+    )
+    : null;
+
+const kartzPlayers =
+    Array.isArray(latestKartz?.playerRankList)
+        ? latestKartz.playerRankList
+        : [];
+
+const kartzAlliances =
+    Array.isArray(latestKartz?.allianceRankList)
+        ? latestKartz.allianceRankList
+        : [];
+
+const topKartzPlayer =
+    [...kartzPlayers]
+        .sort(
+            (a, b) =>
+                Number(a.rank ?? Infinity) -
+                Number(b.rank ?? Infinity)
+        )
+        .at(0) ?? null;
+
+const topKartzAlliance =
+    [...kartzAlliances]
+        .sort(
+            (a, b) =>
+                Number(a.rank ?? Infinity) -
+                Number(b.rank ?? Infinity)
+        )
+        .at(0) ?? null;
+
+const kartzAverageRound = kartzPlayers.length
+    ? Number(
+        (
+            kartzPlayers.reduce(
+                (sum, player) =>
+                    sum + Number(player.round ?? 0),
+                0
+            ) / kartzPlayers.length
+        ).toFixed(2)
+    )
+    : 0;
+
+const kartzServerMap = new Map();
+
+for (const player of kartzPlayers) {
+    const server = Number(player.server);
+    const round = Number(player.round ?? 0);
+
+    if (!Number.isFinite(server)) {
+        continue;
+    }
+
+    const current =
+        kartzServerMap.get(server) ?? {
+            server,
+            playerCount: 0,
+            roundTotal: 0,
+        };
+
+    current.playerCount += 1;
+    current.roundTotal += round;
+
+    kartzServerMap.set(server, current);
+}
+
+const topKartzServer =
+    [...kartzServerMap.values()]
+        .map(server => ({
+            server: server.server,
+            playerCount: server.playerCount,
+            averageRound: Number(
+                (
+                    server.roundTotal /
+                    server.playerCount
+                ).toFixed(2)
+            ),
+        }))
+        .sort(
+            (a, b) =>
+                b.playerCount - a.playerCount ||
+                b.averageRound - a.averageRound ||
+                a.server - b.server
+        )
+        .at(0) ?? null;
+
 
 // ========================================
 // 최종 통계
