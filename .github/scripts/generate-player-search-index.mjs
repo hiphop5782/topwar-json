@@ -187,6 +187,7 @@ function createSearchRecord(player, searchedNickname, matchedNickname = null) {
         s: player.server ?? null,
         a: player.allianceName ?? null,
         t: player.allianceTag ?? null,
+        p: Number(player.cp ?? player.score ?? 0),
     };
     if (hasHangulSyllable(searchedNickname)) {
         // k를 만든 뒤 분해해야 영문/숫자/유사문자 정규화는 유지하면서

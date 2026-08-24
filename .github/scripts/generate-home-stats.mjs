@@ -476,6 +476,135 @@ for (
 
 
 // ========================================
+// Kartz
+// ========================================
+
+const KARTZ_HISTORY_DIR =
+    path.join(
+        JSON_ROOT,
+        "kartz",
+        "history"
+    );
+
+
+const kartzHistoryFiles =
+    fs.existsSync(KARTZ_HISTORY_DIR)
+        ? fs.readdirSync(KARTZ_HISTORY_DIR)
+            .filter(filename =>
+                /^\d{4}-\d{2}\.json$/
+                    .test(filename)
+            )
+            .sort()
+        : [];
+
+
+const latestKartzFilename =
+    kartzHistoryFiles.at(-1) ?? null;
+
+
+const latestKartz =
+    latestKartzFilename
+        ? readJson(
+            path.join(
+                KARTZ_HISTORY_DIR,
+                latestKartzFilename
+            )
+        )
+        : null;
+
+
+const kartzPlayers =
+    Array.isArray(latestKartz?.playerRankList)
+        ? [...latestKartz.playerRankList]
+            .sort(
+                (a, b) =>
+                    Number(a.rank ?? Infinity) -
+                    Number(b.rank ?? Infinity)
+            )
+        : [];
+
+
+const kartzAlliances =
+    Array.isArray(latestKartz?.allianceRankList)
+        ? [...latestKartz.allianceRankList]
+            .sort(
+                (a, b) =>
+                    Number(a.rank ?? Infinity) -
+                    Number(b.rank ?? Infinity)
+            )
+        : [];
+
+
+const topKartzPlayer =
+    kartzPlayers.at(0) ?? null;
+
+
+const kartzCutoffPlayer =
+    kartzPlayers.at(-1) ?? null;
+
+
+const topKartzAlliance =
+    kartzAlliances.at(0) ?? null;
+
+
+const kartzServerMap = new Map();
+
+
+for (const player of kartzPlayers) {
+
+    const server = Number(player.server);
+    const round = Number(player.round ?? 0);
+
+    if (!Number.isFinite(server)) {
+        continue;
+    }
+
+    const current =
+        kartzServerMap.get(server)
+        ?? {
+            server,
+            playerCount: 0,
+            roundTotal: 0
+        };
+
+    current.playerCount++;
+    current.roundTotal += round;
+
+    kartzServerMap.set(
+        server,
+        current
+    );
+
+}
+
+
+const topKartzServer =
+    [...kartzServerMap.values()]
+        .map(server => ({
+            server:
+                server.server,
+
+            playerCount:
+                server.playerCount,
+
+            averageRound:
+                Number(
+                    (
+                        server.roundTotal /
+                        server.playerCount
+                    ).toFixed(2)
+                )
+        }))
+        .sort(
+            (a, b) =>
+                b.playerCount - a.playerCount
+                || b.averageRound - a.averageRound
+                || a.server - b.server
+        )
+        .at(0) ?? null;
+
+
+// ========================================
 // 최종 통계
 // ========================================
 
@@ -645,7 +774,72 @@ const statistics = {
 
         activityGrades
 
-    }
+    },
+
+
+    kartz: latestKartz
+        ? {
+            month:
+                latestKartzFilename
+                    .replace(".json", ""),
+
+            recordedAt:
+                latestKartz.time ?? null,
+
+            playerCount:
+                kartzPlayers.length,
+
+            allianceCount:
+                kartzAlliances.length,
+
+            topPlayer:
+                topKartzPlayer
+                    ? {
+                        rank:
+                            Number(topKartzPlayer.rank),
+                        nickname:
+                            topKartzPlayer.nickname ?? null,
+                        server:
+                            Number(topKartzPlayer.server),
+                        round:
+                            Number(topKartzPlayer.round),
+                        profile:
+                            topKartzPlayer.profile ?? null
+                    }
+                    : null,
+
+            cutoff:
+                kartzCutoffPlayer
+                    ? {
+                        rank:
+                            Number(kartzCutoffPlayer.rank),
+                        round:
+                            Number(kartzCutoffPlayer.round),
+                        damage:
+                            kartzCutoffPlayer.damage ?? null
+                    }
+                    : null,
+
+            topAlliance:
+                topKartzAlliance
+                    ? {
+                        rank:
+                            Number(topKartzAlliance.rank),
+                        name:
+                            topKartzAlliance.name ?? null,
+                        tag:
+                            topKartzAlliance.tag ?? null,
+                        server:
+                            Number(topKartzAlliance.server),
+                        score:
+                            Number(topKartzAlliance.score ?? 0)
+                    }
+                    : null,
+
+            topServer:
+                topKartzServer
+        }
+        : null
 
 };
 

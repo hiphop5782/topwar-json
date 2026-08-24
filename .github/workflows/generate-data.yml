@@ -12,6 +12,7 @@ on:
       - "kartz/**"
       - "allianceDefense/**"
       - ".github/scripts/generate-home-stats.mjs"
+      - ".github/scripts/generate-player-search-index.mjs"
       - ".github/workflows/generate-data.yml"
   workflow_dispatch:
 
@@ -38,6 +39,9 @@ jobs:
 
       - name: Generate home statistics
         run: node .github/scripts/generate-home-stats.mjs
+
+      - name: Generate player search index
+        run: node .github/scripts/generate-player-search-index.mjs
 
       - name: Generate data index
         shell: bash
@@ -114,6 +118,11 @@ jobs:
                           "generated/homeStatistics.json"
                           if (root / "generated/homeStatistics.json").is_file()
                           else None
+                      ),
+                      "playerSearch": (
+                          "generated/player-search/manifest.json"
+                          if (root / "generated/player-search/manifest.json").is_file()
+                          else None
                       )
                   },
                   "power": {
@@ -173,14 +182,14 @@ jobs:
       - name: Commit generated files
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- generated/homeStatistics.json index.json)" ]; then
+          if [ -z "$(git status --porcelain -- generated/homeStatistics.json generated/player-search index.json)" ]; then
             echo "Generated files are already up to date"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/homeStatistics.json index.json
+          git add generated/homeStatistics.json generated/player-search index.json
           git commit -m "chore(data): update generated data [skip ci]"
 
           git pull --rebase origin main
