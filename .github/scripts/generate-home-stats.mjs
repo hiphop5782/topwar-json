@@ -474,7 +474,6 @@ for (
 
 }
 
-
 // ========================================
 // Kartz
 // ========================================
@@ -545,6 +544,19 @@ const kartzCutoffPlayer =
 
 const topKartzAlliance =
     kartzAlliances.at(0) ?? null;
+
+
+const kartzAverageRound = kartzPlayers.length
+    ? Number(
+        (
+            kartzPlayers.reduce(
+                (sum, player) =>
+                    sum + Number(player.round ?? 0),
+                0
+            ) / kartzPlayers.length
+        ).toFixed(2)
+    )
+    : 0;
 
 
 const kartzServerMap = new Map();
@@ -776,7 +788,6 @@ const statistics = {
 
     },
 
-
     kartz: latestKartz
         ? {
             month:
@@ -791,6 +802,9 @@ const statistics = {
 
             allianceCount:
                 kartzAlliances.length,
+
+            averageRound:
+                kartzAverageRound,
 
             topPlayer:
                 topKartzPlayer
