@@ -759,7 +759,89 @@ const statistics = {
 
         activityGrades
 
+    },
+
+    kartz: latestKartz
+    ? {
+        month:
+            latestKartzFilename.replace(
+                ".json",
+                ""
+            ),
+
+        recordedAt:
+            latestKartz.time ?? null,
+
+        playerCount:
+            kartzPlayers.length,
+
+        allianceCount:
+            kartzAlliances.length,
+
+        averageRound:
+            kartzAverageRound,
+
+        topPlayer:
+            topKartzPlayer
+                ? {
+                    rank:
+                        Number(
+                            topKartzPlayer.rank
+                        ),
+
+                    nickname:
+                        topKartzPlayer.nickname ??
+                        null,
+
+                    server:
+                        Number(
+                            topKartzPlayer.server
+                        ),
+
+                    round:
+                        Number(
+                            topKartzPlayer.round
+                        ),
+
+                    profile:
+                        topKartzPlayer.profile ??
+                        null,
+                }
+                : null,
+
+        topAlliance:
+            topKartzAlliance
+                ? {
+                    rank:
+                        Number(
+                            topKartzAlliance.rank
+                        ),
+
+                    name:
+                        topKartzAlliance.name ??
+                        null,
+
+                    tag:
+                        topKartzAlliance.tag ??
+                        null,
+
+                    server:
+                        Number(
+                            topKartzAlliance.server
+                        ),
+
+                    score:
+                        Number(
+                            topKartzAlliance.score ??
+                            0
+                        ),
+                }
+                : null,
+
+        topServer:
+            topKartzServer,
     }
+    : null,
 
 };
 
