@@ -13,6 +13,7 @@ on:
       - "allianceDefense/**"
       - ".github/scripts/generate-home-stats.mjs"
       - ".github/scripts/generate-player-search-index.mjs"
+      - ".github/scripts/generate-overall.mjs"
       - ".github/workflows/generate-data.yml"
   workflow_dispatch:
 
@@ -42,6 +43,9 @@ jobs:
 
       - name: Generate player search index
         run: node .github/scripts/generate-player-search-index.mjs
+
+      - name: Generate overall player data
+        run: node .github/scripts/generate-overall.mjs
 
       - name: Generate data index
         shell: bash
@@ -78,6 +82,9 @@ jobs:
 
           movement_dates = stems("power/movement")
           nickname_dates = stems("power/nickname")
+
+          overall_movement_dates = stems("overall/movement")
+          overall_nickname_dates = stems("overall/nickname")
 
           realpower_server_ids = sorted(
               int(path.stem)
@@ -124,6 +131,23 @@ jobs:
                           if (root / "generated/player-search/manifest.json").is_file()
                           else None
                       )
+                  },
+                  "overall": {
+                      "latest": (
+                          "overall/latest.json"
+                          if (root / "overall/latest.json").is_file()
+                          else None
+                      ),
+                      "movement": {
+                          "pattern": "overall/movement/{date}.json",
+                          "dates": overall_movement_dates,
+                          "count": len(overall_movement_dates)
+                      },
+                      "nickname": {
+                          "pattern": "overall/nickname/{date}.json",
+                          "dates": overall_nickname_dates,
+                          "count": len(overall_nickname_dates)
+                      }
                   },
                   "power": {
                       "files": power_root_files,
@@ -182,14 +206,14 @@ jobs:
       - name: Commit generated files
         shell: bash
         run: |
-          if [ -z "$(git status --porcelain -- generated/homeStatistics.json generated/player-search index.json)" ]; then
+          if [ -z "$(git status --porcelain -- generated/homeStatistics.json generated/player-search overall index.json)" ]; then
             echo "Generated files are already up to date"
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add generated/homeStatistics.json generated/player-search index.json
+          git add generated/homeStatistics.json generated/player-search overall index.json
           git commit -m "chore(data): update generated data [skip ci]"
 
           git pull --rebase origin main
