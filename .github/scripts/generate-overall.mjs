@@ -125,15 +125,23 @@ const players = allUids.map(uid => {
   const realpower = realByUid.get(uid) ?? null;
   const realpowerIsLatest = observedMs(realpower) >= observedMs(power) && !!realpower;
   const latest = realpowerIsLatest ? realpower : (power ?? realpower);
+  const fallback = realpowerIsLatest ? power : realpower;
+  const location = realpower?.x != null && realpower?.y != null
+    ? realpower
+    : null;
   const source = power && realpower ? "both" : (realpower ? "realpower" : "power");
   const previousObservation = observationsDiffer(power, realpower)
     ? sourceSnapshot(realpowerIsLatest ? power : realpower, realpowerIsLatest ? "power" : "realpower")
     : null;
   return clean({
     uid, nickname: latest.nickname, server: latest.server, power: latest.power, level: latest.level,
-    allianceId: latest.allianceId, allianceTag: latest.allianceTag, allianceName: latest.allianceName,
-    isOnline: latest.isOnline, lastLogin: latest.lastLogin, x: latest.x, y: latest.y,
-    pointId: latest.pointId, armyPowerText: latest.armyPowerText, observedAt: latest.observedAt,
+    allianceId: latest.allianceId ?? fallback?.allianceId,
+    allianceTag: latest.allianceTag ?? fallback?.allianceTag,
+    allianceName: latest.allianceName ?? fallback?.allianceName,
+    isOnline: latest.isOnline, lastLogin: latest.lastLogin,
+    x: location?.x, y: location?.y, pointId: location?.pointId, pointType: location?.pointType,
+    locationObservedAt: location?.observedAt,
+    armyPowerText: latest.armyPowerText, observedAt: latest.observedAt,
     source, previousObservation
   });
 });
