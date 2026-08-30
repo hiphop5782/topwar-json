@@ -4,6 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const POWER_DIR = path.join(ROOT, "power");
 const REALPOWER_DIR = path.join(ROOT, "realpower");
+const KARTZ_HISTORY_DIR = path.join(ROOT, "kartz", "history");
 const OUTPUT_DIR = path.join(ROOT, "overall");
 const MOVEMENT_DIR = path.join(OUTPUT_DIR, "movement");
 const NICKNAME_DIR = path.join(OUTPUT_DIR, "nickname");
@@ -55,6 +56,28 @@ function normalizeRealPlayer(row, document) {
     pointId: number(row.pointId), pointType: number(row.pointType), armyPower: text(row.armyPower), armyPowerText: text(row.armyPowerText),
     activityGrade: text(row.activityGrade), userStatus: text(row.userStatus), observedAt: text(document.exportedAt)
   });
+}
+
+function normalizeKartzPlayer(row, document) {
+  const uid = uidOf(row);
+  if (!uid) return null;
+  return clean({
+    observedAt: text(document.time), rank: number(row.rank), round: number(row.round), damage: text(row.damage),
+    server: number(row.server), nickname: text(row.nickname), nation: number(row.nation), gender: number(row.gender),
+    profile: text(row.profile)
+  });
+}
+
+function latestKartzSnapshot() {
+  if (!fs.existsSync(KARTZ_HISTORY_DIR)) return null;
+  const snapshots = [];
+  for (const filename of fs.readdirSync(KARTZ_HISTORY_DIR).filter(name => /^\d{4}-\d{2}\.json$/.test(name)).sort()) {
+    const document = readJson(path.join(KARTZ_HISTORY_DIR, filename));
+    for (const snapshot of Array.isArray(document) ? document : [document]) {
+      if (snapshot?.playerRankList?.some(row => uidOf(row))) snapshots.push(snapshot);
+    }
+  }
+  return snapshots.sort((left, right) => observedMs({ observedAt: left.time }) - observedMs({ observedAt: right.time })).at(-1) ?? null;
 }
 
 function observedMs(row) { const value = Date.parse(row?.observedAt || ""); return Number.isFinite(value) ? value : 0; }
@@ -119,6 +142,13 @@ for (const filename of fs.readdirSync(REALPOWER_DIR).filter(name => /^\d+\.json$
   }
 }
 
+const kartzSnapshot = latestKartzSnapshot();
+const kartzByUid = new Map();
+for (const raw of kartzSnapshot?.playerRankList ?? []) {
+  const player = normalizeKartzPlayer(raw, kartzSnapshot);
+  if (player) kartzByUid.set(uidOf(raw), player);
+}
+
 const allUids = [...new Set([...powerByUid.keys(), ...realByUid.keys()])].sort((a, b) => a.localeCompare(b));
 const players = allUids.map(uid => {
   const power = powerByUid.get(uid) ?? null;
@@ -142,7 +172,7 @@ const players = allUids.map(uid => {
     x: location?.x, y: location?.y, pointId: location?.pointId, pointType: location?.pointType,
     locationObservedAt: location?.observedAt,
     armyPowerText: latest.armyPowerText, observedAt: latest.observedAt,
-    source, previousObservation
+    source, previousObservation, kartz: kartzByUid.get(uid)
   });
 });
 const newestObservedAt = [...powerByUid.values(), ...realByUid.values()]
@@ -196,11 +226,14 @@ if (writeJson(path.join(OUTPUT_DIR, "latest.json"), {
   schemaVersion: 1,
   generatedAt: new Date().toISOString(),
   sourceUpdatedAt: newestObservedAt,
+  kartzObservedAt: text(kartzSnapshot?.time),
   playerCount: players.length,
   sourceCounts: {
     power: powerByUid.size,
     realpower: realByUid.size,
-    overlap: allUids.filter(uid => powerByUid.has(uid) && realByUid.has(uid)).length
+    overlap: allUids.filter(uid => powerByUid.has(uid) && realByUid.has(uid)).length,
+    kartz: kartzByUid.size,
+    kartzMatches: allUids.filter(uid => kartzByUid.has(uid)).length
   },
   players
 })) changedFiles++;
