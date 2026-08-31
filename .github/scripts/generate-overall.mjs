@@ -171,7 +171,9 @@ const players = allUids.map(uid => {
     isOnline: latest.isOnline, lastLogin: latest.lastLogin,
     x: location?.x, y: location?.y, pointId: location?.pointId, pointType: location?.pointType,
     locationObservedAt: location?.observedAt,
-    armyPowerText: latest.armyPowerText, observedAt: latest.observedAt,
+    armyPower: realpower?.armyPower,
+    armyPowerText: realpower?.armyPowerText,
+    observedAt: latest.observedAt,
     source, previousObservation, kartz: kartzByUid.get(uid)
   });
 });
