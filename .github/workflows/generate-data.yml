@@ -32,11 +32,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
-
-      - name: Update checkout to latest main
-        shell: bash
-        run: git pull --ff-only origin main
+          fetch-depth: 2
 
       - name: Generate home statistics
         run: node .github/scripts/generate-home-stats.mjs
