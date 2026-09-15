@@ -3,7 +3,7 @@
   "date" : "2026-09-15",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-15T08:24:10.739117500Z",
+  "updatedAt" : "2026-09-15T10:03:16.019453Z",
   "rows" : [ {
     "detectedAt" : "2026-09-14T17:33:49.110597800Z",
     "uid" : "459494639085",
@@ -424,5 +424,80 @@
       "allianceTag" : "SuZu",
       "allianceName" : "澄みゆく琥珀"
     }
+  }, {
+    "detectedAt" : "2026-09-15T09:37:42.072Z",
+    "uid" : "8619067149961",
+    "nickname" : "SOPRANO",
+    "fromServer" : 3714,
+    "toServer" : 4183,
+    "source" : "CROSS_SOURCE",
+    "fromSource" : "TOP100",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : true,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8619067149961",
+      "nickname" : "SOPRANO",
+      "serverId" : 3714,
+      "score" : 48399912,
+      "level" : 100,
+      "allianceId" : "500374446",
+      "allianceTag" : "TDki",
+      "allianceName" : "Super Heart",
+      "source" : "TOP100",
+      "observedAt" : "2026-09-15T08:24:09.112611700Z"
+    },
+    "to" : {
+      "uid" : "8619067149961",
+      "nickname" : "SOPRANO",
+      "serverId" : 4183,
+      "rank" : 2,
+      "score" : 48424303,
+      "level" : 100,
+      "allianceId" : "500413603",
+      "allianceTag" : "PA83",
+      "allianceName" : "Power of Ants",
+      "x" : 406,
+      "y" : 602,
+      "source" : "MAP",
+      "observedAt" : "2026-09-15T09:37:42.072Z"
+    },
+    "lastConfirmedAt" : "2026-09-15T10:03:15.955623700Z",
+    "sources" : [ "TOP100", "MAP" ]
+  }, {
+    "detectedAt" : "2026-09-15T10:03:15.955623700Z",
+    "uid" : "8662467939994",
+    "nickname" : "Sapphire",
+    "fromServer" : 3768,
+    "toServer" : 3738,
+    "from" : {
+      "uid" : "8662467939994",
+      "nickname" : "Sapphire",
+      "server" : 3768,
+      "rank" : null,
+      "score" : 49757212,
+      "level" : 100,
+      "allianceId" : "500375049",
+      "allianceTag" : ":Dl:",
+      "allianceName" : "Destiny Land"
+    },
+    "to" : {
+      "uid" : "8662467939994",
+      "nickname" : "Sapphire",
+      "server" : 3738,
+      "rank" : null,
+      "score" : 49759712,
+      "level" : 100,
+      "allianceId" : "500372817",
+      "allianceTag" : "Wusa",
+      "allianceName" : "白いうさぎ王国"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
