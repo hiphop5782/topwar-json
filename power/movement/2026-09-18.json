@@ -3,7 +3,7 @@
   "date" : "2026-09-18",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-18T03:20:27.255887700Z",
+  "updatedAt" : "2026-09-18T03:59:55.274146700Z",
   "rows" : [ {
     "detectedAt" : "2026-09-17T17:34:58.450129900Z",
     "uid" : "403495355671",
@@ -965,8 +965,47 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-18T03:27:38.288Z",
+    "sources" : [ "TOP100", "MAP" ]
+  }, {
+    "detectedAt" : "2026-09-18T03:59:54.299Z",
+    "uid" : "473684624926",
+    "nickname" : "Brox",
+    "fromServer" : 1753,
+    "toServer" : 3649,
+    "source" : "CROSS_SOURCE",
+    "fromSource" : "TOP100",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : true,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "473684624926",
+      "nickname" : "Brox",
+      "serverId" : 1753,
+      "score" : 62569468,
+      "level" : 100,
+      "allianceId" : "0",
+      "source" : "TOP100",
+      "observedAt" : "2026-09-18T03:20:27.208413400Z"
+    },
+    "to" : {
+      "uid" : "473684624926",
+      "nickname" : "Brox",
+      "serverId" : 3649,
+      "rank" : 3,
+      "score" : 62569468,
+      "level" : 100,
+      "allianceId" : "500364166",
+      "allianceTag" : "AsgS",
+      "allianceName" : "Asgard southern",
+      "x" : 418,
+      "y" : 602,
+      "source" : "MAP",
+      "observedAt" : "2026-09-18T03:59:54.299Z"
+    }
   } ]
 }
