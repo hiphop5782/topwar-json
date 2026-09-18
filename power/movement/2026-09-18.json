@@ -3,7 +3,7 @@
   "date" : "2026-09-18",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-18T08:33:35.664271600Z",
+  "updatedAt" : "2026-09-18T10:18:24.887084400Z",
   "rows" : [ {
     "detectedAt" : "2026-09-17T17:34:58.450129900Z",
     "uid" : "403495355671",
@@ -69,9 +69,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-18T09:02:05.793Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-17T17:34:58.450129900Z",
     "uid" : "508328055555",
@@ -737,9 +739,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-18T09:23:25.944Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-17T23:52:05.102550300Z",
     "uid" : "938417494797",
@@ -1614,8 +1618,129 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-18T09:42:00.690Z",
+    "sources" : [ "TOP100", "MAP" ]
+  }, {
+    "detectedAt" : "2026-09-18T08:37:22.260Z",
+    "uid" : "7876914777212",
+    "nickname" : "tower",
+    "fromServer" : 3355,
+    "toServer" : 4106,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "7876914777212",
+      "nickname" : "tower",
+      "serverId" : 3355,
+      "rank" : 1,
+      "score" : 48887032,
+      "level" : 100,
+      "allianceId" : "500327292",
+      "allianceTag" : "D1LF",
+      "allianceName" : "Daddies Matter Too",
+      "x" : 486,
+      "y" : 492,
+      "source" : "MAP",
+      "observedAt" : "2026-09-15T12:13:35.701Z"
+    },
+    "to" : {
+      "uid" : "7876914777212",
+      "nickname" : "tower",
+      "serverId" : 4106,
+      "rank" : 5,
+      "score" : 48982432,
+      "level" : 100,
+      "allianceId" : "500399026",
+      "allianceTag" : "U106",
+      "allianceName" : "united 4106",
+      "x" : 438,
+      "y" : 646,
+      "source" : "MAP",
+      "observedAt" : "2026-09-18T08:37:22.260Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-18T09:02:05.793Z",
+    "uid" : "445123376582",
+    "nickname" : "1985",
+    "fromServer" : 1248,
+    "toServer" : 3545,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "445123376582",
+      "nickname" : "1985",
+      "serverId" : 1248,
+      "rank" : 3,
+      "score" : 57511641,
+      "level" : 100,
+      "allianceId" : "750868",
+      "allianceTag" : "HOmE",
+      "allianceName" : "Querencia",
+      "x" : 420,
+      "y" : 278,
+      "source" : "MAP",
+      "observedAt" : "2026-09-17T01:51:03.689Z"
+    },
+    "to" : {
+      "uid" : "445123376582",
+      "nickname" : "1985",
+      "serverId" : 3545,
+      "rank" : 2,
+      "score" : 57519374,
+      "level" : 100,
+      "allianceId" : "500357121",
+      "allianceTag" : "ELyU",
+      "allianceName" : "Elysian Unity",
+      "x" : 419,
+      "y" : 519,
+      "source" : "MAP",
+      "observedAt" : "2026-09-18T09:02:05.793Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-18T09:48:37.072Z",
+    "uid" : "367625233398",
+    "nickname" : "🔪🔪MIKE",
+    "fromServer" : 1540,
+    "toServer" : 3698,
+    "source" : "CROSS_SOURCE",
+    "fromSource" : "TOP100",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : true,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "367625233398",
+      "nickname" : "🔪🔪MIKE",
+      "serverId" : 1540,
+      "score" : 64356481,
+      "level" : 100,
+      "allianceId" : "0",
+      "source" : "TOP100",
+      "observedAt" : "2026-09-18T08:33:35.619416100Z"
+    },
+    "to" : {
+      "uid" : "367625233398",
+      "nickname" : "🔪🔪MIKE",
+      "serverId" : 3698,
+      "score" : 64356481,
+      "level" : 100,
+      "x" : 246,
+      "y" : 184,
+      "source" : "MAP",
+      "observedAt" : "2026-09-18T09:48:37.072Z"
+    },
+    "lastConfirmedAt" : "2026-09-18T10:18:24.841038300Z",
+    "sources" : [ "TOP100", "MAP" ]
   } ]
 }
