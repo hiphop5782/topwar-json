@@ -3,7 +3,7 @@
   "date" : "2026-09-22",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-22T05:43:22.551445500Z",
+  "updatedAt" : "2026-09-22T07:27:49.544194600Z",
   "rows" : [ {
     "detectedAt" : "2026-09-21T16:43:13.618490800Z",
     "uid" : "186447921340",
@@ -1161,9 +1161,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-22T07:03:14.674Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-22T00:26:42.130587300Z",
     "uid" : "527944602478",
@@ -1195,9 +1197,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-22T07:03:14.674Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-22T00:26:42.130587300Z",
     "uid" : "857390418275",
@@ -2075,11 +2079,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false,
-    "lastConfirmedAt" : "2026-09-22T05:43:22.510150400Z",
-    "sources" : [ "TOP100" ]
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-22T05:57:43.290Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-22T05:41:52.860193300Z",
     "uid" : "9040247492590",
@@ -2116,5 +2120,187 @@
     "detectedByMap" : false,
     "lastConfirmedAt" : "2026-09-22T05:43:22.510150400Z",
     "sources" : [ "TOP100" ]
+  }, {
+    "detectedAt" : "2026-09-22T06:09:14.557Z",
+    "uid" : "9399132524777",
+    "nickname" : "Spicy🔥",
+    "fromServer" : 4345,
+    "toServer" : 3939,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "9399132524777",
+      "nickname" : "錦右衛門🔥",
+      "serverId" : 4345,
+      "score" : 43878200,
+      "level" : 100,
+      "x" : 672,
+      "y" : 74,
+      "source" : "MAP",
+      "observedAt" : "2026-09-21T09:49:52.409Z"
+    },
+    "to" : {
+      "uid" : "9399132524777",
+      "nickname" : "Spicy🔥",
+      "serverId" : 3939,
+      "rank" : 2,
+      "score" : 43905793,
+      "level" : 100,
+      "allianceId" : "500385519",
+      "allianceTag" : "SC39",
+      "allianceName" : "The Shadow Council",
+      "x" : 372,
+      "y" : 452,
+      "source" : "MAP",
+      "observedAt" : "2026-09-22T06:09:14.557Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-22T06:53:42.365Z",
+    "uid" : "277853810983",
+    "nickname" : "Nesquik",
+    "fromServer" : 341,
+    "toServer" : 4078,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "277853810983",
+      "nickname" : "Nesquik",
+      "serverId" : 341,
+      "rank" : 1,
+      "score" : 37512332,
+      "level" : 100,
+      "allianceId" : "100010641",
+      "allianceTag" : "V341",
+      "allianceName" : "V341",
+      "x" : 532,
+      "y" : 460,
+      "source" : "MAP",
+      "observedAt" : "2026-09-22T02:09:23.525Z"
+    },
+    "to" : {
+      "uid" : "277853810983",
+      "nickname" : "Nesquik",
+      "serverId" : 4078,
+      "rank" : 2,
+      "score" : 37512332,
+      "level" : 100,
+      "allianceId" : "500395149",
+      "allianceTag" : "S78.",
+      "allianceName" : "Covenant of Ashes",
+      "x" : 391,
+      "y" : 541,
+      "source" : "MAP",
+      "observedAt" : "2026-09-22T06:53:42.365Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-22T07:27:49.497644800Z",
+    "uid" : "851982854471",
+    "nickname" : "MARTIN",
+    "fromServer" : 2607,
+    "toServer" : 4198,
+    "from" : {
+      "uid" : "851982854471",
+      "nickname" : "MARTIN",
+      "server" : 2607,
+      "rank" : null,
+      "score" : 70860622,
+      "level" : 100,
+      "allianceId" : "500211185",
+      "allianceTag" : "yOLO",
+      "allianceName" : "Bad Decisions"
+    },
+    "to" : {
+      "uid" : "851982854471",
+      "nickname" : "MARTIN",
+      "server" : 4198,
+      "rank" : null,
+      "score" : 70860622,
+      "level" : 100,
+      "allianceId" : "500416349",
+      "allianceTag" : "NWII",
+      "allianceName" : "New World Order II"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-22T07:27:49.497644800Z",
+    "uid" : "9035802087405",
+    "nickname" : "渚",
+    "fromServer" : 3798,
+    "toServer" : 3884,
+    "from" : {
+      "uid" : "9035802087405",
+      "nickname" : "渚",
+      "server" : 3798,
+      "rank" : null,
+      "score" : 29267552,
+      "level" : 100,
+      "allianceId" : "500377352",
+      "allianceTag" : "KioR",
+      "allianceName" : "Kingdom of Radiant"
+    },
+    "to" : {
+      "uid" : "9035802087405",
+      "nickname" : "渚",
+      "server" : 3884,
+      "rank" : null,
+      "score" : 29267552,
+      "level" : 100,
+      "allianceId" : "500380735",
+      "allianceTag" : "__84",
+      "allianceName" : "久遠の灯火"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-22T07:27:49.497644800Z",
+    "uid" : "9116014776301",
+    "nickname" : "麓",
+    "fromServer" : 3798,
+    "toServer" : 3884,
+    "from" : {
+      "uid" : "9116014776301",
+      "nickname" : "麓",
+      "server" : 3798,
+      "rank" : null,
+      "score" : 17060884,
+      "level" : 88,
+      "allianceId" : "500377352",
+      "allianceTag" : "KioR",
+      "allianceName" : "Kingdom of Radiant"
+    },
+    "to" : {
+      "uid" : "9116014776301",
+      "nickname" : "麓",
+      "server" : 3884,
+      "rank" : null,
+      "score" : 17060884,
+      "level" : 88,
+      "allianceId" : "500380735",
+      "allianceTag" : "__84",
+      "allianceName" : "久遠の灯火"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
