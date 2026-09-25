@@ -3,7 +3,7 @@
   "date" : "2026-09-25",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-25T08:31:26.277329300Z",
+  "updatedAt" : "2026-09-25T08:59:33.230673900Z",
   "rows" : [ {
     "detectedAt" : "2026-09-24T16:49:50.864133500Z",
     "uid" : "242838180089",
@@ -2049,5 +2049,43 @@
     },
     "lastConfirmedAt" : "2026-09-25T08:31:26.231068700Z",
     "sources" : [ "MAP", "TOP100" ]
+  }, {
+    "detectedAt" : "2026-09-25T08:59:32.486Z",
+    "uid" : "436088358303",
+    "nickname" : "DarthVad",
+    "fromServer" : 1645,
+    "toServer" : 3649,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "436088358303",
+      "nickname" : "DarthVad",
+      "serverId" : 1645,
+      "score" : 52193621,
+      "level" : 100,
+      "x" : 269,
+      "y" : 469,
+      "source" : "MAP",
+      "observedAt" : "2026-09-24T19:03:12.527Z"
+    },
+    "to" : {
+      "uid" : "436088358303",
+      "nickname" : "DarthVad",
+      "serverId" : 3649,
+      "rank" : 1,
+      "score" : 52193621,
+      "level" : 100,
+      "allianceId" : "500364032",
+      "allianceTag" : "ECLP",
+      "allianceName" : "Lunar Eclipse",
+      "x" : 445,
+      "y" : 427,
+      "source" : "MAP",
+      "observedAt" : "2026-09-25T08:59:32.486Z"
+    }
   } ]
 }
