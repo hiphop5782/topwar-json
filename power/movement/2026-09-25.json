@@ -3,7 +3,7 @@
   "date" : "2026-09-25",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-25T03:08:42.893261900Z",
+  "updatedAt" : "2026-09-25T05:01:03.515587800Z",
   "rows" : [ {
     "detectedAt" : "2026-09-24T16:49:50.864133500Z",
     "uid" : "242838180089",
@@ -1817,7 +1817,7 @@
     "fromSource" : "MAP",
     "toSource" : "MAP",
     "status" : "CONFIRMED",
-    "detectedByTop100" : false,
+    "detectedByTop100" : true,
     "detectedByMap" : true,
     "from" : {
       "uid" : "891210066458",
@@ -1844,7 +1844,9 @@
       "y" : 683,
       "source" : "MAP",
       "observedAt" : "2026-09-25T02:50:49.926Z"
-    }
+    },
+    "lastConfirmedAt" : "2026-09-25T05:01:03.470553Z",
+    "sources" : [ "MAP", "TOP100" ]
   }, {
     "detectedAt" : "2026-09-25T03:08:43.032Z",
     "uid" : "903669017149",
@@ -1878,6 +1880,48 @@
       "y" : 778,
       "source" : "MAP",
       "observedAt" : "2026-09-25T03:08:43.032Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-25T03:37:10.905Z",
+    "uid" : "389991720138",
+    "nickname" : "Uni🌽",
+    "fromServer" : 2609,
+    "toServer" : 2698,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "389991720138",
+      "nickname" : "Uni🌽",
+      "serverId" : 2609,
+      "rank" : 3,
+      "score" : 83316691,
+      "level" : 100,
+      "allianceId" : "500212828",
+      "allianceTag" : "609s",
+      "allianceName" : "DirtyZoo",
+      "x" : 423,
+      "y" : 629,
+      "source" : "MAP",
+      "observedAt" : "2026-09-25T01:13:02.278Z"
+    },
+    "to" : {
+      "uid" : "389991720138",
+      "nickname" : "Uni🌽",
+      "serverId" : 2698,
+      "rank" : 1,
+      "score" : 83316691,
+      "level" : 100,
+      "allianceId" : "500245801",
+      "allianceTag" : "698S",
+      "allianceName" : "Jiggle Jiggle",
+      "x" : 410,
+      "y" : 584,
+      "source" : "MAP",
+      "observedAt" : "2026-09-25T03:37:10.905Z"
     }
   } ]
 }
