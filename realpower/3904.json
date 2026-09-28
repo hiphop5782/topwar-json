@@ -1,27 +1,27 @@
 {
-  "exportedAt" : "2026-09-28T00:40:12.711Z",
+  "exportedAt" : "2026-09-28T01:37:20.424Z",
   "serverId" : 3904,
   "summary" : {
     "players" : 57,
     "mapPlayers" : 57,
-    "allianceMemberMergedPlayers" : 23,
-    "mapOnlyPlayers" : 34,
+    "allianceMemberMergedPlayers" : 24,
+    "mapOnlyPlayers" : 33,
     "noAlliancePlayers" : 3,
     "alliances" : 30,
-    "allianceDetails" : 4,
+    "allianceDetails" : 5,
     "activity" : {
       "coreCount" : 13,
-      "activeCount" : 14,
-      "watchCount" : 27,
+      "activeCount" : 15,
+      "watchCount" : 26,
       "lowCount" : 0,
-      "activeTotalCount" : 27
+      "activeTotalCount" : 28
     },
     "allianceActivitySummary" : {
       "coreAllianceCount" : 1,
       "activeAllianceCount" : 0,
       "watchAllianceCount" : 0,
-      "lowAllianceCount" : 26,
-      "insufficientAllianceCount" : 3,
+      "lowAllianceCount" : 25,
+      "insufficientAllianceCount" : 4,
       "activeAllianceCountForWar" : 1,
       "meaningfulAllianceCount" : 1
     },
@@ -36,38 +36,38 @@
       "serverActivityReasons" : [ "coreAllianceCount>=1", "activeAllianceCountForWar>=1", "activeUserRate>=40%", "activePowerRate>=45%" ],
       "totalMapPlayers" : 57,
       "coreUsers" : 13,
-      "activeGradeUsers" : 14,
-      "watchGradeUsers" : 27,
+      "activeGradeUsers" : 15,
+      "watchGradeUsers" : 26,
       "lowGradeUsers" : 0,
-      "activeUsers" : 23,
-      "recentUsers" : 6,
+      "activeUsers" : 24,
+      "recentUsers" : 5,
       "sleepyUsers" : 1,
       "inactiveUsers" : 0,
       "quitLikelyUsers" : 0,
-      "unknownStatusUsers" : 34,
-      "activeUserRate" : 0.403509,
+      "unknownStatusUsers" : 33,
+      "activeUserRate" : 0.421053,
       "quitLikelyRate" : 0,
       "activeAllianceCountForWar" : 1,
       "meaningfulAllianceCount" : 1,
       "coreAllianceCount" : 1,
       "activeAllianceCount" : 0,
       "watchAllianceCount" : 0,
-      "lowAllianceCount" : 26,
-      "insufficientAllianceCount" : 3,
+      "lowAllianceCount" : 25,
+      "insufficientAllianceCount" : 4,
       "serverPowerTotal" : 1058531808,
-      "activePowerTotal" : 630146410,
-      "activePowerRate" : 0.595302,
+      "activePowerTotal" : 671873317,
+      "activePowerRate" : 0.634722,
       "topAlliancePowerRate" : 0.460704,
       "top3AlliancePowerRate" : 0.564365
     },
     "userStatus" : {
-      "activeUsers" : 23,
-      "recentUsers" : 6,
+      "activeUsers" : 24,
+      "recentUsers" : 5,
       "sleepyUsers" : 1,
       "inactiveUsers" : 0,
       "quitLikelyUsers" : 0,
-      "unknownStatusUsers" : 34,
-      "activeUserRate" : 0.403509,
+      "unknownStatusUsers" : 33,
+      "activeUserRate" : 0.421053,
       "quitLikelyRate" : 0
     },
     "activeAllianceCountForWar" : 1,
@@ -155,12 +155,13 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.14
+    "lastLoginDaysAgo" : 0.18
   }, {
     "uid" : "8865026510656",
     "username" : "虎将军",
+    "nickname" : "虎将军",
     "serverId" : 3904,
-    "worldId" : 3904,
+    "worldId" : 1,
     "x" : 531,
     "y" : 193,
     "pointId" : 99082,
@@ -171,24 +172,33 @@
     "armyPowerText" : "744gg",
     "allianceId" : "500381979",
     "allianceTag" : "TRHC",
+    "allianceName" : "Hosaflar",
+    "allianceRole" : 1,
+    "rank" : 1,
+    "isOnline" : 0,
+    "joinTime" : 1771621836,
+    "lastShowTime" : 1790553534,
+    "lastLogin" : 1790553534,
     "language" : "zh_cn",
     "nationalflag" : 171,
     "gender" : 0,
     "usergender" : 0,
+    "headFrameId" : 1,
     "source" : {
-      "map" : true
+      "map" : true,
+      "allianceMember" : true
     },
     "powerRankInAlliance" : 1,
     "powerPercentileInAlliance" : 1,
     "powerContributionRate" : 1,
     "cumulativePowerContributionRate" : 1,
-    "activityScore" : 30,
-    "activityReasons" : [ "map_found" ],
-    "activityGrade" : "WATCH",
-    "userStatus" : "UNKNOWN",
+    "activityScore" : 70,
+    "activityReasons" : [ "map_found", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityGrade" : "ACTIVE",
+    "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLogin_unknown" ],
-    "lastLoginDaysAgo" : null
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.07
   }, {
     "uid" : "8866387955520",
     "username" : "LondonBu",
@@ -231,7 +241,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.76
+    "lastLoginDaysAgo" : 0.8
   }, {
     "uid" : "8860942569280",
     "username" : "Tof",
@@ -274,7 +284,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.17
+    "lastLoginDaysAgo" : 0.21
   }, {
     "uid" : "8866270187328",
     "username" : "elHefe",
@@ -317,7 +327,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.05
   }, {
     "uid" : "8862089154368",
     "username" : "Lenner",
@@ -360,7 +370,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.2
+    "lastLoginDaysAgo" : 1.24
   }, {
     "uid" : "8861286993728",
     "username" : "özer",
@@ -403,7 +413,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.19
+    "lastLoginDaysAgo" : 0.23
   }, {
     "uid" : "8860811300672",
     "username" : "Tosia",
@@ -446,7 +456,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.92
+    "lastLoginDaysAgo" : 0.96
   }, {
     "uid" : "8860871790400",
     "username" : "らい",
@@ -468,8 +478,8 @@
     "rank" : 1,
     "isOnline" : 0,
     "joinTime" : 1790430640,
-    "lastShowTime" : 1790549642,
-    "lastLogin" : 1790549642,
+    "lastShowTime" : 1790557777,
+    "lastLogin" : 1790557777,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -489,7 +499,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.07
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "8865617940288",
     "username" : "🐺Abo",
@@ -532,7 +542,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.18
+    "lastLoginDaysAgo" : 0.22
   }, {
     "uid" : "8865113575232",
     "username" : "wolli",
@@ -575,7 +585,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.62
+    "lastLoginDaysAgo" : 1.66
   }, {
     "uid" : "8863172267840",
     "username" : "piotr",
@@ -618,7 +628,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.26
+    "lastLoginDaysAgo" : 0.3
   }, {
     "uid" : "8867075657536",
     "username" : "MedeMCM",
@@ -661,7 +671,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.02
+    "lastLoginDaysAgo" : 0.06
   }, {
     "uid" : "8860247953216",
     "username" : "ゆう",
@@ -704,7 +714,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.58
+    "lastLoginDaysAgo" : 0.62
   }, {
     "uid" : "8860744126272",
     "username" : "BARA",
@@ -780,7 +790,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.05
+    "lastLoginDaysAgo" : 0.09
   }, {
     "uid" : "8863336861504",
     "username" : "Taka",
@@ -856,7 +866,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.19
+    "lastLoginDaysAgo" : 1.23
   }, {
     "uid" : "8861982199616",
     "username" : "DBCooper",
@@ -932,7 +942,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.04
+    "lastLoginDaysAgo" : 0.08
   }, {
     "uid" : "8862052552512",
     "username" : "Tmartint",
@@ -954,8 +964,8 @@
     "rank" : 9,
     "isOnline" : 0,
     "joinTime" : 1738766820,
-    "lastShowTime" : 1790456848,
-    "lastLogin" : 1790456848,
+    "lastShowTime" : 1790557484,
+    "lastLogin" : 1790557484,
     "language" : "en",
     "nationalflag" : 233,
     "gender" : 0,
@@ -969,13 +979,13 @@
     "powerPercentileInAlliance" : 0.875,
     "powerContributionRate" : 0.051568,
     "cumulativePowerContributionRate" : 0.942986,
-    "activityScore" : 55,
-    "activityReasons" : [ "map_found", "recent_login_3d", "alliance_member_confirmed" ],
+    "activityScore" : 60,
+    "activityReasons" : [ "map_found", "recent_login_1d", "alliance_member_confirmed" ],
     "activityGrade" : "ACTIVE",
-    "userStatus" : "RECENT",
-    "inactiveScore" : 10,
-    "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.15
+    "userStatus" : "ACTIVE",
+    "inactiveScore" : 0,
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "8863385587520",
     "username" : "HYOUTAN",
@@ -1018,7 +1028,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.07
+    "lastLoginDaysAgo" : 0.11
   }, {
     "uid" : "8866103856960",
     "username" : "Goldad",
@@ -1094,7 +1104,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.72
+    "lastLoginDaysAgo" : 0.76
   }, {
     "uid" : "8861882388288",
     "username" : "WILSON",
@@ -1358,7 +1368,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.57
+    "lastLoginDaysAgo" : 1.61
   }, {
     "uid" : "8866015317824",
     "username" : "Maverick",
@@ -1401,7 +1411,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.51
+    "lastLoginDaysAgo" : 0.55
   }, {
     "uid" : "8861203500864",
     "username" : "bessr",
@@ -1855,7 +1865,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 5.2
+    "lastLoginDaysAgo" : 5.24
   }, {
     "uid" : "8860428341056",
     "username" : "مَصٌطّفى",
@@ -2096,7 +2106,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 2.09
+    "lastLoginDaysAgo" : 2.13
   }, {
     "uid" : "8867290648384",
     "username" : "一號基地",
@@ -2497,28 +2507,37 @@
     "memberCount" : 1,
     "allianceId" : "500381979",
     "allianceTag" : "TRHC",
+    "allianceCode" : "TRHC",
+    "allianceName" : "Hosaflar",
+    "allianceLeader" : "wy.8862246047552",
+    "allianceLevel" : 3,
+    "alliancePower" : 100000000,
+    "alliancePowerText" : "100M",
+    "allianceMemberCountShown" : 60,
+    "allianceMemberMax" : 90,
+    "allianceMemberText" : "60/90",
     "serverId" : 3904,
     "activitySummary" : {
       "collectedMapMemberCount" : 1,
       "coreCount" : 0,
-      "activeCount" : 0,
-      "watchCount" : 1,
+      "activeCount" : 1,
+      "watchCount" : 0,
       "lowCount" : 0,
-      "activeTotalCount" : 0,
+      "activeTotalCount" : 1,
       "totalPower" : 41726907,
       "corePowerSum" : 0,
-      "activePowerSum" : 0,
+      "activePowerSum" : 41726907,
       "corePowerRate" : 0,
-      "activePowerRate" : 0,
+      "activePowerRate" : 1,
       "top20PowerCount" : 0,
       "cumulative80PowerCount" : 0,
-      "shownMemberCount" : null,
-      "shownMemberMax" : null
+      "shownMemberCount" : 60,
+      "shownMemberMax" : 90
     },
-    "activeAllianceGrade" : "LOW",
+    "activeAllianceGrade" : "INSUFFICIENT",
     "activeAllianceScore" : 0,
-    "activeAllianceReasons" : [ "coverageRate=100%" ],
-    "coverageRate" : 1
+    "activeAllianceReasons" : [ "coverageRate=1.67%", "coverageRate<10%", "sample_too_small_for_alliance_grade" ],
+    "coverageRate" : 0.0167
   }, {
     "memberCount" : 1,
     "allianceId" : "500382066",
@@ -3017,7 +3036,7 @@
   "movementTracking" : {
     "version" : 1,
     "mode" : "uid-cross-server",
-    "detectedAt" : "2026-09-28T00:40:12.711Z",
+    "detectedAt" : "2026-09-28T01:37:20.424Z",
     "eventCount" : 0
   },
   "movementEvents" : [ ]
