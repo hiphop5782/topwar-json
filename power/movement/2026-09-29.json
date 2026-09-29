@@ -3,7 +3,7 @@
   "date" : "2026-09-29",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-29T02:00:24.578922700Z",
+  "updatedAt" : "2026-09-29T03:15:03.202839900Z",
   "rows" : [ {
     "detectedAt" : "2026-09-28T17:30:02.709Z",
     "uid" : "9266914496659",
@@ -417,9 +417,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T03:15:02.385Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-28T18:59:16.021234200Z",
     "uid" : "449505018496",
@@ -485,9 +487,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T03:15:02.385Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-28T18:59:16.021234200Z",
     "uid" : "542437278672",
@@ -763,9 +767,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T03:13:48.071Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-28T18:59:16.021234200Z",
     "uid" : "8965244358581",
@@ -2183,9 +2189,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T03:07:19Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-29T02:00:24.531379100Z",
     "uid" : "9568057299255",
@@ -2220,5 +2228,123 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-29T02:32:00.448Z",
+    "uid" : "7968283987151",
+    "nickname" : "Sparrow",
+    "fromServer" : 3145,
+    "toServer" : 2275,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "7968283987151",
+      "nickname" : "Sparrow",
+      "serverId" : 3145,
+      "rank" : 3,
+      "score" : 59894196,
+      "level" : 100,
+      "allianceId" : "500308779",
+      "allianceTag" : "$RD",
+      "allianceName" : "Ohana3145",
+      "x" : 408,
+      "y" : 394,
+      "source" : "MAP",
+      "observedAt" : "2026-09-28T18:26:49.014Z"
+    },
+    "to" : {
+      "uid" : "7968283987151",
+      "nickname" : "Sparrow",
+      "serverId" : 2275,
+      "rank" : 3,
+      "score" : 59894196,
+      "level" : 100,
+      "allianceId" : "500142211",
+      "allianceTag" : "SFA-",
+      "allianceName" : "Server First Always",
+      "x" : 449,
+      "y" : 451,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T02:32:00.448Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-29T02:32:00.448Z",
+    "uid" : "918812367491",
+    "nickname" : "WudexMm",
+    "fromServer" : 1805,
+    "toServer" : 2275,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "918812367491",
+      "nickname" : "WudexMm",
+      "serverId" : 1805,
+      "score" : 72480945,
+      "level" : 100,
+      "x" : 109,
+      "y" : 101,
+      "source" : "MAP",
+      "observedAt" : "2026-09-28T22:16:20.826Z"
+    },
+    "to" : {
+      "uid" : "918812367491",
+      "nickname" : "WudexMm",
+      "serverId" : 2275,
+      "rank" : 1,
+      "score" : 72480945,
+      "level" : 100,
+      "allianceId" : "500142211",
+      "allianceTag" : "SFA-",
+      "allianceName" : "Server First Always",
+      "x" : 455,
+      "y" : 473,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T02:32:00.448Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-29T02:52:09.982Z",
+    "uid" : "823281432784",
+    "nickname" : "おっちょこマメ",
+    "fromServer" : 1732,
+    "toServer" : 1552,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "823281432784",
+      "nickname" : "おっちょこマメ",
+      "serverId" : 1732,
+      "rank" : 4,
+      "score" : 48960677,
+      "level" : 100,
+      "allianceId" : "400133843",
+      "allianceTag" : "@pcm",
+      "allianceName" : "Pochama1938",
+      "x" : 398,
+      "y" : 326,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T00:37:59.730Z"
+    },
+    "to" : {
+      "uid" : "823281432784",
+      "nickname" : "おっちょこマメ",
+      "serverId" : 1552,
+      "score" : 48960677,
+      "level" : 100,
+      "x" : 628,
+      "y" : 408,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T02:52:09.982Z"
+    }
   } ]
 }
