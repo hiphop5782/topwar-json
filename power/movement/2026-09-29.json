@@ -3,7 +3,7 @@
   "date" : "2026-09-29",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-29T09:01:43.967118900Z",
+  "updatedAt" : "2026-09-29T10:24:29.380698500Z",
   "rows" : [ {
     "detectedAt" : "2026-09-28T17:30:02.709Z",
     "uid" : "9266914496659",
@@ -1313,9 +1313,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T10:24:28.409Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-28T22:29:06.820088700Z",
     "uid" : "9560910958902",
@@ -1667,9 +1669,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T10:05:53.249Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-29T00:14:38.977048300Z",
     "uid" : "9551521714473",
@@ -2814,5 +2818,47 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-29T09:58:37.738Z",
+    "uid" : "500400157416",
+    "nickname" : "KIWI🥝🐦",
+    "fromServer" : 2616,
+    "toServer" : 3540,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "500400157416",
+      "nickname" : "KIWI🥝🐦",
+      "serverId" : 2616,
+      "rank" : 2,
+      "score" : 64066130,
+      "level" : 100,
+      "allianceId" : "500216117",
+      "allianceTag" : "W4R,",
+      "allianceName" : "Without a Reason",
+      "x" : 451,
+      "y" : 667,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T05:37:23.737Z"
+    },
+    "to" : {
+      "uid" : "500400157416",
+      "nickname" : "KIWI🥝🐦",
+      "serverId" : 3540,
+      "rank" : 3,
+      "score" : 64066130,
+      "level" : 100,
+      "allianceId" : "500355668",
+      "allianceTag" : "DETz",
+      "allianceName" : "Dragons Eat Tacos",
+      "x" : 422,
+      "y" : 336,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T09:58:37.738Z"
+    }
   } ]
 }
