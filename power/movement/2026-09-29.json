@@ -3,7 +3,7 @@
   "date" : "2026-09-29",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-29T05:32:05.830849400Z",
+  "updatedAt" : "2026-09-29T07:17:09.689533500Z",
   "rows" : [ {
     "detectedAt" : "2026-09-28T17:30:02.709Z",
     "uid" : "9266914496659",
@@ -453,9 +453,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T06:50:45.787Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-28T18:59:16.021234200Z",
     "uid" : "500137997030",
@@ -523,9 +525,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T06:50:45.787Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-28T18:59:16.021234200Z",
     "uid" : "545192747990",
@@ -2402,7 +2406,7 @@
     "fromSource" : "MAP",
     "toSource" : "MAP",
     "status" : "CONFIRMED",
-    "detectedByTop100" : false,
+    "detectedByTop100" : true,
     "detectedByMap" : true,
     "from" : {
       "uid" : "8533086867033",
@@ -2431,7 +2435,9 @@
       "y" : 599,
       "source" : "MAP",
       "observedAt" : "2026-09-29T05:25:31.505Z"
-    }
+    },
+    "lastConfirmedAt" : "2026-09-29T07:17:09.641628500Z",
+    "sources" : [ "MAP", "TOP100" ]
   }, {
     "detectedAt" : "2026-09-29T05:25:31.505Z",
     "uid" : "8535418211929",
@@ -2503,9 +2509,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T05:35:01.956Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-29T05:32:05.783774800Z",
     "uid" : "495864391264",
@@ -2533,6 +2541,158 @@
       "allianceId" : "100033208",
       "allianceTag" : "7sss",
       "allianceName" : "SEVEN SENSES"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-29T06:34:16.034Z",
+    "uid" : "9286418010276",
+    "nickname" : "Jaber",
+    "fromServer" : 4260,
+    "toServer" : 3698,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "9286418010276",
+      "nickname" : "Jaber",
+      "serverId" : 4260,
+      "rank" : 1,
+      "score" : 18644415,
+      "level" : 89,
+      "allianceId" : "500425231",
+      "allianceTag" : "PEF6",
+      "allianceName" : "Place to Enjoy Free",
+      "x" : 338,
+      "y" : 472,
+      "source" : "MAP",
+      "observedAt" : "2026-09-28T04:31:10.237Z"
+    },
+    "to" : {
+      "uid" : "9286418010276",
+      "nickname" : "Jaber",
+      "serverId" : 3698,
+      "rank" : 3,
+      "score" : 18726530,
+      "level" : 89,
+      "allianceId" : "500369059",
+      "allianceTag" : "M!lk",
+      "allianceName" : "Dragons Drink Milk",
+      "x" : 357,
+      "y" : 463,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T06:34:16.034Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-29T06:58:01.790Z",
+    "uid" : "782371768363",
+    "nickname" : "ベル🔔",
+    "fromServer" : 2147,
+    "toServer" : 3646,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "782371768363",
+      "nickname" : "ベル🔔",
+      "serverId" : 2147,
+      "rank" : 3,
+      "score" : 72473690,
+      "level" : 100,
+      "allianceId" : "400254698",
+      "allianceTag" : "NcM",
+      "allianceName" : "シン・猫cafeメリーズ Q",
+      "x" : 412,
+      "y" : 426,
+      "source" : "MAP",
+      "observedAt" : "2026-09-28T22:10:06.614Z"
+    },
+    "to" : {
+      "uid" : "782371768363",
+      "nickname" : "ベル🔔",
+      "serverId" : 3646,
+      "rank" : 3,
+      "score" : 72988896,
+      "level" : 100,
+      "allianceId" : "500363011",
+      "allianceTag" : "UNT,",
+      "allianceName" : "万・事・屋",
+      "x" : 419,
+      "y" : 521,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T06:58:01.790Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-29T07:17:09.641628500Z",
+    "uid" : "186124472508",
+    "nickname" : "爆裂戦車道",
+    "fromServer" : 188,
+    "toServer" : 707,
+    "from" : {
+      "uid" : "186124472508",
+      "nickname" : "爆裂戦車道",
+      "server" : 188,
+      "rank" : null,
+      "score" : 88826775,
+      "level" : 100,
+      "allianceId" : "123590",
+      "allianceTag" : "HiNO",
+      "allianceName" : "飛騨ノ宿"
+    },
+    "to" : {
+      "uid" : "186124472508",
+      "nickname" : "爆裂戦車道",
+      "server" : 707,
+      "rank" : null,
+      "score" : 88826775,
+      "level" : 100,
+      "allianceId" : "417171",
+      "allianceTag" : "DOG!",
+      "allianceName" : "ワンダフルデイズ"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-29T07:17:09.641628500Z",
+    "uid" : "282470838570",
+    "nickname" : "Godnails",
+    "fromServer" : 188,
+    "toServer" : 707,
+    "from" : {
+      "uid" : "282470838570",
+      "nickname" : "Godnails",
+      "server" : 188,
+      "rank" : null,
+      "score" : 86907596,
+      "level" : 100,
+      "allianceId" : "123590",
+      "allianceTag" : "HiNO",
+      "allianceName" : "飛騨ノ宿"
+    },
+    "to" : {
+      "uid" : "282470838570",
+      "nickname" : "Godnails",
+      "server" : 707,
+      "rank" : null,
+      "score" : 86907596,
+      "level" : 100,
+      "allianceId" : "421779",
+      "allianceTag" : null,
+      "allianceName" : null
     },
     "source" : "TOP100",
     "fromSource" : "TOP100",
