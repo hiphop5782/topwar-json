@@ -3,7 +3,7 @@
   "date" : "2026-09-29",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-09-29T12:34:19.486277700Z",
+  "updatedAt" : "2026-09-29T14:18:14.675786900Z",
   "rows" : [ {
     "detectedAt" : "2026-09-28T17:30:02.709Z",
     "uid" : "9266914496659",
@@ -2667,9 +2667,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T13:15:40.683Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-29T07:17:09.641628500Z",
     "uid" : "282470838570",
@@ -2701,9 +2703,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-09-29T13:15:40.683Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-09-29T08:04:50.868Z",
     "uid" : "9881292444081",
@@ -3120,7 +3124,7 @@
     "fromSource" : "MAP",
     "toSource" : "MAP",
     "status" : "CONFIRMED",
-    "detectedByTop100" : false,
+    "detectedByTop100" : true,
     "detectedByMap" : true,
     "from" : {
       "uid" : "519783879485",
@@ -3151,7 +3155,9 @@
       "y" : 614,
       "source" : "MAP",
       "observedAt" : "2026-09-29T11:57:56.766Z"
-    }
+    },
+    "lastConfirmedAt" : "2026-09-29T14:18:14.628934400Z",
+    "sources" : [ "MAP", "TOP100" ]
   }, {
     "detectedAt" : "2026-09-29T11:57:56.766Z",
     "uid" : "786931656763",
@@ -3380,5 +3386,217 @@
     "detectedByMap" : false,
     "lastConfirmedAt" : "2026-09-29T12:34:19.447380200Z",
     "sources" : [ "TOP100" ]
+  }, {
+    "detectedAt" : "2026-09-29T13:35:28.136Z",
+    "uid" : "8239499382158",
+    "nickname" : "Max2005",
+    "fromServer" : 1607,
+    "toServer" : 2287,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8239499382158",
+      "nickname" : "Max2005",
+      "serverId" : 1607,
+      "rank" : 3,
+      "score" : 59633710,
+      "level" : 100,
+      "allianceId" : "200268222",
+      "allianceTag" : "WaR'",
+      "allianceName" : "We_Are_Ready",
+      "x" : 379,
+      "y" : 605,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T04:41:09.760Z"
+    },
+    "to" : {
+      "uid" : "8239499382158",
+      "nickname" : "Max2005",
+      "serverId" : 2287,
+      "rank" : 1,
+      "score" : 59633710,
+      "level" : 100,
+      "allianceId" : "500144281",
+      "allianceTag" : "gWAR",
+      "allianceName" : "FAFO Green",
+      "x" : 264,
+      "y" : 540,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T13:35:28.136Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-29T13:54:27.479Z",
+    "uid" : "400074659071",
+    "nickname" : "Ray",
+    "fromServer" : 2864,
+    "toServer" : 1175,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "400074659071",
+      "nickname" : "Ray",
+      "serverId" : 2864,
+      "score" : 69768947,
+      "level" : 100,
+      "x" : 372,
+      "y" : 310,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T01:38:37.545Z"
+    },
+    "to" : {
+      "uid" : "400074659071",
+      "nickname" : "Ray",
+      "serverId" : 1175,
+      "score" : 69768947,
+      "level" : 100,
+      "x" : 208,
+      "y" : 782,
+      "source" : "MAP",
+      "observedAt" : "2026-09-29T13:54:27.479Z"
+    }
+  }, {
+    "detectedAt" : "2026-09-29T14:18:14.628934400Z",
+    "uid" : "328690447137",
+    "nickname" : "spy",
+    "fromServer" : 2341,
+    "toServer" : 4122,
+    "from" : {
+      "uid" : "328690447137",
+      "nickname" : "spy",
+      "server" : 2341,
+      "rank" : null,
+      "score" : 73934352,
+      "level" : 100,
+      "allianceId" : "0",
+      "allianceTag" : null,
+      "allianceName" : null
+    },
+    "to" : {
+      "uid" : "328690447137",
+      "nickname" : "spy",
+      "server" : 4122,
+      "rank" : null,
+      "score" : 73934352,
+      "level" : 100,
+      "allianceId" : "500402632",
+      "allianceTag" : "4I22",
+      "allianceName" : "the Collective"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-29T14:18:14.628934400Z",
+    "uid" : "787314829371",
+    "nickname" : "長ねぎサラダ",
+    "fromServer" : 2107,
+    "toServer" : 2463,
+    "from" : {
+      "uid" : "787314829371",
+      "nickname" : "長ねぎサラダ",
+      "server" : 2107,
+      "rank" : null,
+      "score" : 76014920,
+      "level" : 100,
+      "allianceId" : "400232909",
+      "allianceTag" : "7rmp",
+      "allianceName" : "トリンプ"
+    },
+    "to" : {
+      "uid" : "787314829371",
+      "nickname" : "長ねぎサラダ",
+      "server" : 2463,
+      "rank" : null,
+      "score" : 76014920,
+      "level" : 100,
+      "allianceId" : "500168709",
+      "allianceTag" : "SEae",
+      "allianceName" : "クリオネ"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-29T14:18:14.628934400Z",
+    "uid" : "788027172923",
+    "nickname" : "hare_ru",
+    "fromServer" : 2107,
+    "toServer" : 2463,
+    "from" : {
+      "uid" : "788027172923",
+      "nickname" : "hare_ru",
+      "server" : 2107,
+      "rank" : null,
+      "score" : 71469256,
+      "level" : 100,
+      "allianceId" : "400232909",
+      "allianceTag" : "7rmp",
+      "allianceName" : "トリンプ"
+    },
+    "to" : {
+      "uid" : "788027172923",
+      "nickname" : "hare_ru",
+      "server" : 2463,
+      "rank" : null,
+      "score" : 71527725,
+      "level" : 100,
+      "allianceId" : "500168709",
+      "allianceTag" : "SEae",
+      "allianceName" : "クリオネ"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-09-29T14:18:14.628934400Z",
+    "uid" : "8114823892281",
+    "nickname" : "はるねぇ°ʚɞ°",
+    "fromServer" : 3053,
+    "toServer" : 3531,
+    "from" : {
+      "uid" : "8114823892281",
+      "nickname" : "はるねぇ°ʚɞ°",
+      "server" : 3053,
+      "rank" : null,
+      "score" : 76290749,
+      "level" : 100,
+      "allianceId" : "500301377",
+      "allianceTag" : "ReUN",
+      "allianceName" : "ReUNION3053"
+    },
+    "to" : {
+      "uid" : "8114823892281",
+      "nickname" : "はるねぇ°ʚɞ°",
+      "server" : 3531,
+      "rank" : null,
+      "score" : 76648626,
+      "level" : 100,
+      "allianceId" : "500353086",
+      "allianceTag" : "EEzK",
+      "allianceName" : "EEzyanaika"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
