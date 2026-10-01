@@ -3,7 +3,7 @@
   "date" : "2026-10-02",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-01T18:43:43.577399400Z",
+  "updatedAt" : "2026-10-01T19:11:44.590192900Z",
   "rows" : [ {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "264019706134",
@@ -103,9 +103,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T18:57:48.319Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "472067158700",
@@ -409,9 +411,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T18:57:48.319Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "8538536218201",
@@ -477,9 +481,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T18:57:48.319Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "8984998514630",
@@ -772,5 +778,39 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-10-01T19:11:43.012Z",
+    "uid" : "371560191005",
+    "nickname" : "Cₕₑₑₛₑ",
+    "fromServer" : 1508,
+    "toServer" : 2698,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "371560191005",
+      "nickname" : "Cₕₑₑₛₑ",
+      "serverId" : 1508,
+      "score" : 53692217,
+      "level" : 100,
+      "x" : 377,
+      "y" : 807,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T07:12:35.951Z"
+    },
+    "to" : {
+      "uid" : "371560191005",
+      "nickname" : "Cₕₑₑₛₑ",
+      "serverId" : 2698,
+      "score" : 53692217,
+      "level" : 100,
+      "x" : 106,
+      "y" : 838,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T19:11:43.012Z"
+    }
   } ]
 }
