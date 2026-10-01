@@ -3,7 +3,7 @@
   "date" : "2026-10-02",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-01T19:11:44.590192900Z",
+  "updatedAt" : "2026-10-01T21:37:11.999317400Z",
   "rows" : [ {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "264019706134",
@@ -207,9 +207,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T21:06:49.704Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "581889161149",
@@ -241,9 +243,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T19:55:27.950Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "587824133036",
@@ -517,9 +521,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T21:35:08.964Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "9565968372023",
@@ -551,9 +557,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T21:27:03.597Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T17:18:50.085Z",
     "uid" : "282223690229",
@@ -707,9 +715,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T21:06:49.704Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T18:43:43.517947700Z",
     "uid" : "468870809104",
@@ -741,9 +751,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T21:06:49.704Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T18:43:43.517947700Z",
     "uid" : "929566718666",
@@ -775,9 +787,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-01T20:52:18.575Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T19:11:43.012Z",
     "uid" : "371560191005",
@@ -812,5 +826,165 @@
       "source" : "MAP",
       "observedAt" : "2026-10-01T19:11:43.012Z"
     }
+  }, {
+    "detectedAt" : "2026-10-01T20:13:13.448Z",
+    "uid" : "804738283645",
+    "nickname" : "Kurumî🍉",
+    "fromServer" : 3256,
+    "toServer" : 2474,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "804738283645",
+      "nickname" : "Kurumî🍉",
+      "serverId" : 3256,
+      "rank" : 2,
+      "score" : 53091062,
+      "level" : 100,
+      "allianceId" : "500315704",
+      "allianceTag" : "K256",
+      "allianceName" : "Kurumi Familia",
+      "x" : 437,
+      "y" : 305,
+      "source" : "MAP",
+      "observedAt" : "2026-09-30T17:18:54.254Z"
+    },
+    "to" : {
+      "uid" : "804738283645",
+      "nickname" : "Kurumî🍉",
+      "serverId" : 2474,
+      "rank" : 1,
+      "score" : 53091062,
+      "level" : 100,
+      "allianceId" : "500173619",
+      "allianceTag" : "1WLD",
+      "allianceName" : "Wild One",
+      "x" : 402,
+      "y" : 564,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T20:13:13.448Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-01T20:39:24.698Z",
+    "uid" : "628293993838",
+    "nickname" : "我儘",
+    "fromServer" : 1756,
+    "toServer" : 3396,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "628293993838",
+      "nickname" : "我儘",
+      "serverId" : 1756,
+      "rank" : 2,
+      "score" : 50641026,
+      "level" : 100,
+      "allianceId" : "400037947",
+      "allianceTag" : "Edg,",
+      "allianceName" : "56Earth",
+      "x" : 332,
+      "y" : 406,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T18:17:23.353Z"
+    },
+    "to" : {
+      "uid" : "628293993838",
+      "nickname" : "我儘",
+      "serverId" : 3396,
+      "rank" : 2,
+      "score" : 50641026,
+      "level" : 100,
+      "allianceId" : "500331117",
+      "allianceTag" : "96Z",
+      "allianceName" : "Z_APEX",
+      "x" : 48,
+      "y" : 194,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T20:39:24.698Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-01T21:12:08.945Z",
+    "uid" : "7992504093934",
+    "nickname" : "SHᗩRK🦈",
+    "fromServer" : 2580,
+    "toServer" : 4169,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "7992504093934",
+      "nickname" : "SHᗩRK🦈",
+      "serverId" : 2580,
+      "rank" : 4,
+      "score" : 45291090,
+      "level" : 100,
+      "allianceId" : "500208631",
+      "allianceTag" : "UTF7",
+      "allianceName" : "United_Force7",
+      "x" : 408,
+      "y" : 610,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T01:07:05.125Z"
+    },
+    "to" : {
+      "uid" : "7992504093934",
+      "nickname" : "SHᗩRK🦈",
+      "serverId" : 4169,
+      "rank" : 4,
+      "score" : 45291090,
+      "level" : 100,
+      "allianceId" : "500411671",
+      "allianceTag" : "unc.",
+      "allianceName" : "MrChildren",
+      "x" : 410,
+      "y" : 380,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T21:12:08.945Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-01T21:37:11.952902200Z",
+    "uid" : "892349631005",
+    "nickname" : "✨シュガ👻✨",
+    "fromServer" : 3258,
+    "toServer" : 3531,
+    "from" : {
+      "uid" : "892349631005",
+      "nickname" : "✨シュガ👻✨",
+      "server" : 3258,
+      "rank" : null,
+      "score" : 68092021,
+      "level" : 100,
+      "allianceId" : "500316513",
+      "allianceTag" : "NtHS",
+      "allianceName" : "なめたけのこのこほしたんたん"
+    },
+    "to" : {
+      "uid" : "892349631005",
+      "nickname" : "✨シュガ👻✨",
+      "server" : 3531,
+      "rank" : null,
+      "score" : 68092021,
+      "level" : 100,
+      "allianceId" : "500353086",
+      "allianceTag" : "EEzK",
+      "allianceName" : "EEzyanaika"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
