@@ -3,7 +3,7 @@
   "date" : "2026-10-02",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-02T06:33:55.973994200Z",
+  "updatedAt" : "2026-10-02T08:05:37.926724700Z",
   "rows" : [ {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "264019706134",
@@ -1343,9 +1343,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-02T06:47:17.422Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-02T01:31:31.034Z",
     "uid" : "474269328926",
@@ -1671,6 +1673,48 @@
       "y" : 611,
       "source" : "MAP",
       "observedAt" : "2026-10-02T05:32:11.774Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-02T08:05:34.396Z",
+    "uid" : "877130630231",
+    "nickname" : "𝕁äℚä𝕁",
+    "fromServer" : 1001,
+    "toServer" : 4206,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "877130630231",
+      "nickname" : "𝕁äℚä𝕁",
+      "serverId" : 1001,
+      "rank" : 1,
+      "score" : 7863794,
+      "level" : 79,
+      "allianceId" : "100208423",
+      "allianceTag" : "BzLa",
+      "allianceName" : "Blazilla",
+      "x" : 379,
+      "y" : 437,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T02:19:56.324Z"
+    },
+    "to" : {
+      "uid" : "877130630231",
+      "nickname" : "𝕁äℚä𝕁",
+      "serverId" : 4206,
+      "rank" : 1,
+      "score" : 7945314,
+      "level" : 80,
+      "allianceId" : "500417206",
+      "allianceTag" : "AV06",
+      "allianceName" : "Atomic Vendeta",
+      "x" : 380,
+      "y" : 314,
+      "source" : "MAP",
+      "observedAt" : "2026-10-02T08:05:34.396Z"
     }
   } ]
 }
