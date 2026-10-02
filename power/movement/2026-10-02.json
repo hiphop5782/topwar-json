@@ -3,7 +3,7 @@
   "date" : "2026-10-02",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-02T02:45:31.527158600Z",
+  "updatedAt" : "2026-10-02T04:47:16.984324Z",
   "rows" : [ {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "264019706134",
@@ -313,9 +313,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-02T04:26:18.374Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-01T16:23:21.181210700Z",
     "uid" : "8099131166009",
@@ -1503,6 +1505,90 @@
       "y" : 425,
       "source" : "MAP",
       "observedAt" : "2026-10-02T02:45:29.476Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-02T03:27:04.435Z",
+    "uid" : "9400823845097",
+    "nickname" : "FOX🦊👑4",
+    "fromServer" : 4329,
+    "toServer" : 1507,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "9400823845097",
+      "nickname" : "FOX🦊👑4",
+      "serverId" : 4329,
+      "rank" : 1,
+      "score" : 19197968,
+      "level" : 100,
+      "allianceId" : "500438701",
+      "allianceTag" : "*NB*",
+      "allianceName" : "NEW Beginnings",
+      "x" : 344,
+      "y" : 478,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T15:55:52.628Z"
+    },
+    "to" : {
+      "uid" : "9400823845097",
+      "nickname" : "FOX🦊👑4",
+      "serverId" : 1507,
+      "rank" : 3,
+      "score" : 19197968,
+      "level" : 100,
+      "allianceId" : "200239759",
+      "allianceTag" : "R0fT",
+      "allianceName" : "Reign of Terror",
+      "x" : 389,
+      "y" : 313,
+      "source" : "MAP",
+      "observedAt" : "2026-10-02T03:27:04.435Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-02T04:47:14.544Z",
+    "uid" : "449269102035",
+    "nickname" : "KAPITAN",
+    "fromServer" : 1645,
+    "toServer" : 1679,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "449269102035",
+      "nickname" : "KAPITAN",
+      "serverId" : 1645,
+      "rank" : 1,
+      "score" : 50269901,
+      "level" : 100,
+      "allianceId" : "200282247",
+      "allianceTag" : "ERA*",
+      "allianceName" : "ЭРА",
+      "x" : 284,
+      "y" : 124,
+      "source" : "MAP",
+      "observedAt" : "2026-09-30T21:23:58.138Z"
+    },
+    "to" : {
+      "uid" : "449269102035",
+      "nickname" : "KAPITAN",
+      "serverId" : 1679,
+      "rank" : 3,
+      "score" : 50524256,
+      "level" : 100,
+      "allianceId" : "200295729",
+      "allianceTag" : "I679",
+      "allianceName" : "union 1679",
+      "x" : 758,
+      "y" : 756,
+      "source" : "MAP",
+      "observedAt" : "2026-10-02T04:47:14.544Z"
     }
   } ]
 }
