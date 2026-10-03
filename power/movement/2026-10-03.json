@@ -3,7 +3,7 @@
   "date" : "2026-10-03",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-03T07:27:26.527275400Z",
+  "updatedAt" : "2026-10-03T11:11:08.297166400Z",
   "rows" : [ {
     "detectedAt" : "2026-10-02T16:25:40.649739500Z",
     "uid" : "425530536630",
@@ -2607,5 +2607,39 @@
       "source" : "MAP",
       "observedAt" : "2026-10-03T07:27:23.480Z"
     }
+  }, {
+    "detectedAt" : "2026-10-03T11:11:08.259267800Z",
+    "uid" : "9160438779976",
+    "nickname" : "FRA",
+    "fromServer" : 4168,
+    "toServer" : 4059,
+    "from" : {
+      "uid" : "9160438779976",
+      "nickname" : "FRA",
+      "server" : 4168,
+      "rank" : null,
+      "score" : 33839532,
+      "level" : 100,
+      "allianceId" : "500411291",
+      "allianceTag" : "RA-O",
+      "allianceName" : "Rise as One"
+    },
+    "to" : {
+      "uid" : "9160438779976",
+      "nickname" : "FRA",
+      "server" : 4059,
+      "rank" : null,
+      "score" : 33839532,
+      "level" : 100,
+      "allianceId" : "500393391",
+      "allianceTag" : "SoW*",
+      "allianceName" : "squad of whales"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
