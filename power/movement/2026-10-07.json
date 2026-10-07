@@ -3,7 +3,7 @@
   "date" : "2026-10-07",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-07T15:53:16.818709300Z",
+  "updatedAt" : "2026-10-07T15:56:14.041126500Z",
   "rows" : [ {
     "detectedAt" : "2026-10-06T16:37:59.155Z",
     "uid" : "167583867052",
@@ -3613,5 +3613,47 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-10-07T15:56:11.244Z",
+    "uid" : "333495874358",
+    "nickname" : "Tomi",
+    "fromServer" : 2842,
+    "toServer" : 4170,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "333495874358",
+      "nickname" : "Tomi",
+      "serverId" : 2842,
+      "rank" : 2,
+      "score" : 77145748,
+      "level" : 100,
+      "allianceId" : "500269694",
+      "allianceTag" : "E$G",
+      "allianceName" : "EternalGuardian",
+      "x" : 457,
+      "y" : 625,
+      "source" : "MAP",
+      "observedAt" : "2026-10-07T11:24:49.545Z"
+    },
+    "to" : {
+      "uid" : "333495874358",
+      "nickname" : "Tomi",
+      "serverId" : 4170,
+      "rank" : 3,
+      "score" : 75000108,
+      "level" : 100,
+      "allianceId" : "500412243",
+      "allianceTag" : "Pfuz",
+      "allianceName" : "peachfuzz",
+      "x" : 420,
+      "y" : 334,
+      "source" : "MAP",
+      "observedAt" : "2026-10-07T15:56:11.244Z"
+    }
   } ]
 }
