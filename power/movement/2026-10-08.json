@@ -3,7 +3,7 @@
   "date" : "2026-10-08",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-08T15:20:58.156317200Z",
+  "updatedAt" : "2026-10-08T15:58:39.095570300Z",
   "rows" : [ {
     "detectedAt" : "2026-10-07T16:16:46.166Z",
     "uid" : "381495796850",
@@ -3011,9 +3011,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-08T15:55:15.661Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-08T12:43:34.109919500Z",
     "uid" : "9585533948225",
@@ -3338,5 +3340,85 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-10-08T15:55:15.661Z",
+    "uid" : "8656545779355",
+    "nickname" : "Neptune",
+    "fromServer" : 3675,
+    "toServer" : 3646,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8656545779355",
+      "nickname" : "Neptune",
+      "serverId" : 3675,
+      "score" : 19758311,
+      "level" : 84,
+      "x" : 411,
+      "y" : 557,
+      "source" : "MAP",
+      "observedAt" : "2026-10-08T10:53:43.561Z"
+    },
+    "to" : {
+      "uid" : "8656545779355",
+      "nickname" : "Neptune",
+      "serverId" : 3646,
+      "rank" : 1,
+      "score" : 19912669,
+      "level" : 85,
+      "allianceId" : "500363054",
+      "allianceTag" : "ONE\"",
+      "allianceName" : "豚肉連盟",
+      "x" : 399,
+      "y" : 351,
+      "source" : "MAP",
+      "observedAt" : "2026-10-08T15:55:15.661Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-08T15:58:38.510Z",
+    "uid" : "8451164016172",
+    "nickname" : "𝑷𝐢𝒑𝒆",
+    "fromServer" : 3619,
+    "toServer" : 3902,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8451164016172",
+      "nickname" : "𝑷𝐢𝒑𝒆",
+      "serverId" : 3619,
+      "rank" : 5,
+      "score" : 41872734,
+      "level" : 100,
+      "allianceId" : "500359709",
+      "allianceTag" : "EOtw",
+      "allianceName" : "End of the World",
+      "x" : 517,
+      "y" : 477,
+      "source" : "MAP",
+      "observedAt" : "2026-10-08T11:08:29.040Z"
+    },
+    "to" : {
+      "uid" : "8451164016172",
+      "nickname" : "𝑷𝐢𝒑𝒆",
+      "serverId" : 3902,
+      "rank" : 2,
+      "score" : 41872734,
+      "level" : 100,
+      "allianceId" : "500381370",
+      "allianceTag" : "=WP=",
+      "allianceName" : "II Wolfpack II",
+      "x" : 423,
+      "y" : 329,
+      "source" : "MAP",
+      "observedAt" : "2026-10-08T15:58:38.510Z"
+    }
   } ]
 }
