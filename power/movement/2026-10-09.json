@@ -3,7 +3,7 @@
   "date" : "2026-10-09",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-09T09:21:01.967434800Z",
+  "updatedAt" : "2026-10-09T12:00:35.899885100Z",
   "rows" : [ {
     "detectedAt" : "2026-10-08T16:00:45.596Z",
     "uid" : "521748510370",
@@ -2018,7 +2018,7 @@
     "fromSource" : "MAP",
     "toSource" : "MAP",
     "status" : "CONFIRMED",
-    "detectedByTop100" : false,
+    "detectedByTop100" : true,
     "detectedByMap" : true,
     "from" : {
       "uid" : "313335100036",
@@ -2045,6 +2045,76 @@
       "y" : 459,
       "source" : "MAP",
       "observedAt" : "2026-10-09T09:20:58.453Z"
+    },
+    "lastConfirmedAt" : "2026-10-09T12:00:35.851015900Z",
+    "sources" : [ "MAP", "TOP100" ]
+  }, {
+    "detectedAt" : "2026-10-09T10:57:48.291Z",
+    "uid" : "590720693463",
+    "nickname" : "𝑩𝑶𝑱ᴀɴ",
+    "fromServer" : 3355,
+    "toServer" : 341,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "590720693463",
+      "nickname" : "𝑩𝑶𝑱ᴀɴ",
+      "serverId" : 3355,
+      "score" : 88581492,
+      "level" : 100,
+      "x" : 795,
+      "y" : 439,
+      "source" : "MAP",
+      "observedAt" : "2026-10-09T04:33:43.553Z"
+    },
+    "to" : {
+      "uid" : "590720693463",
+      "nickname" : "𝑩𝑶𝑱ᴀɴ",
+      "serverId" : 341,
+      "score" : 88581492,
+      "level" : 100,
+      "x" : 413,
+      "y" : 485,
+      "source" : "MAP",
+      "observedAt" : "2026-10-09T10:57:48.291Z"
     }
+  }, {
+    "detectedAt" : "2026-10-09T12:00:35.851015900Z",
+    "uid" : "8468631850082",
+    "nickname" : "亀さん👻㌠",
+    "fromServer" : 3144,
+    "toServer" : 4166,
+    "from" : {
+      "uid" : "8468631850082",
+      "nickname" : "亀さん👻㌠",
+      "server" : 3144,
+      "rank" : null,
+      "score" : 25324219,
+      "level" : 100,
+      "allianceId" : "500308233",
+      "allianceTag" : "3I44",
+      "allianceName" : "居酒屋Momiji"
+    },
+    "to" : {
+      "uid" : "8468631850082",
+      "nickname" : "亀さん👻㌠",
+      "server" : 4166,
+      "rank" : null,
+      "score" : 32118583,
+      "level" : 100,
+      "allianceId" : "500409573",
+      "allianceTag" : "S4l6",
+      "allianceName" : "United4166"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
