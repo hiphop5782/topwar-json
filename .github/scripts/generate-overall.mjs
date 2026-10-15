@@ -4,6 +4,7 @@ import path from "node:path";
 const ROOT = process.cwd();
 const POWER_DIR = path.join(ROOT, "power");
 const REALPOWER_DIR = path.join(ROOT, "realpower");
+const CROSS_PVP_FILE = path.join(ROOT, "cross-pvp", "top100.json");
 const KARTZ_HISTORY_DIR = path.join(ROOT, "kartz", "history");
 const OUTPUT_DIR = path.join(ROOT, "overall");
 const MOVEMENT_DIR = path.join(OUTPUT_DIR, "movement");
@@ -149,6 +150,19 @@ for (const raw of kartzSnapshot?.playerRankList ?? []) {
   if (player) kartzByUid.set(uidOf(raw), player);
 }
 
+const crossPvpDocument = fs.existsSync(CROSS_PVP_FILE) ? readJson(CROSS_PVP_FILE) : null;
+const rawCrossPvpByUid = new Map(
+  (crossPvpDocument?.results ?? []).map(row => [uidOf(row), row]).filter(([uid]) => uid)
+);
+const mappedCrossPvpByUid = new Map(
+  (crossPvpDocument?.mappedResults ?? []).map(row => [uidOf(row), row]).filter(([uid]) => uid)
+);
+const crossPvpUids = new Set([...rawCrossPvpByUid.keys(), ...mappedCrossPvpByUid.keys()]);
+const crossPvpByUid = new Map([...crossPvpUids].map(uid => [uid, {
+  ...rawCrossPvpByUid.get(uid),
+  ...mappedCrossPvpByUid.get(uid),
+}]));
+
 const allUids = [...new Set([...powerByUid.keys(), ...realByUid.keys()])].sort((a, b) => a.localeCompare(b));
 const players = allUids.map(uid => {
   const power = powerByUid.get(uid) ?? null;
@@ -229,13 +243,16 @@ if (writeJson(path.join(OUTPUT_DIR, "latest.json"), {
   generatedAt: new Date().toISOString(),
   sourceUpdatedAt: newestObservedAt,
   kartzObservedAt: text(kartzSnapshot?.time),
+  crossPvpCollectedAt: text(crossPvpDocument?.collectedAt),
   playerCount: players.length,
   sourceCounts: {
     power: powerByUid.size,
     realpower: realByUid.size,
     overlap: allUids.filter(uid => powerByUid.has(uid) && realByUid.has(uid)).length,
     kartz: kartzByUid.size,
-    kartzMatches: allUids.filter(uid => kartzByUid.has(uid)).length
+    kartzMatches: allUids.filter(uid => kartzByUid.has(uid)).length,
+    crossPvp: crossPvpByUid.size,
+    crossPvpMatches: allUids.filter(uid => crossPvpByUid.has(uid)).length
   },
   players
 })) changedFiles++;

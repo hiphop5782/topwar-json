@@ -1,0 +1,13 @@
+{
+  "name": "topwar-json-ingest",
+  "private": true,
+  "version": "1.0.0",
+  "description": "TOPWAR 조사 결과 보관 API",
+  "scripts": {
+    "start": "node server/server.cjs",
+    "test": "node --test server/server.test.cjs"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

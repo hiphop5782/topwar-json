@@ -11,6 +11,7 @@ on:
       - "liondance/**"
       - "kartz/**"
       - "allianceDefense/**"
+      - "cross-pvp/**"
       - ".github/scripts/generate-home-stats.mjs"
       - ".github/scripts/generate-player-search-index.mjs"
       - ".github/scripts/generate-overall.mjs"
@@ -190,6 +191,13 @@ jobs:
                       "pattern": "allianceDefense/{date}.json",
                       "dates": alliance_defense_dates,
                       "count": len(alliance_defense_dates)
+                  },
+                  "crossPvp": {
+                      "latest": (
+                          "cross-pvp/top100.json"
+                          if (root / "cross-pvp/top100.json").is_file()
+                          else None
+                      )
                   }
               }
           }
