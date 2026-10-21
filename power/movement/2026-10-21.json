@@ -3,7 +3,7 @@
   "date" : "2026-10-21",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-21T13:57:32.556229100Z",
+  "updatedAt" : "2026-10-21T15:53:38.604647300Z",
   "rows" : [ {
     "detectedAt" : "2026-10-20T16:31:12.673666400Z",
     "uid" : "145909514394",
@@ -6703,9 +6703,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-21T15:01:25.424Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-21T13:57:32.497193400Z",
     "uid" : "8914415357817",
@@ -6774,5 +6776,89 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-10-21T15:43:33.580Z",
+    "uid" : "925333895866",
+    "nickname" : "Namy🍊",
+    "fromServer" : 3355,
+    "toServer" : 2781,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "925333895866",
+      "nickname" : "Namy🍊",
+      "serverId" : 3355,
+      "rank" : 3,
+      "score" : 44839012,
+      "level" : 100,
+      "allianceId" : "500327049",
+      "allianceTag" : "-B3-",
+      "allianceName" : "BurnEverything",
+      "x" : 463,
+      "y" : 633,
+      "source" : "MAP",
+      "observedAt" : "2026-10-20T20:27:54.369Z"
+    },
+    "to" : {
+      "uid" : "925333895866",
+      "nickname" : "Namy🍊",
+      "serverId" : 2781,
+      "rank" : 3,
+      "score" : 44844462,
+      "level" : 100,
+      "allianceId" : "500258965",
+      "allianceTag" : "N0PP",
+      "allianceName" : "No Pants Pirates",
+      "x" : 416,
+      "y" : 430,
+      "source" : "MAP",
+      "observedAt" : "2026-10-21T15:43:33.580Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-21T15:53:38.051Z",
+    "uid" : "382592496748",
+    "nickname" : "🅱️Ⓜ️W",
+    "fromServer" : 1508,
+    "toServer" : 1244,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "382592496748",
+      "nickname" : "🅱️Ⓜ️W",
+      "serverId" : 1508,
+      "rank" : 1,
+      "score" : 73395228,
+      "level" : 100,
+      "allianceId" : "300041284",
+      "allianceTag" : "0LYZ",
+      "allianceName" : "Kingdom of Zeus",
+      "x" : 424,
+      "y" : 404,
+      "source" : "MAP",
+      "observedAt" : "2026-10-10T12:36:22.881Z"
+    },
+    "to" : {
+      "uid" : "382592496748",
+      "nickname" : "🅱️Ⓜ️W",
+      "serverId" : 1244,
+      "rank" : 2,
+      "score" : 73395228,
+      "level" : 100,
+      "allianceId" : "300041284",
+      "allianceTag" : "0LYZ",
+      "allianceName" : "Kingdom of Zeus",
+      "x" : 241,
+      "y" : 385,
+      "source" : "MAP",
+      "observedAt" : "2026-10-21T15:53:38.051Z"
+    }
   } ]
 }
