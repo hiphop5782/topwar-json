@@ -3,7 +3,7 @@
   "date" : "2026-10-29",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-29T02:12:42.132298100Z",
+  "updatedAt" : "2026-10-29T02:57:44.040683700Z",
   "rows" : [ {
     "detectedAt" : "2026-10-28T17:00:54.201439600Z",
     "uid" : "342505968498",
@@ -433,9 +433,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-29T02:29:03.511Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-28T19:26:57.293709800Z",
     "uid" : "608188892455",
@@ -1102,9 +1104,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-29T02:57:41.662Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-29T02:12:42.090304900Z",
     "uid" : "415804880227",
@@ -1170,9 +1174,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-29T02:21:11.108Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-29T02:12:42.090304900Z",
     "uid" : "430535906717",
@@ -1204,9 +1210,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-29T02:21:11.108Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-29T02:12:42.090304900Z",
     "uid" : "9003810885592",
@@ -1241,5 +1249,47 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-10-29T02:21:11.108Z",
+    "uid" : "528189871517",
+    "nickname" : "Chavez",
+    "fromServer" : 1041,
+    "toServer" : 950,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "528189871517",
+      "nickname" : "Chavez",
+      "serverId" : 1041,
+      "rank" : 3,
+      "score" : 45701210,
+      "level" : 100,
+      "allianceId" : "706054",
+      "allianceTag" : "041A",
+      "allianceName" : "1041Alpha",
+      "x" : 386,
+      "y" : 588,
+      "source" : "MAP",
+      "observedAt" : "2026-10-27T05:43:10.207Z"
+    },
+    "to" : {
+      "uid" : "528189871517",
+      "nickname" : "Chavez",
+      "serverId" : 950,
+      "rank" : 3,
+      "score" : 45701210,
+      "level" : 100,
+      "allianceId" : "100167738",
+      "allianceTag" : ">GD>",
+      "allianceName" : "Ghost Division",
+      "x" : 394,
+      "y" : 424,
+      "source" : "MAP",
+      "observedAt" : "2026-10-29T02:21:11.108Z"
+    }
   } ]
 }
