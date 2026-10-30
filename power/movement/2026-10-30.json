@@ -3,7 +3,7 @@
   "date" : "2026-10-30",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-10-30T14:45:51.545166500Z",
+  "updatedAt" : "2026-10-30T15:48:53.855154600Z",
   "rows" : [ {
     "detectedAt" : "2026-10-29T16:12:41.434Z",
     "uid" : "481594664496",
@@ -1492,9 +1492,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-10-30T15:48:49.597Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-10-30T01:21:49.324848500Z",
     "uid" : "7861111131231",
@@ -2949,5 +2951,89 @@
     "detectedByMap" : false,
     "lastConfirmedAt" : "2026-10-30T14:45:51.508179600Z",
     "sources" : [ "TOP100" ]
+  }, {
+    "detectedAt" : "2026-10-30T15:01:13.154Z",
+    "uid" : "8902493343586",
+    "nickname" : "ᘜOᑎ🖤",
+    "fromServer" : 4022,
+    "toServer" : 4002,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8902493343586",
+      "nickname" : "ᘜOᑎ🖤",
+      "serverId" : 4022,
+      "rank" : 8,
+      "score" : 38878331,
+      "level" : 100,
+      "allianceId" : "500388095",
+      "allianceTag" : "THR~",
+      "allianceName" : "HаrdRain",
+      "x" : 365,
+      "y" : 451,
+      "source" : "MAP",
+      "observedAt" : "2026-10-27T23:48:00.935Z"
+    },
+    "to" : {
+      "uid" : "8902493343586",
+      "nickname" : "ᘜOᑎ🖤",
+      "serverId" : 4002,
+      "rank" : 3,
+      "score" : 41739565,
+      "level" : 100,
+      "allianceId" : "500387219",
+      "allianceTag" : "B1$",
+      "allianceName" : "Best 1n Slot",
+      "x" : 390,
+      "y" : 586,
+      "source" : "MAP",
+      "observedAt" : "2026-10-30T15:01:13.154Z"
+    }
+  }, {
+    "detectedAt" : "2026-10-30T15:27:07.655Z",
+    "uid" : "9409019580662",
+    "nickname" : "L•❤️•V•E",
+    "fromServer" : 4356,
+    "toServer" : 3885,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "9409019580662",
+      "nickname" : "L•❤️•V•E",
+      "serverId" : 4356,
+      "rank" : 2,
+      "score" : 36442753,
+      "level" : 100,
+      "allianceId" : "500443583",
+      "allianceTag" : "Xcon",
+      "allianceName" : "Xcons",
+      "x" : 338,
+      "y" : 492,
+      "source" : "MAP",
+      "observedAt" : "2026-10-29T23:59:46.522Z"
+    },
+    "to" : {
+      "uid" : "9409019580662",
+      "nickname" : "L•❤️•V•E",
+      "serverId" : 3885,
+      "rank" : 3,
+      "score" : 36521795,
+      "level" : 100,
+      "allianceId" : "500380761",
+      "allianceTag" : "TIMs",
+      "allianceName" : "The Insane Muppets",
+      "x" : 392,
+      "y" : 552,
+      "source" : "MAP",
+      "observedAt" : "2026-10-30T15:27:07.655Z"
+    }
   } ]
 }
