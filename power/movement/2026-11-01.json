@@ -3,7 +3,7 @@
   "date" : "2026-11-01",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-01T01:29:43.255615600Z",
+  "updatedAt" : "2026-11-01T03:18:13.742309200Z",
   "rows" : [ {
     "detectedAt" : "2026-10-31T17:16:34.784Z",
     "uid" : "9842231939493",
@@ -2106,5 +2106,47 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-01T03:18:11.614Z",
+    "uid" : "402697082131",
+    "nickname" : "Drufus",
+    "fromServer" : 1026,
+    "toServer" : 1015,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "402697082131",
+      "nickname" : "Drufus",
+      "serverId" : 1026,
+      "rank" : 3,
+      "score" : 35652281,
+      "level" : 100,
+      "allianceId" : "200166184",
+      "allianceTag" : "HSp",
+      "allianceName" : "Holy Spankers",
+      "x" : 589,
+      "y" : 503,
+      "source" : "MAP",
+      "observedAt" : "2026-10-10T17:08:06.606Z"
+    },
+    "to" : {
+      "uid" : "402697082131",
+      "nickname" : "Drufus",
+      "serverId" : 1015,
+      "rank" : 2,
+      "score" : 35658091,
+      "level" : 100,
+      "allianceId" : "200166184",
+      "allianceTag" : "HSp",
+      "allianceName" : "Holy Spankers",
+      "x" : 412,
+      "y" : 464,
+      "source" : "MAP",
+      "observedAt" : "2026-11-01T03:18:11.614Z"
+    }
   } ]
 }
