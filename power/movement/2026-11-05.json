@@ -3,7 +3,7 @@
   "date" : "2026-11-05",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-05T14:58:25.647437600Z",
+  "updatedAt" : "2026-11-05T15:46:15.740067900Z",
   "rows" : [ {
     "detectedAt" : "2026-11-04T16:06:28.696373200Z",
     "uid" : "180739362996",
@@ -8937,5 +8937,79 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-05T15:44:44.635819300Z",
+    "uid" : "346155307903",
+    "nickname" : "SHaDoW",
+    "fromServer" : 3530,
+    "toServer" : 4245,
+    "from" : {
+      "uid" : "346155307903",
+      "nickname" : "SHaDoW",
+      "server" : 3530,
+      "rank" : null,
+      "score" : 84256504,
+      "level" : 100,
+      "allianceId" : "500372663",
+      "allianceTag" : "H353",
+      "allianceName" : "Humble Start"
+    },
+    "to" : {
+      "uid" : "346155307903",
+      "nickname" : "SHaDoW",
+      "server" : 4245,
+      "rank" : null,
+      "score" : 84256504,
+      "level" : 100,
+      "allianceId" : "500423450",
+      "allianceTag" : ";DNA",
+      "allianceName" : "DNA Life Style"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false,
+    "lastConfirmedAt" : "2026-11-05T15:46:15.694757200Z",
+    "sources" : [ "TOP100" ]
+  }, {
+    "detectedAt" : "2026-11-05T15:44:54.622Z",
+    "uid" : "363488060383",
+    "nickname" : "cockeal",
+    "fromServer" : 1379,
+    "toServer" : 2616,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "363488060383",
+      "nickname" : "cockeal",
+      "serverId" : 1379,
+      "score" : 75706751,
+      "level" : 100,
+      "x" : 421,
+      "y" : 639,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T11:06:52.105Z"
+    },
+    "to" : {
+      "uid" : "363488060383",
+      "nickname" : "cockeal",
+      "serverId" : 2616,
+      "rank" : 2,
+      "score" : 75706751,
+      "level" : 100,
+      "allianceId" : "500216117",
+      "allianceTag" : "W4R,",
+      "allianceName" : "Without a Reason",
+      "x" : 459,
+      "y" : 667,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T15:44:54.622Z"
+    }
   } ]
 }
