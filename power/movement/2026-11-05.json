@@ -3,7 +3,7 @@
   "date" : "2026-11-05",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-05T13:17:05.894467700Z",
+  "updatedAt" : "2026-11-05T14:11:02.638515Z",
   "rows" : [ {
     "detectedAt" : "2026-11-04T16:06:28.696373200Z",
     "uid" : "180739362996",
@@ -5449,9 +5449,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-05T13:36:30.334Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-04T21:13:52.243Z",
     "uid" : "392852788441",
@@ -7597,9 +7599,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-05T13:36:30.334Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-05T10:21:26.627Z",
     "uid" : "427445182812",
@@ -8162,6 +8166,74 @@
       "allianceId" : "0",
       "allianceTag" : null,
       "allianceName" : null
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-05T13:40:43.099Z",
+    "uid" : "908497099338",
+    "nickname" : "wy.908497099338",
+    "fromServer" : 2505,
+    "toServer" : 2325,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "908497099338",
+      "nickname" : "wy.908497099338",
+      "serverId" : 2505,
+      "score" : 39655,
+      "level" : 11,
+      "x" : 32,
+      "y" : 730,
+      "source" : "MAP",
+      "observedAt" : "2026-10-01T00:13:32.895Z"
+    },
+    "to" : {
+      "uid" : "908497099338",
+      "nickname" : "wy.908497099338",
+      "serverId" : 2325,
+      "score" : 41535,
+      "level" : 11,
+      "x" : 473,
+      "y" : 329,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T13:40:43.099Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-05T14:11:02.593634Z",
+    "uid" : "9415255265528",
+    "nickname" : "ᴍᴏɴᴇʏ",
+    "fromServer" : 4343,
+    "toServer" : 4419,
+    "from" : {
+      "uid" : "9415255265528",
+      "nickname" : "ᴍᴏɴᴇʏ",
+      "server" : 4343,
+      "rank" : null,
+      "score" : 38960156,
+      "level" : 100,
+      "allianceId" : "0",
+      "allianceTag" : null,
+      "allianceName" : null
+    },
+    "to" : {
+      "uid" : "9415255265528",
+      "nickname" : "ᴍᴏɴᴇʏ",
+      "server" : 4419,
+      "rank" : null,
+      "score" : 38960156,
+      "level" : 100,
+      "allianceId" : "500460671",
+      "allianceTag" : "NRRS",
+      "allianceName" : "NAVY REVOLUTIONS"
     },
     "source" : "TOP100",
     "fromSource" : "TOP100",
