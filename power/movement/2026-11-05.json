@@ -3,7 +3,7 @@
   "date" : "2026-11-05",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-05T10:12:01.914011200Z",
+  "updatedAt" : "2026-11-05T10:49:10.631858900Z",
   "rows" : [ {
     "detectedAt" : "2026-11-04T16:06:28.696373200Z",
     "uid" : "180739362996",
@@ -4809,11 +4809,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false,
-    "lastConfirmedAt" : "2026-11-04T19:34:51.990196500Z",
-    "sources" : [ "TOP100" ]
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-05T10:28:29.460Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-04T19:33:18.394565300Z",
     "uid" : "449325331928",
@@ -4917,11 +4917,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false,
-    "lastConfirmedAt" : "2026-11-04T19:34:51.990196500Z",
-    "sources" : [ "TOP100" ]
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-05T10:28:29.460Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-04T19:34:45.359Z",
     "uid" : "547214726117",
@@ -6877,9 +6877,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-05T10:28:29.460Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-05T07:42:38.961211400Z",
     "uid" : "336299869003",
@@ -7588,5 +7590,85 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-05T10:21:26.627Z",
+    "uid" : "427445182812",
+    "nickname" : "橙Piccolo",
+    "fromServer" : 315,
+    "toServer" : 1677,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "427445182812",
+      "nickname" : "橙Piccolo",
+      "serverId" : 315,
+      "score" : 21496796,
+      "level" : 87,
+      "x" : 782,
+      "y" : 254,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T04:31:27.005Z"
+    },
+    "to" : {
+      "uid" : "427445182812",
+      "nickname" : "橙Piccolo",
+      "serverId" : 1677,
+      "rank" : 1,
+      "score" : 21496796,
+      "level" : 87,
+      "allianceId" : "200297616",
+      "allianceTag" : "l677",
+      "allianceName" : "Safe Haven",
+      "x" : 435,
+      "y" : 299,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T10:21:26.627Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-05T10:49:10.170Z",
+    "uid" : "7643551533947",
+    "nickname" : "CaptH",
+    "fromServer" : 3374,
+    "toServer" : 3196,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "7643551533947",
+      "nickname" : "CaptH",
+      "serverId" : 3374,
+      "rank" : 1,
+      "score" : 55285606,
+      "level" : 100,
+      "allianceId" : "500329226",
+      "allianceTag" : "IlCE",
+      "allianceName" : "Treasure of Ice",
+      "x" : 220,
+      "y" : 438,
+      "source" : "MAP",
+      "observedAt" : "2026-10-05T02:06:53.496Z"
+    },
+    "to" : {
+      "uid" : "7643551533947",
+      "nickname" : "CaptH",
+      "serverId" : 3196,
+      "rank" : 1,
+      "score" : 55285606,
+      "level" : 100,
+      "allianceId" : "500329226",
+      "allianceTag" : "IlCE",
+      "allianceName" : "Treasure of Ice",
+      "x" : 307,
+      "y" : 379,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T10:49:10.170Z"
+    }
   } ]
 }
