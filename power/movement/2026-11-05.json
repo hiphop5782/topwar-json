@@ -3,7 +3,7 @@
   "date" : "2026-11-05",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-05T12:29:40.867636400Z",
+  "updatedAt" : "2026-11-05T13:17:05.894467700Z",
   "rows" : [ {
     "detectedAt" : "2026-11-04T16:06:28.696373200Z",
     "uid" : "180739362996",
@@ -7329,9 +7329,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-05T12:41:59.624Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-05T07:42:38.961211400Z",
     "uid" : "9433754636539",
@@ -7940,7 +7942,7 @@
     "fromSource" : "MAP",
     "toSource" : "MAP",
     "status" : "CONFIRMED",
-    "detectedByTop100" : false,
+    "detectedByTop100" : true,
     "detectedByMap" : true,
     "from" : {
       "uid" : "377970992204",
@@ -7971,7 +7973,9 @@
       "y" : 808,
       "source" : "MAP",
       "observedAt" : "2026-11-05T12:26:41.440Z"
-    }
+    },
+    "lastConfirmedAt" : "2026-11-05T13:17:05.848526Z",
+    "sources" : [ "MAP", "TOP100" ]
   }, {
     "detectedAt" : "2026-11-05T12:27:47.093Z",
     "uid" : "9418290368760",
@@ -8016,5 +8020,154 @@
     },
     "lastConfirmedAt" : "2026-11-05T12:29:40.821606600Z",
     "sources" : [ "MAP", "TOP100" ]
+  }, {
+    "detectedAt" : "2026-11-05T12:49:08.543Z",
+    "uid" : "8189866675567",
+    "nickname" : "Ａ",
+    "fromServer" : 3620,
+    "toServer" : 2474,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8189866675567",
+      "nickname" : "Ａ",
+      "serverId" : 3620,
+      "rank" : 3,
+      "score" : 44044616,
+      "level" : 100,
+      "allianceId" : "500369407",
+      "allianceTag" : "ANKT",
+      "allianceName" : "Ancient Knights",
+      "x" : 420,
+      "y" : 526,
+      "source" : "MAP",
+      "observedAt" : "2026-11-01T04:24:41.713Z"
+    },
+    "to" : {
+      "uid" : "8189866675567",
+      "nickname" : "Ａ",
+      "serverId" : 2474,
+      "rank" : 3,
+      "score" : 45241415,
+      "level" : 100,
+      "allianceId" : "500173619",
+      "allianceTag" : "1WLD",
+      "allianceName" : "Wild One",
+      "x" : 409,
+      "y" : 557,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T12:49:08.543Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-05T12:51:02.108Z",
+    "uid" : "8817332293418",
+    "nickname" : "SoleX",
+    "fromServer" : 3882,
+    "toServer" : 3673,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8817332293418",
+      "nickname" : "SoleX",
+      "serverId" : 3882,
+      "score" : 30426823,
+      "level" : 100,
+      "allianceId" : "500380532",
+      "allianceTag" : "{LC}",
+      "x" : 549,
+      "y" : 203,
+      "source" : "MAP",
+      "observedAt" : "2026-10-12T00:29:44.869Z"
+    },
+    "to" : {
+      "uid" : "8817332293418",
+      "nickname" : "SoleX",
+      "serverId" : 3673,
+      "score" : 30426823,
+      "level" : 100,
+      "allianceId" : "500380532",
+      "allianceTag" : "{LC}",
+      "x" : 99,
+      "y" : 537,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T12:51:02.108Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-05T12:51:02.108Z",
+    "uid" : "8860795899712",
+    "nickname" : "Akid",
+    "fromServer" : 3904,
+    "toServer" : 3673,
+    "source" : "CROSS_SOURCE",
+    "fromSource" : "TOP100",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : true,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8860795899712",
+      "nickname" : "Akid",
+      "serverId" : 3904,
+      "score" : 24204040,
+      "level" : 93,
+      "allianceId" : "500382737",
+      "source" : "TOP100",
+      "observedAt" : "2026-11-01T19:01:47.157349200Z"
+    },
+    "to" : {
+      "uid" : "8860795899712",
+      "nickname" : "Akid",
+      "serverId" : 3673,
+      "score" : 24204110,
+      "level" : 93,
+      "allianceId" : "500382737",
+      "allianceTag" : "NlK",
+      "x" : 699,
+      "y" : 391,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T12:51:02.108Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-05T13:17:05.848526Z",
+    "uid" : "9316727787708",
+    "nickname" : "Овен",
+    "fromServer" : 4284,
+    "toServer" : 4419,
+    "from" : {
+      "uid" : "9316727787708",
+      "nickname" : "Овен",
+      "server" : 4284,
+      "rank" : null,
+      "score" : 47886762,
+      "level" : 100,
+      "allianceId" : "500429253",
+      "allianceTag" : "S.F!",
+      "allianceName" : "SPECIAL FoRcE"
+    },
+    "to" : {
+      "uid" : "9316727787708",
+      "nickname" : "Овен",
+      "server" : 4419,
+      "rank" : null,
+      "score" : 47886762,
+      "level" : 100,
+      "allianceId" : "0",
+      "allianceTag" : null,
+      "allianceName" : null
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
