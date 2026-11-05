@@ -3,7 +3,7 @@
   "date" : "2026-11-06",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-05T21:53:05.942679600Z",
+  "updatedAt" : "2026-11-05T22:39:48.924826400Z",
   "rows" : [ {
     "detectedAt" : "2026-11-05T16:00:24.006Z",
     "uid" : "492065445466",
@@ -2559,5 +2559,115 @@
       "source" : "MAP",
       "observedAt" : "2026-11-05T21:53:05.506Z"
     }
+  }, {
+    "detectedAt" : "2026-11-05T22:32:23.445Z",
+    "uid" : "269894820309",
+    "nickname" : "wade",
+    "fromServer" : 3698,
+    "toServer" : 2622,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "269894820309",
+      "nickname" : "wade",
+      "serverId" : 3698,
+      "rank" : 4,
+      "score" : 42944921,
+      "level" : 100,
+      "allianceId" : "500369059",
+      "allianceTag" : "M!lk",
+      "allianceName" : "Dragons Drink Milk",
+      "x" : 334,
+      "y" : 476,
+      "source" : "MAP",
+      "observedAt" : "2026-11-03T21:17:22.753Z"
+    },
+    "to" : {
+      "uid" : "269894820309",
+      "nickname" : "wade",
+      "serverId" : 2622,
+      "rank" : 1,
+      "score" : 43040003,
+      "level" : 100,
+      "allianceId" : "500220540",
+      "allianceTag" : "FOXC",
+      "allianceName" : "First Order of XC",
+      "x" : 535,
+      "y" : 497,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T22:32:23.445Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-05T22:39:48.879652100Z",
+    "uid" : "457984488934",
+    "nickname" : "Score",
+    "fromServer" : 3854,
+    "toServer" : 2747,
+    "from" : {
+      "uid" : "457984488934",
+      "nickname" : "Score",
+      "server" : 3854,
+      "rank" : null,
+      "score" : 83388024,
+      "level" : 100,
+      "allianceId" : "500379680",
+      "allianceTag" : "S854",
+      "allianceName" : "Legacy Of Dragons"
+    },
+    "to" : {
+      "uid" : "457984488934",
+      "nickname" : "Score",
+      "server" : 2747,
+      "rank" : null,
+      "score" : 83388024,
+      "level" : 100,
+      "allianceId" : "500251922",
+      "allianceTag" : "747S",
+      "allianceName" : "NightOwls"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-05T22:39:48.879652100Z",
+    "uid" : "845736220965",
+    "nickname" : "loop",
+    "fromServer" : 2256,
+    "toServer" : 1568,
+    "from" : {
+      "uid" : "845736220965",
+      "nickname" : "loop",
+      "server" : 2256,
+      "rank" : null,
+      "score" : 78227512,
+      "level" : 100,
+      "allianceId" : "500196794",
+      "allianceTag" : "SNAX",
+      "allianceName" : "We Share Snacks"
+    },
+    "to" : {
+      "uid" : "845736220965",
+      "nickname" : "loop",
+      "server" : 1568,
+      "rank" : null,
+      "score" : 78227512,
+      "level" : 100,
+      "allianceId" : "200295729",
+      "allianceTag" : "I568",
+      "allianceName" : "APEX UNITED"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
