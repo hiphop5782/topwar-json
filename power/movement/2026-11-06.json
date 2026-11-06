@@ -3,7 +3,7 @@
   "date" : "2026-11-06",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-06T04:01:04.023567600Z",
+  "updatedAt" : "2026-11-06T04:42:33.202090400Z",
   "rows" : [ {
     "detectedAt" : "2026-11-05T16:00:24.006Z",
     "uid" : "492065445466",
@@ -1298,9 +1298,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-06T04:06:43.530Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-05T19:02:08.903009Z",
     "uid" : "760225962014",
@@ -3214,6 +3216,48 @@
       "y" : 484,
       "source" : "MAP",
       "observedAt" : "2026-11-06T04:01:03.764Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-06T04:42:33.068Z",
+    "uid" : "527184987812",
+    "nickname" : "Stalker☢",
+    "fromServer" : 2311,
+    "toServer" : 1772,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "527184987812",
+      "nickname" : "Stalker☢",
+      "serverId" : 2311,
+      "rank" : 3,
+      "score" : 78674016,
+      "level" : 100,
+      "allianceId" : "500172876",
+      "allianceTag" : "KeC",
+      "allianceName" : "KEEP CALM",
+      "x" : 402,
+      "y" : 332,
+      "source" : "MAP",
+      "observedAt" : "2026-11-03T10:03:37.268Z"
+    },
+    "to" : {
+      "uid" : "527184987812",
+      "nickname" : "Stalker☢",
+      "serverId" : 1772,
+      "rank" : 2,
+      "score" : 78752010,
+      "level" : 100,
+      "allianceId" : "500006606",
+      "allianceTag" : "THC;",
+      "allianceName" : "The Heroes Company",
+      "x" : 352,
+      "y" : 508,
+      "source" : "MAP",
+      "observedAt" : "2026-11-06T04:42:33.068Z"
     }
   } ]
 }
