@@ -3,7 +3,7 @@
   "date" : "2026-11-06",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-06T04:42:33.202090400Z",
+  "updatedAt" : "2026-11-06T05:07:44.899436300Z",
   "rows" : [ {
     "detectedAt" : "2026-11-05T16:00:24.006Z",
     "uid" : "492065445466",
@@ -1334,9 +1334,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-06T05:07:44.612Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-05T19:35:42.773Z",
     "uid" : "9010822189017",
