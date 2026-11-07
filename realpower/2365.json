@@ -1,5 +1,5 @@
 {
-  "exportedAt" : "2026-11-07T06:23:10.697Z",
+  "exportedAt" : "2026-11-07T09:44:48.437Z",
   "serverId" : 2365,
   "summary" : {
     "players" : 22,
@@ -40,7 +40,7 @@
       "watchGradeUsers" : 2,
       "lowGradeUsers" : 0,
       "activeUsers" : 18,
-      "recentUsers" : 4,
+      "recentUsers" : 6,
       "sleepyUsers" : 3,
       "inactiveUsers" : 0,
       "quitLikelyUsers" : 0,
@@ -62,7 +62,7 @@
     },
     "userStatus" : {
       "activeUsers" : 18,
-      "recentUsers" : 4,
+      "recentUsers" : 6,
       "sleepyUsers" : 3,
       "inactiveUsers" : 0,
       "quitLikelyUsers" : 0,
@@ -125,17 +125,17 @@
     "pointType" : 1,
     "level" : 100,
     "power" : 67103286,
-    "armyPower" : "1,828,435,501,701,770,000,000,000,000,000,000,000",
-    "armyPowerText" : "1.83hh",
+    "armyPower" : "1,889,451,057,012,796,400,000,000,000,000,000,000",
+    "armyPowerText" : "1.89hh",
     "allianceId" : "400373334",
     "allianceTag" : "VBRO",
     "allianceName" : "Vietnamese Brothers",
     "allianceRole" : 5,
     "rank" : 5,
-    "isOnline" : 0,
+    "isOnline" : 1,
     "joinTime" : 1732445909,
-    "lastShowTime" : 1794032468,
-    "lastLogin" : 1794032468,
+    "lastShowTime" : 1794044529,
+    "lastLogin" : 1794044529,
     "language" : "vi",
     "nationalflag" : 241,
     "gender" : 0,
@@ -149,12 +149,12 @@
     "powerPercentileInAlliance" : 0.0769,
     "powerContributionRate" : 0.089934,
     "cumulativePowerContributionRate" : 0.089934,
-    "activityScore" : 115,
-    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "recent_login_1d", "alliance_member_confirmed" ],
+    "activityScore" : 145,
+    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "online", "recent_login_1d", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "inactiveReasons" : [ "online" ],
     "lastLoginDaysAgo" : 0
   }, {
     "uid" : "433237575086",
@@ -168,17 +168,17 @@
     "pointType" : 1,
     "level" : 100,
     "power" : 67022115,
-    "armyPower" : "796,680,463,685,047,600,000,000,000,000,000,000",
-    "armyPowerText" : "797gg",
+    "armyPower" : "802,127,777,967,863,100,000,000,000,000,000,000",
+    "armyPowerText" : "802gg",
     "allianceId" : "400373334",
     "allianceTag" : "VBRO",
     "allianceName" : "Vietnamese Brothers",
     "allianceRole" : 7,
     "rank" : 7,
-    "isOnline" : 1,
+    "isOnline" : 0,
     "joinTime" : 1774975552,
-    "lastShowTime" : 1794031666,
-    "lastLogin" : 1794031666,
+    "lastShowTime" : 1794032771,
+    "lastLogin" : 1794032771,
     "language" : "vi",
     "nationalflag" : 241,
     "gender" : 0,
@@ -192,13 +192,13 @@
     "powerPercentileInAlliance" : 0.1538,
     "powerContributionRate" : 0.089825,
     "cumulativePowerContributionRate" : 0.17976,
-    "activityScore" : 145,
-    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "online", "recent_login_1d", "alliance_member_confirmed" ],
+    "activityScore" : 115,
+    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "recent_login_1d", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "online" ],
-    "lastLoginDaysAgo" : 0
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.14
   }, {
     "uid" : "921664240264",
     "username" : "NấmHương",
@@ -235,13 +235,13 @@
     "powerPercentileInAlliance" : 0.2308,
     "powerContributionRate" : 0.089635,
     "cumulativePowerContributionRate" : 0.269395,
-    "activityScore" : 110,
-    "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityScore" : 105,
+    "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_3d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
-    "userStatus" : "ACTIVE",
-    "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.94
+    "userStatus" : "RECENT",
+    "inactiveScore" : 10,
+    "inactiveReasons" : [ "lastLoginWithin3Days" ],
+    "lastLoginDaysAgo" : 1.08
   }, {
     "uid" : "661923776135",
     "username" : "Lãobàbà",
@@ -284,7 +284,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.18
+    "lastLoginDaysAgo" : 0.32
   }, {
     "uid" : "623416022360",
     "username" : "vũ",
@@ -327,7 +327,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.31
+    "lastLoginDaysAgo" : 0.45
   }, {
     "uid" : "586661255121",
     "username" : "Jonelee",
@@ -340,8 +340,8 @@
     "pointType" : 1,
     "level" : 100,
     "power" : 63890496,
-    "armyPower" : "136,410,281,435,905,830,000,000,000,000,000,000",
-    "armyPowerText" : "136gg",
+    "armyPower" : "184,377,689,803,580,150,000,000,000,000,000,000",
+    "armyPowerText" : "184gg",
     "allianceId" : "400373334",
     "allianceTag" : "VBRO",
     "allianceName" : "Vietnamese Brothers",
@@ -349,8 +349,8 @@
     "rank" : 3,
     "isOnline" : 0,
     "joinTime" : 1786012705,
-    "lastShowTime" : 1794017583,
-    "lastLogin" : 1794017583,
+    "lastShowTime" : 1794042662,
+    "lastLogin" : 1794042662,
     "language" : "vi",
     "nationalflag" : 241,
     "gender" : 0,
@@ -370,7 +370,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.17
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "432074515886",
     "username" : "❆⋆Thái⋆❆",
@@ -383,7 +383,7 @@
     "pointType" : 1,
     "level" : 100,
     "power" : 63801923,
-    "armyPower" : "1,564,071,445,394,150,800,000,000,000,000,000,000",
+    "armyPower" : "1,560,314,062,341,845,800,000,000,000,000,000,000",
     "armyPowerText" : "1.56hh",
     "allianceId" : "400373334",
     "allianceTag" : "VBRO",
@@ -413,7 +413,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.15
   }, {
     "uid" : "497683048033",
     "username" : "VietJet",
@@ -450,13 +450,13 @@
     "powerPercentileInAlliance" : 0.6154,
     "powerContributionRate" : 0.078042,
     "cumulativePowerContributionRate" : 0.694217,
-    "activityScore" : 95,
-    "activityReasons" : [ "map_found", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityScore" : 90,
+    "activityReasons" : [ "map_found", "cumulative_power_80", "recent_login_3d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
-    "userStatus" : "ACTIVE",
-    "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.96
+    "userStatus" : "RECENT",
+    "inactiveScore" : 10,
+    "inactiveReasons" : [ "lastLoginWithin3Days" ],
+    "lastLoginDaysAgo" : 1.1
   }, {
     "uid" : "656265885114",
     "username" : "🙏thank",
@@ -499,7 +499,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.38
+    "lastLoginDaysAgo" : 1.52
   }, {
     "uid" : "583074973637",
     "username" : "hduyung",
@@ -566,7 +566,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 3.66
+    "lastLoginDaysAgo" : 3.8
   }, {
     "uid" : "847580768573",
     "username" : "wy.847580768573",
@@ -633,7 +633,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 2.13
+    "lastLoginDaysAgo" : 2.27
   }, {
     "uid" : "443875456454",
     "username" : "🐺SÓI🐺",
@@ -676,7 +676,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 4.75
+    "lastLoginDaysAgo" : 4.89
   }, {
     "uid" : "848647625021",
     "username" : "ALIRAQI",
@@ -689,8 +689,8 @@
     "pointType" : 1,
     "level" : 100,
     "power" : 38876875,
-    "armyPower" : "191,506,834,016,664,500,000,000,000,000,000,000",
-    "armyPowerText" : "192gg",
+    "armyPower" : "226,504,451,062,715,160,000,000,000,000,000,000",
+    "armyPowerText" : "227gg",
     "allianceId" : "400373334",
     "allianceTag" : "VBRO",
     "allianceName" : "Vietnamese Brothers",
@@ -698,8 +698,8 @@
     "rank" : 3,
     "isOnline" : 0,
     "joinTime" : 1688624155,
-    "lastShowTime" : 1794011506,
-    "lastLogin" : 1794011506,
+    "lastShowTime" : 1794042615,
+    "lastLogin" : 1794042615,
     "language" : "ar",
     "nationalflag" : 107,
     "gender" : 0,
@@ -719,7 +719,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.24
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "848556173629",
     "username" : "wy.848556173629",
@@ -762,7 +762,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 4.3
+    "lastLoginDaysAgo" : 4.44
   }, {
     "uid" : "856672942397",
     "username" : "Chicago",
@@ -775,7 +775,7 @@
     "pointType" : 1,
     "level" : 95,
     "power" : 25793415,
-    "armyPower" : "5,291,184,332,794,807,000,000,000,000,000,000",
+    "armyPower" : "5,291,184,332,794,808,000,000,000,000,000,000",
     "armyPowerText" : "5.29gg",
     "allianceId" : "400382566",
     "allianceTag" : "AAB.",
@@ -805,7 +805,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.57
+    "lastLoginDaysAgo" : 0.71
   }, {
     "uid" : "848453130557",
     "username" : "wy.848453130557",
@@ -848,7 +848,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.5
+    "lastLoginDaysAgo" : 0.64
   }, {
     "uid" : "847798548797",
     "username" : "あきこ",
@@ -891,7 +891,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 2.69
+    "lastLoginDaysAgo" : 2.83
   }, {
     "uid" : "857288898877",
     "username" : "wy.857288898877",
@@ -934,7 +934,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 2.78
+    "lastLoginDaysAgo" : 2.92
   }, {
     "uid" : "868049414461",
     "username" : "nagomi🌠",
@@ -1233,7 +1233,7 @@
   "movementTracking" : {
     "version" : 1,
     "mode" : "uid-cross-server",
-    "detectedAt" : "2026-11-07T06:23:10.697Z",
+    "detectedAt" : "2026-11-07T09:44:48.437Z",
     "eventCount" : 0
   },
   "movementEvents" : [ ]
