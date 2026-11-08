@@ -3,7 +3,7 @@
   "date" : "2026-11-08",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-08T08:12:55.795630900Z",
+  "updatedAt" : "2026-11-08T10:00:20.946536600Z",
   "rows" : [ {
     "detectedAt" : "2026-11-07T16:32:58.068Z",
     "uid" : "9802544451992",
@@ -1463,9 +1463,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-08T09:33:45.643Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T04:36:29.642720700Z",
     "uid" : "8155130301790",
@@ -1497,9 +1499,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-08T09:33:45.643Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T04:36:29.642720700Z",
     "uid" : "8402367516119",
@@ -2260,5 +2264,39 @@
       "source" : "MAP",
       "observedAt" : "2026-11-08T08:12:56.262Z"
     }
+  }, {
+    "detectedAt" : "2026-11-08T10:00:20.904644500Z",
+    "uid" : "354020275118",
+    "nickname" : "Hokyiko",
+    "fromServer" : 1067,
+    "toServer" : 1397,
+    "from" : {
+      "uid" : "354020275118",
+      "nickname" : "Hokyiko",
+      "server" : 1067,
+      "rank" : null,
+      "score" : 87579970,
+      "level" : 100,
+      "allianceId" : "686615",
+      "allianceTag" : "SiX7",
+      "allianceName" : "KiSs"
+    },
+    "to" : {
+      "uid" : "354020275118",
+      "nickname" : "Hokyiko",
+      "server" : 1397,
+      "rank" : null,
+      "score" : 87596370,
+      "level" : 100,
+      "allianceId" : "701962",
+      "allianceTag" : "l397",
+      "allianceName" : "煉獄之門"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
