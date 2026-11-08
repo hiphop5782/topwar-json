@@ -3,7 +3,7 @@
   "date" : "2026-11-08",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-08T13:04:42.489269200Z",
+  "updatedAt" : "2026-11-08T14:37:11.165354200Z",
   "rows" : [ {
     "detectedAt" : "2026-11-07T16:32:58.068Z",
     "uid" : "9802544451992",
@@ -1431,9 +1431,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-08T13:58:14.621Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T04:36:29.642720700Z",
     "uid" : "807884998797",
@@ -2299,9 +2301,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-08T14:14:49.923Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T10:38:50.408Z",
     "uid" : "9585604858177",
@@ -2604,6 +2608,80 @@
       "allianceId" : "500428147",
       "allianceTag" : "@mat",
       "allianceName" : "博多の城"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-08T13:58:14.621Z",
+    "uid" : "787794704443",
+    "nickname" : "HARJOT",
+    "fromServer" : 2107,
+    "toServer" : 4004,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "787794704443",
+      "nickname" : "HARJOT",
+      "serverId" : 2107,
+      "score" : 42477257,
+      "level" : 100,
+      "allianceId" : "400234916",
+      "allianceTag" : "NGU`",
+      "x" : 311,
+      "y" : 633,
+      "source" : "MAP",
+      "observedAt" : "2026-11-05T19:09:40.900Z"
+    },
+    "to" : {
+      "uid" : "787794704443",
+      "nickname" : "HARJOT",
+      "serverId" : 4004,
+      "rank" : 3,
+      "score" : 42498657,
+      "level" : 100,
+      "allianceId" : "500387634",
+      "allianceTag" : "H!VE",
+      "allianceName" : "HAV0K",
+      "x" : 453,
+      "y" : 467,
+      "source" : "MAP",
+      "observedAt" : "2026-11-08T13:58:14.621Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-08T14:37:11.121947800Z",
+    "uid" : "479559419449",
+    "nickname" : "NOAHツ💣",
+    "fromServer" : 2986,
+    "toServer" : 2050,
+    "from" : {
+      "uid" : "479559419449",
+      "nickname" : "NOAHツ💣",
+      "server" : 2986,
+      "rank" : null,
+      "score" : 77243219,
+      "level" : 100,
+      "allianceId" : "500291509",
+      "allianceTag" : "=CL=",
+      "allianceName" : "Crypt of Light"
+    },
+    "to" : {
+      "uid" : "479559419449",
+      "nickname" : "NOAHツ💣",
+      "server" : 2050,
+      "rank" : null,
+      "score" : 77243219,
+      "level" : 100,
+      "allianceId" : "400240692",
+      "allianceTag" : "R-ST",
+      "allianceName" : "RSTxFAMILY"
     },
     "source" : "TOP100",
     "fromSource" : "TOP100",
