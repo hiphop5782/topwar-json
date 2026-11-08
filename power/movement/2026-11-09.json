@@ -3,7 +3,7 @@
   "date" : "2026-11-09",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-08T20:47:51.019568700Z",
+  "updatedAt" : "2026-11-08T21:33:38.514843Z",
   "rows" : [ {
     "detectedAt" : "2026-11-08T16:03:20.096Z",
     "uid" : "413849756860",
@@ -393,9 +393,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-08T21:29:11.122Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T19:04:27.610212100Z",
     "uid" : "457545483749",
@@ -427,9 +429,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-08T21:29:11.122Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T19:20:16.557Z",
     "uid" : "849421871427",
@@ -621,6 +625,74 @@
       "allianceId" : "500268303",
       "allianceTag" : "W4ND",
       "allianceName" : "WeAreNotDead"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-08T21:33:38.472016400Z",
+    "uid" : "7864610786400",
+    "nickname" : "TᕼEᗪᑌᗪE",
+    "fromServer" : 3671,
+    "toServer" : 4153,
+    "from" : {
+      "uid" : "7864610786400",
+      "nickname" : "TᕼEᗪᑌᗪE",
+      "server" : 3671,
+      "rank" : null,
+      "score" : 48026622,
+      "level" : 100,
+      "allianceId" : "500370119",
+      "allianceTag" : "NSFw",
+      "allianceName" : "Not Safe For Whales"
+    },
+    "to" : {
+      "uid" : "7864610786400",
+      "nickname" : "TᕼEᗪᑌᗪE",
+      "server" : 4153,
+      "rank" : null,
+      "score" : 48026622,
+      "level" : 100,
+      "allianceId" : "500406973",
+      "allianceTag" : "TfHC",
+      "allianceName" : "Tinfoil Hat Club"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-08T21:33:38.472016400Z",
+    "uid" : "8930732314489",
+    "nickname" : "imda",
+    "fromServer" : 3671,
+    "toServer" : 4153,
+    "from" : {
+      "uid" : "8930732314489",
+      "nickname" : "imda",
+      "server" : 3671,
+      "rank" : null,
+      "score" : 48113204,
+      "level" : 100,
+      "allianceId" : "500370119",
+      "allianceTag" : "NSFw",
+      "allianceName" : "Not Safe For Whales"
+    },
+    "to" : {
+      "uid" : "8930732314489",
+      "nickname" : "imda",
+      "server" : 4153,
+      "rank" : null,
+      "score" : 48113204,
+      "level" : 100,
+      "allianceId" : "500406973",
+      "allianceTag" : "TfHC",
+      "allianceName" : "Tinfoil Hat Club"
     },
     "source" : "TOP100",
     "fromSource" : "TOP100",
