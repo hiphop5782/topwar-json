@@ -3,7 +3,7 @@
   "date" : "2026-11-09",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-09T02:09:20.025876300Z",
+  "updatedAt" : "2026-11-09T02:56:50.822154300Z",
   "rows" : [ {
     "detectedAt" : "2026-11-08T16:03:20.096Z",
     "uid" : "413849756860",
@@ -251,9 +251,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T02:21:16.075Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T17:42:37.864155700Z",
     "uid" : "9516175135002",
@@ -845,9 +847,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T02:38:34.155Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T23:06:33.547687900Z",
     "uid" : "9104204959773",
@@ -879,9 +883,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T02:38:34.155Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T23:06:33.547687900Z",
     "uid" : "9110974730280",
@@ -985,9 +991,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T02:38:34.155Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T23:09:57.905Z",
     "uid" : "588957656264",
@@ -1145,9 +1153,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T02:38:34.155Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T23:52:43.715082600Z",
     "uid" : "8021173734669",
@@ -1556,5 +1566,123 @@
       "source" : "MAP",
       "observedAt" : "2026-11-09T02:09:20.346Z"
     }
+  }, {
+    "detectedAt" : "2026-11-09T02:38:34.155Z",
+    "uid" : "9478594367752",
+    "nickname" : "𓄂ᵥₐₗₑ𓆃",
+    "fromServer" : 4360,
+    "toServer" : 4392,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "9478594367752",
+      "nickname" : "𓄂ᵥₐₗₑ𓆃",
+      "serverId" : 4360,
+      "rank" : 3,
+      "score" : 17932829,
+      "level" : 100,
+      "allianceId" : "500445760",
+      "allianceTag" : "1BDE",
+      "allianceName" : "Big Defense Energy",
+      "x" : 411,
+      "y" : 591,
+      "source" : "MAP",
+      "observedAt" : "2026-11-08T14:43:34.009Z"
+    },
+    "to" : {
+      "uid" : "9478594367752",
+      "nickname" : "𓄂ᵥₐₗₑ𓆃",
+      "serverId" : 4392,
+      "rank" : 1,
+      "score" : 17932879,
+      "level" : 100,
+      "allianceId" : "500453203",
+      "allianceTag" : ".DTF",
+      "allianceName" : "CYBER WORLD",
+      "x" : 343,
+      "y" : 467,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T02:38:34.155Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-09T02:42:08.847Z",
+    "uid" : "9214129377038",
+    "nickname" : "ergün",
+    "fromServer" : 3854,
+    "toServer" : 4080,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "9214129377038",
+      "nickname" : "ergün",
+      "serverId" : 3854,
+      "rank" : 2,
+      "score" : 10955393,
+      "level" : 79,
+      "allianceId" : "500379680",
+      "allianceTag" : "S854",
+      "allianceName" : "Legacy Of Dragons",
+      "x" : 446,
+      "y" : 628,
+      "source" : "MAP",
+      "observedAt" : "2026-11-08T21:42:24.663Z"
+    },
+    "to" : {
+      "uid" : "9214129377038",
+      "nickname" : "ergün",
+      "serverId" : 4080,
+      "rank" : 1,
+      "score" : 10991759,
+      "level" : 80,
+      "allianceId" : "500396474",
+      "allianceTag" : "LaNd",
+      "allianceName" : "InTheLostLands",
+      "x" : 433,
+      "y" : 609,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T02:42:08.847Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-09T02:56:50.778284700Z",
+    "uid" : "306371367492",
+    "nickname" : "HIKO",
+    "fromServer" : 315,
+    "toServer" : 3309,
+    "from" : {
+      "uid" : "306371367492",
+      "nickname" : "HIKO",
+      "server" : 315,
+      "rank" : null,
+      "score" : 76105144,
+      "level" : 100,
+      "allianceId" : "100066272",
+      "allianceTag" : null,
+      "allianceName" : null
+    },
+    "to" : {
+      "uid" : "306371367492",
+      "nickname" : "HIKO",
+      "server" : 3309,
+      "rank" : null,
+      "score" : 76105144,
+      "level" : 100,
+      "allianceId" : "0",
+      "allianceTag" : null,
+      "allianceName" : null
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
