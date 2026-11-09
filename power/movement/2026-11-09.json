@@ -3,7 +3,7 @@
   "date" : "2026-11-09",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-09T05:37:26.880364100Z",
+  "updatedAt" : "2026-11-09T06:42:11.265282200Z",
   "rows" : [ {
     "detectedAt" : "2026-11-08T16:03:20.096Z",
     "uid" : "413849756860",
@@ -77,9 +77,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T06:42:12.108Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T16:56:33.708476300Z",
     "uid" : "9238469546124",
@@ -2001,9 +2003,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T06:20:12.208Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T05:30:14.181Z",
     "uid" : "637518448017",
