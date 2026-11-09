@@ -3,7 +3,7 @@
   "date" : "2026-11-09",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-09T11:49:56.450044700Z",
+  "updatedAt" : "2026-11-09T12:36:45.810344600Z",
   "rows" : [ {
     "detectedAt" : "2026-11-08T16:03:20.096Z",
     "uid" : "413849756860",
@@ -1805,9 +1805,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T12:27:42.350Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T04:06:40.770Z",
     "uid" : "909115976273",
@@ -2308,7 +2310,7 @@
     "fromSource" : "MAP",
     "toSource" : "MAP",
     "status" : "CONFIRMED",
-    "detectedByTop100" : false,
+    "detectedByTop100" : true,
     "detectedByMap" : true,
     "from" : {
       "uid" : "7716794960828",
@@ -2339,6 +2341,8 @@
       "y" : 476,
       "source" : "MAP",
       "observedAt" : "2026-11-09T11:49:57.420Z"
-    }
+    },
+    "lastConfirmedAt" : "2026-11-09T12:36:45.767542800Z",
+    "sources" : [ "MAP", "TOP100" ]
   } ]
 }
