@@ -3,7 +3,7 @@
   "date" : "2026-11-10",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-09T20:57:33.167024700Z",
+  "updatedAt" : "2026-11-09T20:58:12.390766200Z",
   "rows" : [ {
     "detectedAt" : "2026-11-09T16:42:32.580Z",
     "uid" : "464058979851",
@@ -191,9 +191,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T20:58:13.199Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T17:30:07.943Z",
     "uid" : "460877137404",
@@ -958,5 +960,47 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-09T20:58:13.199Z",
+    "uid" : "9316604678332",
+    "nickname" : "HanSolo",
+    "fromServer" : 4284,
+    "toServer" : 4344,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "9316604678332",
+      "nickname" : "HanSolo",
+      "serverId" : 4284,
+      "rank" : 2,
+      "score" : 45483773,
+      "level" : 100,
+      "allianceId" : "500429253",
+      "allianceTag" : "S.F!",
+      "allianceName" : "SPECIAL FoRcE",
+      "x" : 427,
+      "y" : 531,
+      "source" : "MAP",
+      "observedAt" : "2026-11-08T07:20:07.808Z"
+    },
+    "to" : {
+      "uid" : "9316604678332",
+      "nickname" : "HanSolo",
+      "serverId" : 4344,
+      "rank" : 3,
+      "score" : 45786273,
+      "level" : 100,
+      "allianceId" : "500440288",
+      "allianceTag" : "EnLe",
+      "allianceName" : "EndlessLegends",
+      "x" : 424,
+      "y" : 622,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T20:58:13.199Z"
+    }
   } ]
 }
