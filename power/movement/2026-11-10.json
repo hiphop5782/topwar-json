@@ -3,7 +3,7 @@
   "date" : "2026-11-10",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-09T22:28:20.534461900Z",
+  "updatedAt" : "2026-11-09T22:30:06.003862200Z",
   "rows" : [ {
     "detectedAt" : "2026-11-09T16:42:32.580Z",
     "uid" : "464058979851",
@@ -1070,5 +1070,43 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-09T22:30:06.921Z",
+    "uid" : "475116332573",
+    "nickname" : "HÙNGK",
+    "fromServer" : 2682,
+    "toServer" : 4239,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "475116332573",
+      "nickname" : "HÙNGK",
+      "serverId" : 2682,
+      "score" : 70233007,
+      "level" : 100,
+      "x" : 574,
+      "y" : 156,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T04:23:56.477Z"
+    },
+    "to" : {
+      "uid" : "475116332573",
+      "nickname" : "HÙNGK",
+      "serverId" : 4239,
+      "rank" : 3,
+      "score" : 73100607,
+      "level" : 100,
+      "allianceId" : "500498666",
+      "allianceTag" : "Dth1",
+      "allianceName" : "D3athly1",
+      "x" : 457,
+      "y" : 467,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T22:30:06.921Z"
+    }
   } ]
 }
