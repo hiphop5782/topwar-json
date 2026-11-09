@@ -3,7 +3,7 @@
   "date" : "2026-11-09",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-09T05:15:17.547923Z",
+  "updatedAt" : "2026-11-09T05:37:26.880364100Z",
   "rows" : [ {
     "detectedAt" : "2026-11-08T16:03:20.096Z",
     "uid" : "413849756860",
@@ -111,9 +111,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-09T05:37:27.770Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-08T16:56:33.708476300Z",
     "uid" : "9316604678332",
@@ -2002,5 +2004,47 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-09T05:30:14.181Z",
+    "uid" : "637518448017",
+    "nickname" : "蒼紫",
+    "fromServer" : 2205,
+    "toServer" : 3619,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "637518448017",
+      "nickname" : "蒼紫",
+      "serverId" : 2205,
+      "rank" : 2,
+      "score" : 52056502,
+      "level" : 100,
+      "allianceId" : "400286773",
+      "allianceTag" : "22O5",
+      "allianceName" : "22O5",
+      "x" : 406,
+      "y" : 626,
+      "source" : "MAP",
+      "observedAt" : "2026-11-08T07:25:23.544Z"
+    },
+    "to" : {
+      "uid" : "637518448017",
+      "nickname" : "蒼紫",
+      "serverId" : 3619,
+      "rank" : 3,
+      "score" : 52063562,
+      "level" : 100,
+      "allianceId" : "500359549",
+      "allianceTag" : "N*GD",
+      "allianceName" : "North Golden Ducks",
+      "x" : 416,
+      "y" : 418,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T05:30:14.181Z"
+    }
   } ]
 }
