@@ -3,7 +3,7 @@
   "date" : "2026-11-11",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-10T16:58:44.341277900Z",
+  "updatedAt" : "2026-11-10T17:42:01.594635500Z",
   "rows" : [ {
     "detectedAt" : "2026-11-10T16:05:13.158Z",
     "uid" : "381881533536",
@@ -288,5 +288,81 @@
       "source" : "MAP",
       "observedAt" : "2026-11-10T16:25:21.001Z"
     }
+  }, {
+    "detectedAt" : "2026-11-10T17:26:45.287Z",
+    "uid" : "388170826941",
+    "nickname" : "javier",
+    "fromServer" : 4153,
+    "toServer" : 4236,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "388170826941",
+      "nickname" : "javier",
+      "serverId" : 4153,
+      "rank" : 2,
+      "score" : 56053316,
+      "level" : 100,
+      "allianceId" : "500406973",
+      "allianceTag" : "TfHC",
+      "allianceName" : "Tinfoil Hat Club",
+      "x" : 405,
+      "y" : 415,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T14:15:43.436Z"
+    },
+    "to" : {
+      "uid" : "388170826941",
+      "nickname" : "javier",
+      "serverId" : 4236,
+      "rank" : 2,
+      "score" : 56843116,
+      "level" : 100,
+      "allianceId" : "500419445",
+      "allianceTag" : "FgRd",
+      "allianceName" : "Fog Riderz",
+      "x" : 410,
+      "y" : 630,
+      "source" : "MAP",
+      "observedAt" : "2026-11-10T17:26:45.287Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-10T17:42:01.545015500Z",
+    "uid" : "656878880349",
+    "nickname" : "Dưamỏhổn",
+    "fromServer" : 3545,
+    "toServer" : 4155,
+    "from" : {
+      "uid" : "656878880349",
+      "nickname" : "Dưamỏhổn",
+      "server" : 3545,
+      "rank" : null,
+      "score" : 59936359,
+      "level" : 100,
+      "allianceId" : "500357121",
+      "allianceTag" : "ELyU",
+      "allianceName" : "Elysian Unity"
+    },
+    "to" : {
+      "uid" : "656878880349",
+      "nickname" : "Dưamỏhổn",
+      "server" : 4155,
+      "rank" : null,
+      "score" : 59936359,
+      "level" : 100,
+      "allianceId" : "500409300",
+      "allianceTag" : "S155",
+      "allianceName" : "Top families"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
