@@ -3,7 +3,7 @@
   "date" : "2026-11-10",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-10T10:01:38.817725100Z",
+  "updatedAt" : "2026-11-10T11:31:40.405253300Z",
   "rows" : [ {
     "detectedAt" : "2026-11-09T16:42:32.580Z",
     "uid" : "464058979851",
@@ -515,9 +515,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T11:16:47.852Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T19:26:46.516674800Z",
     "uid" : "8795980336880",
@@ -1746,5 +1748,115 @@
       "source" : "MAP",
       "observedAt" : "2026-11-10T10:01:39.227Z"
     }
+  }, {
+    "detectedAt" : "2026-11-10T10:48:06.185Z",
+    "uid" : "321798550251",
+    "nickname" : "Aslan",
+    "fromServer" : 3278,
+    "toServer" : 2275,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "321798550251",
+      "nickname" : "Aslan",
+      "serverId" : 3278,
+      "rank" : 2,
+      "score" : 37247451,
+      "level" : 100,
+      "allianceId" : "500327024",
+      "allianceTag" : "U278",
+      "allianceName" : "UNITED 3278",
+      "x" : 429,
+      "y" : 531,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T09:45:15.579Z"
+    },
+    "to" : {
+      "uid" : "321798550251",
+      "nickname" : "Aslan",
+      "serverId" : 2275,
+      "rank" : 2,
+      "score" : 37369282,
+      "level" : 100,
+      "allianceId" : "500129309",
+      "allianceTag" : "OP75",
+      "allianceName" : "OnepieCE",
+      "x" : 338,
+      "y" : 452,
+      "source" : "MAP",
+      "observedAt" : "2026-11-10T10:48:06.185Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-10T11:31:40.361393100Z",
+    "uid" : "646189569532",
+    "nickname" : "🤫Silent",
+    "fromServer" : 3342,
+    "toServer" : 3671,
+    "from" : {
+      "uid" : "646189569532",
+      "nickname" : "🤫Silent",
+      "server" : 3342,
+      "rank" : null,
+      "score" : 71629174,
+      "level" : 100,
+      "allianceId" : "500333375",
+      "allianceTag" : "R&S*",
+      "allianceName" : "The Resilience Squad"
+    },
+    "to" : {
+      "uid" : "646189569532",
+      "nickname" : "🤫Silent",
+      "server" : 3671,
+      "rank" : null,
+      "score" : 71559374,
+      "level" : 100,
+      "allianceId" : "500370119",
+      "allianceTag" : "NSFw",
+      "allianceName" : "Not Safe For Whales"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-10T11:31:40.361393100Z",
+    "uid" : "8197976001904",
+    "nickname" : "にゃんこ先生",
+    "fromServer" : 3440,
+    "toServer" : 3738,
+    "from" : {
+      "uid" : "8197976001904",
+      "nickname" : "にゃんこ先生",
+      "server" : 3440,
+      "rank" : null,
+      "score" : 57710406,
+      "level" : 100,
+      "allianceId" : "0",
+      "allianceTag" : null,
+      "allianceName" : null
+    },
+    "to" : {
+      "uid" : "8197976001904",
+      "nickname" : "にゃんこ先生",
+      "server" : 3738,
+      "rank" : null,
+      "score" : 57710406,
+      "level" : 100,
+      "allianceId" : "500372817",
+      "allianceTag" : "Wusa",
+      "allianceName" : "白いうさぎ王国"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
