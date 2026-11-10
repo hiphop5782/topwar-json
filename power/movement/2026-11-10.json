@@ -3,7 +3,7 @@
   "date" : "2026-11-10",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-10T00:38:27.703481800Z",
+  "updatedAt" : "2026-11-10T02:08:46.511815300Z",
   "rows" : [ {
     "detectedAt" : "2026-11-09T16:42:32.580Z",
     "uid" : "464058979851",
@@ -395,9 +395,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T02:08:47.289Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T18:09:27.304Z",
     "uid" : "148513415322",
@@ -547,9 +549,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T02:08:47.289Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T19:35:13.186Z",
     "uid" : "628356584814",
@@ -847,9 +851,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T02:08:47.289Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T20:27:30.702Z",
     "uid" : "891716057626",
@@ -923,9 +929,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T01:36:07.760Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T20:57:33.122675200Z",
     "uid" : "9267790614675",
@@ -957,9 +965,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T01:36:07.760Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T20:58:13.199Z",
     "uid" : "9316604678332",
@@ -1139,9 +1149,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T01:36:07.760Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-10T00:29:58.589Z",
     "uid" : "665522366107",
@@ -1301,6 +1313,44 @@
       "y" : 297,
       "source" : "MAP",
       "observedAt" : "2026-11-10T00:38:28.517Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-10T01:33:55.638Z",
+    "uid" : "8860247953216",
+    "nickname" : "ゆう",
+    "fromServer" : 3673,
+    "toServer" : 4037,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8860247953216",
+      "nickname" : "ゆう",
+      "serverId" : 3673,
+      "score" : 28085891,
+      "level" : 100,
+      "x" : 285,
+      "y" : 281,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T09:44:41.105Z"
+    },
+    "to" : {
+      "uid" : "8860247953216",
+      "nickname" : "ゆう",
+      "serverId" : 4037,
+      "rank" : 2,
+      "score" : 28085891,
+      "level" : 100,
+      "allianceId" : "500389714",
+      "allianceTag" : "NDL1",
+      "allianceName" : "NoDramaLama",
+      "x" : 371,
+      "y" : 337,
+      "source" : "MAP",
+      "observedAt" : "2026-11-10T01:33:55.638Z"
     }
   } ]
 }
