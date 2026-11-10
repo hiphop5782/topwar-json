@@ -3,7 +3,7 @@
   "date" : "2026-11-10",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-10T12:17:28.304371800Z",
+  "updatedAt" : "2026-11-10T12:53:57.164714200Z",
   "rows" : [ {
     "detectedAt" : "2026-11-09T16:42:32.580Z",
     "uid" : "464058979851",
@@ -1703,9 +1703,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T12:53:57.744Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-10T10:01:39.227Z",
     "uid" : "356314309565",
@@ -1960,5 +1962,47 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-10T12:36:01.187Z",
+    "uid" : "473009550875",
+    "nickname" : "LINE।",
+    "fromServer" : 1552,
+    "toServer" : 4238,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "473009550875",
+      "nickname" : "LINE।",
+      "serverId" : 1552,
+      "rank" : 2,
+      "score" : 29866050,
+      "level" : 82,
+      "allianceId" : "771513",
+      "allianceTag" : "KisS",
+      "allianceName" : "白子のからあげ帝国",
+      "x" : 404,
+      "y" : 274,
+      "source" : "MAP",
+      "observedAt" : "2026-11-10T09:23:31.526Z"
+    },
+    "to" : {
+      "uid" : "473009550875",
+      "nickname" : "LINE।",
+      "serverId" : 4238,
+      "rank" : 3,
+      "score" : 29983204,
+      "level" : 82,
+      "allianceId" : "500420653",
+      "allianceTag" : "neP",
+      "allianceName" : "猫パンチ過激派",
+      "x" : 411,
+      "y" : 563,
+      "source" : "MAP",
+      "observedAt" : "2026-11-10T12:36:01.187Z"
+    }
   } ]
 }
