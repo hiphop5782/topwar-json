@@ -3,7 +3,7 @@
   "date" : "2026-11-10",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-10T05:31:07.696991400Z",
+  "updatedAt" : "2026-11-10T06:50:14.702134500Z",
   "rows" : [ {
     "detectedAt" : "2026-11-09T16:42:32.580Z",
     "uid" : "464058979851",
@@ -1081,9 +1081,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-10T06:50:15.401Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-09T22:30:06.921Z",
     "uid" : "475116332573",
@@ -1589,6 +1591,44 @@
       "y" : 666,
       "source" : "MAP",
       "observedAt" : "2026-11-10T05:31:08.478Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-10T06:31:31.544Z",
+    "uid" : "899693173298",
+    "nickname" : "Westy84",
+    "fromServer" : 3355,
+    "toServer" : 2842,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "899693173298",
+      "nickname" : "Westy84",
+      "serverId" : 3355,
+      "rank" : 3,
+      "score" : 67663744,
+      "level" : 100,
+      "allianceId" : "500327049",
+      "allianceTag" : "-B3-",
+      "allianceName" : "BurnEverything",
+      "x" : 419,
+      "y" : 629,
+      "source" : "MAP",
+      "observedAt" : "2026-11-09T02:27:41.969Z"
+    },
+    "to" : {
+      "uid" : "899693173298",
+      "nickname" : "Westy84",
+      "serverId" : 2842,
+      "score" : 67663744,
+      "level" : 100,
+      "x" : 642,
+      "y" : 620,
+      "source" : "MAP",
+      "observedAt" : "2026-11-10T06:31:31.544Z"
     }
   } ]
 }
