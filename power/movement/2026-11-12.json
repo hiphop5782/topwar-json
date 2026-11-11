@@ -3,7 +3,7 @@
   "date" : "2026-11-12",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-11T22:20:23.755396100Z",
+  "updatedAt" : "2026-11-11T22:55:37.118218200Z",
   "rows" : [ {
     "detectedAt" : "2026-11-11T16:24:56.534Z",
     "uid" : "8750454509186",
@@ -115,9 +115,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-11T22:52:11.399Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-11T17:10:48.272085600Z",
     "uid" : "9435906183419",
@@ -783,6 +785,90 @@
       "y" : 428,
       "source" : "MAP",
       "observedAt" : "2026-11-11T22:20:33.010Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-11T22:50:25.819Z",
+    "uid" : "8021644774669",
+    "nickname" : "源",
+    "fromServer" : 2022,
+    "toServer" : 1547,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "8021644774669",
+      "nickname" : "源",
+      "serverId" : 2022,
+      "rank" : 3,
+      "score" : 59698907,
+      "level" : 100,
+      "allianceId" : "400188331",
+      "allianceTag" : "Lver",
+      "allianceName" : "L i b e r t a",
+      "x" : 347,
+      "y" : 471,
+      "source" : "MAP",
+      "observedAt" : "2026-11-10T02:30:16.243Z"
+    },
+    "to" : {
+      "uid" : "8021644774669",
+      "nickname" : "源",
+      "serverId" : 1547,
+      "rank" : 2,
+      "score" : 59656347,
+      "level" : 100,
+      "allianceId" : "760987",
+      "allianceTag" : "3sIR",
+      "allianceName" : "United1547",
+      "x" : 441,
+      "y" : 443,
+      "source" : "MAP",
+      "observedAt" : "2026-11-11T22:50:25.819Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-11T22:55:46.404Z",
+    "uid" : "440345093490",
+    "nickname" : "mkkiller",
+    "fromServer" : 1379,
+    "toServer" : 3278,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "440345093490",
+      "nickname" : "mkkiller",
+      "serverId" : 1379,
+      "rank" : 3,
+      "score" : 48912875,
+      "level" : 100,
+      "allianceId" : "120200874",
+      "allianceTag" : "LoCO",
+      "allianceName" : "Legion of Chaos",
+      "x" : 452,
+      "y" : 628,
+      "source" : "MAP",
+      "observedAt" : "2026-11-11T04:11:19.206Z"
+    },
+    "to" : {
+      "uid" : "440345093490",
+      "nickname" : "mkkiller",
+      "serverId" : 3278,
+      "rank" : 1,
+      "score" : 48947911,
+      "level" : 100,
+      "allianceId" : "500327024",
+      "allianceTag" : "U278",
+      "allianceName" : "UNITED 3278",
+      "x" : 427,
+      "y" : 525,
+      "source" : "MAP",
+      "observedAt" : "2026-11-11T22:55:46.404Z"
     }
   } ]
 }
