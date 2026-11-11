@@ -3,7 +3,7 @@
   "date" : "2026-11-12",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-11T21:47:41.160860800Z",
+  "updatedAt" : "2026-11-11T22:20:23.755396100Z",
   "rows" : [ {
     "detectedAt" : "2026-11-11T16:24:56.534Z",
     "uid" : "8750454509186",
@@ -742,5 +742,47 @@
     "status" : "DETECTED",
     "detectedByTop100" : true,
     "detectedByMap" : false
+  }, {
+    "detectedAt" : "2026-11-11T22:20:33.010Z",
+    "uid" : "548349597452",
+    "nickname" : "wy002",
+    "fromServer" : 591,
+    "toServer" : 4059,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "548349597452",
+      "nickname" : "wy002",
+      "serverId" : 591,
+      "rank" : 1,
+      "score" : 36241963,
+      "level" : 91,
+      "allianceId" : "373334",
+      "allianceTag" : "591S",
+      "allianceName" : "591South",
+      "x" : 177,
+      "y" : 303,
+      "source" : "MAP",
+      "observedAt" : "2026-11-10T20:46:26.090Z"
+    },
+    "to" : {
+      "uid" : "548349597452",
+      "nickname" : "wy002",
+      "serverId" : 4059,
+      "rank" : 1,
+      "score" : 36278669,
+      "level" : 91,
+      "allianceId" : "500393391",
+      "allianceTag" : "SoW*",
+      "allianceName" : "squad of whales",
+      "x" : 352,
+      "y" : 428,
+      "source" : "MAP",
+      "observedAt" : "2026-11-11T22:20:33.010Z"
+    }
   } ]
 }
