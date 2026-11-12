@@ -3,7 +3,7 @@
   "date" : "2026-11-12",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-12T02:32:23.204253Z",
+  "updatedAt" : "2026-11-12T03:57:51.500537400Z",
   "rows" : [ {
     "detectedAt" : "2026-11-11T16:24:56.534Z",
     "uid" : "8750454509186",
@@ -355,9 +355,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-12T03:32:52.129Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-11T19:29:32.577961100Z",
     "uid" : "9324137910473",
@@ -389,9 +391,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-12T03:32:52.129Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-11T19:42:26.331Z",
     "uid" : "8591985774196",
@@ -998,5 +1002,81 @@
       "source" : "MAP",
       "observedAt" : "2026-11-12T01:51:34.438Z"
     }
+  }, {
+    "detectedAt" : "2026-11-12T03:39:10.112Z",
+    "uid" : "381871883379",
+    "nickname" : "APOC",
+    "fromServer" : 2287,
+    "toServer" : 1244,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "381871883379",
+      "nickname" : "APOC",
+      "serverId" : 2287,
+      "rank" : 2,
+      "score" : 68784842,
+      "level" : 100,
+      "allianceId" : "500144281",
+      "allianceTag" : "gWAR",
+      "allianceName" : "FAFO Green",
+      "x" : 270,
+      "y" : 550,
+      "source" : "MAP",
+      "observedAt" : "2026-11-11T04:34:37.351Z"
+    },
+    "to" : {
+      "uid" : "381871883379",
+      "nickname" : "APOC",
+      "serverId" : 1244,
+      "rank" : 2,
+      "score" : 68816142,
+      "level" : 100,
+      "allianceId" : "300041284",
+      "allianceTag" : "0LYZ",
+      "allianceName" : "Kingdom of Zeus",
+      "x" : 411,
+      "y" : 379,
+      "source" : "MAP",
+      "observedAt" : "2026-11-12T03:39:10.112Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-12T03:57:51.456743900Z",
+    "uid" : "512586860136",
+    "nickname" : "Andreslm",
+    "fromServer" : 1668,
+    "toServer" : 2609,
+    "from" : {
+      "uid" : "512586860136",
+      "nickname" : "Andreslm",
+      "server" : 1668,
+      "rank" : null,
+      "score" : 93920219,
+      "level" : 100,
+      "allianceId" : "300091258",
+      "allianceTag" : "A5LM",
+      "allianceName" : "1668_The_Asylum"
+    },
+    "to" : {
+      "uid" : "512586860136",
+      "nickname" : "Andreslm",
+      "server" : 2609,
+      "rank" : null,
+      "score" : 93920219,
+      "level" : 100,
+      "allianceId" : "500212828",
+      "allianceTag" : "609s",
+      "allianceName" : "DirtyZoo"
+    },
+    "source" : "TOP100",
+    "fromSource" : "TOP100",
+    "toSource" : "TOP100",
+    "status" : "DETECTED",
+    "detectedByTop100" : true,
+    "detectedByMap" : false
   } ]
 }
