@@ -1,5 +1,6 @@
 import fs from "node:fs";
 import path from "node:path";
+import { reconcileHistory } from "./shared-history.mjs";
 
 const ROOT = process.cwd();
 const POWER_DIR = path.join(ROOT, "power");
@@ -11,7 +12,7 @@ const MOVEMENT_DIR = path.join(OUTPUT_DIR, "movement");
 const NICKNAME_DIR = path.join(OUTPUT_DIR, "nickname");
 const readJson = file => JSON.parse(fs.readFileSync(file, "utf8"));
 const text = value => value == null ? null : (String(value).trim() || null);
-const number = value => { const parsed = Number(value); return Number.isFinite(parsed) ? parsed : null; };
+const number = value => { if (value == null || value === "") return null; const parsed = Number(value); return Number.isFinite(parsed) ? parsed : null; };
 const uidOf = row => text(row?.uid ?? row?.pid ?? row?.userId ?? row?.playerId);
 const clean = value => Object.fromEntries(Object.entries(value).filter(([, item]) => item !== null && item !== undefined && item !== ""));
 
@@ -91,7 +92,7 @@ function observationsDiffer(left, right) {
   );
 }
 function normalizeMovement(row, source, document) {
-  const uid = uidOf(row ?? row?.to ?? row?.from);
+  const uid = uidOf(row) ?? uidOf(row?.to) ?? uidOf(row?.from);
   const fromServer = number(row?.fromServer ?? row?.from?.server ?? row?.from?.serverId);
   const toServer = number(row?.toServer ?? row?.to?.server ?? row?.to?.serverId);
   if (!uid || fromServer == null || toServer == null || fromServer === toServer) return null;
@@ -99,12 +100,12 @@ function normalizeMovement(row, source, document) {
     detectedAt: text(row.detectedAt ?? row.t ?? document.updatedAt), uid,
     nickname: text(row.nickname ?? row.name ?? row.to?.nickname ?? row.from?.nickname), fromServer, toServer,
     from: row.from && typeof row.from === "object" ? row.from : null,
-    to: row.to && typeof row.to === "object" ? row.to : null, sources: [source]
+    to: row.to && typeof row.to === "object" ? row.to : null, sources: historySources(row, source)
   });
 }
 
 function normalizeNickname(row, source, document) {
-  const uid = uidOf(row ?? row?.to ?? row?.from);
+  const uid = uidOf(row) ?? uidOf(row?.to) ?? uidOf(row?.from);
   const fromNickname = text(row?.fromNickname ?? row?.from?.nickname);
   const toNickname = text(row?.toNickname ?? row?.to?.nickname);
   if (!uid || !fromNickname || !toNickname || fromNickname.normalize("NFC") === toNickname.normalize("NFC")) return null;
@@ -112,20 +113,26 @@ function normalizeNickname(row, source, document) {
     detectedAt: text(row.detectedAt ?? row.t ?? document.updatedAt), uid, fromNickname, toNickname,
     server: number(row.server ?? row.toServer ?? row.to?.server ?? row.to?.serverId),
     fromServer: number(row.fromServer ?? row.from?.server ?? row.from?.serverId),
-    toServer: number(row.toServer ?? row.to?.server ?? row.to?.serverId), serverChanged: row.serverChanged === true, sources: [source]
+    toServer: number(row.toServer ?? row.to?.server ?? row.to?.serverId), serverChanged: row.serverChanged === true, sources: historySources(row, source)
   });
 }
 
-function mergeEvent(groups, date, event, key) {
-  if (!event) return;
-  groups.set(date, groups.get(date) ?? new Map());
-  const previous = groups.get(date).get(key);
-  groups.get(date).set(key, previous ? clean({
-    ...previous, ...event,
-    detectedAt: [previous.detectedAt, event.detectedAt].filter(Boolean).sort()[0] ?? null,
-    sources: [...new Set([...(previous.sources ?? []), ...(event.sources ?? [])])].sort(),
-    inferred: previous.inferred === true && event.inferred === true ? true : null
-  }) : event);
+function historySources(row, fallback) {
+  const sources = new Set(row.sources ?? []);
+  if (row.detectedByMap === true || row.source === "MAP" || row.source === "CROSS_SOURCE") sources.add("realpower");
+  if (row.detectedByTop100 === true || row.source === "TOP100") sources.add("power");
+  if (!sources.size) sources.add(fallback);
+  return [...sources].sort();
+}
+
+function groupHistory(rows, kind) {
+  const groups = new Map();
+  for (const row of reconcileHistory(rows, kind)) {
+    const date = serverDate(row.detectedAt);
+    if (!groups.has(date)) groups.set(date, []);
+    groups.get(date).push(row);
+  }
+  return groups;
 }
 
 const powerByUid = new Map();
@@ -197,44 +204,70 @@ const newestObservedAt = [...powerByUid.values(), ...realByUid.values()]
   .sort()
   .at(-1) ?? new Date().toISOString();
 
-const movementGroups = new Map();
+const movementEvents = [];
 for (const [directory, source] of [[path.join(POWER_DIR, "movement"), "power"], [path.join(REALPOWER_DIR, "movement"), "realpower"]]) {
   for (const file of datedFiles(directory)) {
     const document = readJson(file);
     for (const row of document.rows ?? []) {
       const event = normalizeMovement(row, source, document);
       if (!event) continue;
-      const date = serverDate(event.detectedAt ?? document.date);
-      mergeEvent(movementGroups, date, event, `${event.uid}|${event.fromServer}|${event.toServer}`);
+      movementEvents.push(event);
     }
   }
 }
 
-const nicknameGroups = new Map();
-for (const file of datedFiles(path.join(POWER_DIR, "nickname"))) {
+const nicknameEvents = [];
+for (const [directory, source] of [[path.join(POWER_DIR, "nickname"), "power"], [path.join(REALPOWER_DIR, "nickname"), "realpower"]]) {
+for (const file of datedFiles(directory)) {
   const document = readJson(file);
   for (const row of document.rows ?? []) {
-    const event = normalizeNickname(row, "power", document);
+    const event = normalizeNickname(row, source, document);
     if (!event) continue;
-    const date = serverDate(event.detectedAt ?? document.date);
-    mergeEvent(nicknameGroups, date, event, `${event.uid}|${event.fromNickname.normalize("NFC")}|${event.toNickname.normalize("NFC")}`);
+    nicknameEvents.push(event);
   }
 }
+}
 
-// 양쪽 최신 관측의 닉네임이 다르면 관측 순서가 명확한 경우에만 변경 후보로 보강한다.
+// Keep inferred changes after the other collector catches up. The shared latest
+// snapshot is the next run's baseline, so an old source cannot invent the same
+// change on every run with a new detection date.
+for (const file of datedFiles(NICKNAME_DIR)) {
+  for (const row of readJson(file).rows ?? []) {
+    if (row.inferred === true || row.inferredDetectedAt) {
+      nicknameEvents.push({ ...row, detectedAt: row.inferredDetectedAt ?? row.detectedAt, inferred: true });
+    }
+  }
+}
+const previousLatestFile = path.join(OUTPUT_DIR, "latest.json");
+const previousByUid = new Map((fs.existsSync(previousLatestFile) ? readJson(previousLatestFile).players ?? [] : []).map(row => [uidOf(row), row]));
 for (const uid of allUids) {
-  const power = powerByUid.get(uid);
-  const realpower = realByUid.get(uid);
-  if (!power?.nickname || !realpower?.nickname || power.nickname.normalize("NFC") === realpower.nickname.normalize("NFC")) continue;
-  const earlier = observedMs(power) <= observedMs(realpower) ? power : realpower;
-  const later = earlier === power ? realpower : power;
-  if (!earlier.observedAt || !later.observedAt || observedMs(earlier) === observedMs(later)) continue;
-  const event = clean({
-    detectedAt: later.observedAt, uid, fromNickname: earlier.nickname, toNickname: later.nickname,
-    server: later.server, sources: [earlier === realpower || later === realpower ? "realpower" : "power"], inferred: true
-  });
-  const date = serverDate(event.detectedAt);
-  mergeEvent(nicknameGroups, date, event, `${uid}|${event.fromNickname.normalize("NFC")}|${event.toNickname.normalize("NFC")}`);
+  const observations = [powerByUid.get(uid), realByUid.get(uid)].filter(row => row?.nickname && observedMs(row) > 0).sort((a, b) => observedMs(a) - observedMs(b));
+  let earlier = previousByUid.get(uid);
+  if (!earlier?.nickname || !observedMs(earlier)) earlier = observations.shift();
+  for (const later of observations) {
+    if (!earlier || observedMs(later) <= observedMs(earlier)) continue;
+    if (earlier.nickname.normalize("NFC") !== later.nickname.normalize("NFC")) {
+      nicknameEvents.push(clean({
+        detectedAt: later.observedAt, fromObservedAt: earlier.observedAt,
+        uid, fromNickname: earlier.nickname, toNickname: later.nickname,
+        server: later.server, sources: [later === realByUid.get(uid) ? "realpower" : "power"], inferred: true
+      }));
+    }
+    earlier = later;
+  }
+}
+const movementGroups = groupHistory(movementEvents, "movement");
+const nicknameGroups = groupHistory(nicknameEvents, "nickname");
+
+// Rewrite dates emptied by cross-date reconciliation as well. Otherwise the old
+// duplicate file would continue to be served and indexed after a rebuild.
+for (const file of datedFiles(MOVEMENT_DIR)) {
+  const date = path.basename(file, ".json");
+  if (!movementGroups.has(date)) movementGroups.set(date, []);
+}
+for (const file of datedFiles(NICKNAME_DIR)) {
+  const date = path.basename(file, ".json");
+  if (!nicknameGroups.has(date)) nicknameGroups.set(date, []);
 }
 
 let changedFiles = 0;
@@ -269,3 +302,4 @@ for (const [date, events] of [...nicknameGroups.entries()].sort()) {
 }
 
 console.log(`[Overall History] comparedPlayers=${allUids.length}, movementDates=${movementGroups.size}, nicknameDates=${nicknameGroups.size}, changedFiles=${changedFiles}`);
+
