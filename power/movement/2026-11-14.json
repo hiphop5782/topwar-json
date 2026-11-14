@@ -3,7 +3,7 @@
   "date" : "2026-11-14",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-14T08:58:43.778631800Z",
+  "updatedAt" : "2026-11-14T09:30:52.261401500Z",
   "rows" : [ {
     "detectedAt" : "2026-11-13T16:08:13.162Z",
     "uid" : "512264795789",
@@ -1861,9 +1861,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-14T09:13:43.515Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-14T08:13:36.242786100Z",
     "uid" : "9274337857696",
@@ -2055,8 +2057,50 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-14T09:31:02.278Z",
+    "sources" : [ "TOP100", "MAP" ]
+  }, {
+    "detectedAt" : "2026-11-14T09:09:27.643Z",
+    "uid" : "536179872376",
+    "nickname" : "hunain",
+    "fromServer" : 567,
+    "toServer" : 546,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "536179872376",
+      "nickname" : "hunain",
+      "serverId" : 567,
+      "rank" : 1,
+      "score" : 4907790,
+      "level" : 58,
+      "allianceId" : "100073050",
+      "allianceTag" : "tFln",
+      "allianceName" : "theFallen",
+      "x" : 230,
+      "y" : 632,
+      "source" : "MAP",
+      "observedAt" : "2026-10-05T21:24:17.623Z"
+    },
+    "to" : {
+      "uid" : "536179872376",
+      "nickname" : "hunain",
+      "serverId" : 546,
+      "score" : 4907790,
+      "level" : 58,
+      "allianceId" : "100073050",
+      "allianceTag" : "Weyr",
+      "x" : 603,
+      "y" : 339,
+      "source" : "MAP",
+      "observedAt" : "2026-11-14T09:09:27.643Z"
+    }
   } ]
 }
