@@ -3,7 +3,7 @@
   "date" : "2026-11-14",
   "serverTimezone" : "UTC+8",
   "serverResetAt" : "00:00 UTC+8 (01:00 Asia/Seoul)",
-  "updatedAt" : "2026-11-14T03:36:29.522143600Z",
+  "updatedAt" : "2026-11-14T03:53:59.574385800Z",
   "rows" : [ {
     "detectedAt" : "2026-11-13T16:08:13.162Z",
     "uid" : "512264795789",
@@ -429,9 +429,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-14T03:54:09.479Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-13T17:46:00.777652100Z",
     "uid" : "647897716238",
@@ -463,9 +465,11 @@
     "source" : "TOP100",
     "fromSource" : "TOP100",
     "toSource" : "TOP100",
-    "status" : "DETECTED",
+    "status" : "CONFIRMED",
     "detectedByTop100" : true,
-    "detectedByMap" : false
+    "detectedByMap" : true,
+    "lastConfirmedAt" : "2026-11-14T03:54:09.479Z",
+    "sources" : [ "TOP100", "MAP" ]
   }, {
     "detectedAt" : "2026-11-13T17:59:58.109Z",
     "uid" : "611075884337",
@@ -1236,6 +1240,48 @@
       "y" : 246,
       "source" : "MAP",
       "observedAt" : "2026-11-14T03:36:37.645Z"
+    }
+  }, {
+    "detectedAt" : "2026-11-14T03:54:09.479Z",
+    "uid" : "589218448584",
+    "nickname" : "No23",
+    "fromServer" : 1221,
+    "toServer" : 3901,
+    "source" : "MAP",
+    "fromSource" : "MAP",
+    "toSource" : "MAP",
+    "status" : "CONFIRMED",
+    "detectedByTop100" : false,
+    "detectedByMap" : true,
+    "from" : {
+      "uid" : "589218448584",
+      "nickname" : "No23",
+      "serverId" : 1221,
+      "rank" : 3,
+      "score" : 41678723,
+      "level" : 100,
+      "allianceId" : "654195",
+      "allianceTag" : "IZZI",
+      "allianceName" : "All for 1221",
+      "x" : 441,
+      "y" : 219,
+      "source" : "MAP",
+      "observedAt" : "2026-11-13T05:55:16.114Z"
+    },
+    "to" : {
+      "uid" : "589218448584",
+      "nickname" : "No23",
+      "serverId" : 3901,
+      "rank" : 1,
+      "score" : 41679583,
+      "level" : 100,
+      "allianceId" : "500381144",
+      "allianceTag" : "39O1",
+      "allianceName" : "GARUDA PHOENIX",
+      "x" : 704,
+      "y" : 250,
+      "source" : "MAP",
+      "observedAt" : "2026-11-14T03:54:09.479Z"
     }
   } ]
 }
