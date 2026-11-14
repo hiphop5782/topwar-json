@@ -1,5 +1,5 @@
 {
-  "exportedAt" : "2026-11-14T12:22:10.243Z",
+  "exportedAt" : "2026-11-14T12:53:23.025Z",
   "serverId" : 926,
   "summary" : {
     "players" : 133,
@@ -10,8 +10,8 @@
     "alliances" : 23,
     "allianceDetails" : 5,
     "activity" : {
-      "coreCount" : 75,
-      "activeCount" : 38,
+      "coreCount" : 76,
+      "activeCount" : 37,
       "watchCount" : 20,
       "lowCount" : 0,
       "activeTotalCount" : 113
@@ -35,8 +35,8 @@
       "serverActivityScore" : 64,
       "serverActivityReasons" : [ "activeAllianceCountForWar>=1", "activeUsers>=80", "corePlusActiveGradeUsers>=80", "activeUserRate>=40%", "activePowerRate>=65%" ],
       "totalMapPlayers" : 133,
-      "coreUsers" : 75,
-      "activeGradeUsers" : 38,
+      "coreUsers" : 76,
+      "activeGradeUsers" : 37,
       "watchGradeUsers" : 20,
       "lowGradeUsers" : 0,
       "activeUsers" : 108,
@@ -54,8 +54,8 @@
       "watchAllianceCount" : 2,
       "lowAllianceCount" : 19,
       "insufficientAllianceCount" : 0,
-      "serverPowerTotal" : 6927398300,
-      "activePowerTotal" : 6324468729,
+      "serverPowerTotal" : 6927399930,
+      "activePowerTotal" : 6324470359,
       "activePowerRate" : 0.912965,
       "topAlliancePowerRate" : 0.308273,
       "top3AlliancePowerRate" : 0.801563
@@ -132,10 +132,10 @@
     "allianceName" : "野鳥を見守る会",
     "allianceRole" : 8,
     "rank" : 8,
-    "isOnline" : 1,
+    "isOnline" : 0,
     "joinTime" : 1786130889,
-    "lastShowTime" : 1794658496,
-    "lastLogin" : 1794658496,
+    "lastShowTime" : 1794659028,
+    "lastLogin" : 1794659028,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -149,13 +149,13 @@
     "powerPercentileInAlliance" : 0.1,
     "powerContributionRate" : 0.144529,
     "cumulativePowerContributionRate" : 0.144529,
-    "activityScore" : 145,
-    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "online", "recent_login_1d", "alliance_member_confirmed" ],
+    "activityScore" : 115,
+    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "recent_login_1d", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "online" ],
-    "lastLoginDaysAgo" : 0
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "542701507538",
     "username" : "英雄7227",
@@ -177,8 +177,8 @@
     "rank" : 8,
     "isOnline" : 0,
     "joinTime" : 1786219554,
-    "lastShowTime" : 1794653539,
-    "lastLogin" : 1794653539,
+    "lastShowTime" : 1794660553,
+    "lastLogin" : 1794660553,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -198,7 +198,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.06
+    "lastLoginDaysAgo" : 0
   }, {
     "uid" : "538905842601",
     "username" : "ポンコツ",
@@ -241,7 +241,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "530525836154",
     "username" : "N상현",
@@ -261,10 +261,10 @@
     "allianceName" : "snow and moonflower",
     "allianceRole" : 6,
     "rank" : 6,
-    "isOnline" : 1,
+    "isOnline" : 0,
     "joinTime" : 1767793156,
-    "lastShowTime" : 1794658032,
-    "lastLogin" : 1794658032,
+    "lastShowTime" : 1794659653,
+    "lastLogin" : 1794659653,
     "language" : "jp",
     "nationalflag" : 122,
     "gender" : 0,
@@ -278,13 +278,13 @@
     "powerPercentileInAlliance" : 0.0345,
     "powerContributionRate" : 0.054299,
     "cumulativePowerContributionRate" : 0.054299,
-    "activityScore" : 145,
-    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "online", "recent_login_1d", "alliance_member_confirmed" ],
+    "activityScore" : 115,
+    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "recent_login_1d", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "online" ],
-    "lastLoginDaysAgo" : 0
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.01
   }, {
     "uid" : "548392989672",
     "username" : "揚げ出し豆腐",
@@ -349,8 +349,8 @@
     "rank" : 4,
     "isOnline" : 0,
     "joinTime" : 1683719517,
-    "lastShowTime" : 1794651834,
-    "lastLogin" : 1794651834,
+    "lastShowTime" : 1794659844,
+    "lastLogin" : 1794659844,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -370,7 +370,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.08
+    "lastLoginDaysAgo" : 0.01
   }, {
     "uid" : "534593754014",
     "username" : "気分屋",
@@ -392,8 +392,8 @@
     "rank" : 7,
     "isOnline" : 0,
     "joinTime" : 1785279428,
-    "lastShowTime" : 1794641760,
-    "lastLogin" : 1794641760,
+    "lastShowTime" : 1794659816,
+    "lastLogin" : 1794659816,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -413,7 +413,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.2
+    "lastLoginDaysAgo" : 0.01
   }, {
     "uid" : "533012390814",
     "username" : "Erin",
@@ -456,7 +456,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.05
+    "lastLoginDaysAgo" : 0.08
   }, {
     "uid" : "534558978974",
     "username" : "ascan",
@@ -499,7 +499,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.14
+    "lastLoginDaysAgo" : 0.16
   }, {
     "uid" : "533293290398",
     "username" : "ｉ_¬b",
@@ -542,7 +542,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "538853651369",
     "username" : "LEVIN",
@@ -585,7 +585,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.02
+    "lastLoginDaysAgo" : 0.04
   }, {
     "uid" : "546900714457",
     "username" : "hydrange",
@@ -628,7 +628,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.02
+    "lastLoginDaysAgo" : 0.04
   }, {
     "uid" : "473696719539",
     "username" : "🎱8Ball",
@@ -671,7 +671,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 2
+    "lastLoginDaysAgo" : 2.02
   }, {
     "uid" : "431229232557",
     "username" : "れうぅぅ🍋",
@@ -714,7 +714,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.05
+    "lastLoginDaysAgo" : 0.07
   }, {
     "uid" : "545856078808",
     "username" : "想賣帳號",
@@ -757,7 +757,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.04
+    "lastLoginDaysAgo" : 0.06
   }, {
     "uid" : "280834855410",
     "username" : "RiverMya",
@@ -800,7 +800,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.77
+    "lastLoginDaysAgo" : 0.79
   }, {
     "uid" : "548249560025",
     "username" : "おじお",
@@ -843,7 +843,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.08
+    "lastLoginDaysAgo" : 0.1
   }, {
     "uid" : "595398837224",
     "username" : "杏仁豆腐",
@@ -886,7 +886,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "411136315965",
     "username" : "클레이",
@@ -906,10 +906,10 @@
     "allianceName" : "snow and moonflower",
     "allianceRole" : 2,
     "rank" : 2,
-    "isOnline" : 1,
+    "isOnline" : 0,
     "joinTime" : 1744553933,
-    "lastShowTime" : 1794657773,
-    "lastLogin" : 1794657773,
+    "lastShowTime" : 1794659856,
+    "lastLogin" : 1794659856,
     "language" : "ko",
     "nationalflag" : 122,
     "gender" : 0,
@@ -923,13 +923,13 @@
     "powerPercentileInAlliance" : 0.1379,
     "powerContributionRate" : 0.043192,
     "cumulativePowerContributionRate" : 0.188044,
-    "activityScore" : 155,
-    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "online", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityScore" : 125,
+    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "online" ],
-    "lastLoginDaysAgo" : 0
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.01
   }, {
     "uid" : "548788610024",
     "username" : "レイ",
@@ -972,7 +972,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.12
+    "lastLoginDaysAgo" : 0.14
   }, {
     "uid" : "433473213874",
     "username" : "™VVS1🦉ᴹ",
@@ -984,18 +984,18 @@
     "pointId" : 224443,
     "pointType" : 1,
     "level" : 100,
-    "power" : 74058830,
-    "armyPower" : "2,054,305,229,354,179,400,000,000,000,000,000,000",
+    "power" : 74058880,
+    "armyPower" : "2,054,937,525,958,444,000,000,000,000,000,000,000",
     "armyPowerText" : "2.05hh",
     "allianceId" : "512846",
     "allianceTag" : "926N",
     "allianceName" : "snow and moonflower",
     "allianceRole" : 4,
     "rank" : 4,
-    "isOnline" : 0,
+    "isOnline" : 1,
     "joinTime" : 1754661924,
-    "lastShowTime" : 1794574291,
-    "lastLogin" : 1794574291,
+    "lastShowTime" : 1794660197,
+    "lastLogin" : 1794660197,
     "language" : "en",
     "nationalflag" : 158,
     "gender" : 0,
@@ -1009,13 +1009,13 @@
     "powerPercentileInAlliance" : 0.1724,
     "powerContributionRate" : 0.042702,
     "cumulativePowerContributionRate" : 0.230746,
-    "activityScore" : 125,
-    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityScore" : 155,
+    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "online", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.98
+    "inactiveReasons" : [ "online" ],
+    "lastLoginDaysAgo" : 0
   }, {
     "uid" : "556688327693",
     "username" : "瑠香😼Ruka",
@@ -1058,7 +1058,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.08
+    "lastLoginDaysAgo" : 0.1
   }, {
     "uid" : "499337470938",
     "username" : "英雄",
@@ -1078,10 +1078,10 @@
     "allianceName" : "ZERO1000",
     "allianceRole" : 4,
     "rank" : 4,
-    "isOnline" : 0,
+    "isOnline" : 1,
     "joinTime" : 1786219555,
-    "lastShowTime" : 1794653581,
-    "lastLogin" : 1794653581,
+    "lastShowTime" : 1794660561,
+    "lastLogin" : 1794660561,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -1093,15 +1093,15 @@
     },
     "powerRankInAlliance" : 5,
     "powerPercentileInAlliance" : 0.1613,
-    "powerContributionRate" : 0.043719,
+    "powerContributionRate" : 0.043718,
     "cumulativePowerContributionRate" : 0.246017,
-    "activityScore" : 125,
-    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityScore" : 155,
+    "activityReasons" : [ "map_found", "top_20_power", "cumulative_power_80", "online", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.06
+    "inactiveReasons" : [ "online" ],
+    "lastLoginDaysAgo" : 0
   }, {
     "uid" : "422674776658",
     "username" : "🐉T2🐉",
@@ -1123,8 +1123,8 @@
     "rank" : 4,
     "isOnline" : 0,
     "joinTime" : 1683747300,
-    "lastShowTime" : 1794653189,
-    "lastLogin" : 1794653189,
+    "lastShowTime" : 1794659562,
+    "lastLogin" : 1794659562,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -1144,7 +1144,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.07
+    "lastLoginDaysAgo" : 0.01
   }, {
     "uid" : "542784893906",
     "username" : "KISUKE",
@@ -1187,7 +1187,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.19
+    "lastLoginDaysAgo" : 0.21
   }, {
     "uid" : "549055157224",
     "username" : "吉野家",
@@ -1230,7 +1230,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.03
+    "lastLoginDaysAgo" : 0.06
   }, {
     "uid" : "549074498536",
     "username" : "Distorsi",
@@ -1266,14 +1266,14 @@
     "powerRankInAlliance" : 7,
     "powerPercentileInAlliance" : 0.2258,
     "powerContributionRate" : 0.042466,
-    "cumulativePowerContributionRate" : 0.331005,
+    "cumulativePowerContributionRate" : 0.331004,
     "activityScore" : 110,
     "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.9
+    "lastLoginDaysAgo" : 0.92
   }, {
     "uid" : "477386400439",
     "username" : "Me0w🌱",
@@ -1309,14 +1309,14 @@
     "powerRankInAlliance" : 8,
     "powerPercentileInAlliance" : 0.2759,
     "powerContributionRate" : 0.040859,
-    "cumulativePowerContributionRate" : 0.355905,
+    "cumulativePowerContributionRate" : 0.355904,
     "activityScore" : 110,
     "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.53
+    "lastLoginDaysAgo" : 0.55
   }, {
     "uid" : "587926647768",
     "username" : "wy.587926647768",
@@ -1359,7 +1359,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.25
+    "lastLoginDaysAgo" : 0.28
   }, {
     "uid" : "537623094185",
     "username" : "Nori",
@@ -1402,7 +1402,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.54
+    "lastLoginDaysAgo" : 0.56
   }, {
     "uid" : "532873118622",
     "username" : "neelyama",
@@ -1445,7 +1445,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.09
+    "lastLoginDaysAgo" : 0.11
   }, {
     "uid" : "533792633758",
     "username" : "リノ",
@@ -1467,8 +1467,8 @@
     "rank" : 4,
     "isOnline" : 0,
     "joinTime" : 1786069708,
-    "lastShowTime" : 1794654674,
-    "lastLogin" : 1794654674,
+    "lastShowTime" : 1794659774,
+    "lastLogin" : 1794659774,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -1488,7 +1488,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.05
+    "lastLoginDaysAgo" : 0.01
   }, {
     "uid" : "532949439390",
     "username" : "Lobster",
@@ -1508,10 +1508,10 @@
     "allianceName" : "LARK ACL",
     "allianceRole" : 6,
     "rank" : 6,
-    "isOnline" : 1,
+    "isOnline" : 0,
     "joinTime" : 1786034622,
-    "lastShowTime" : 1794655771,
-    "lastLogin" : 1794655771,
+    "lastShowTime" : 1794659818,
+    "lastLogin" : 1794659818,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -1525,13 +1525,13 @@
     "powerPercentileInAlliance" : 0.3243,
     "powerContributionRate" : 0.032308,
     "cumulativePowerContributionRate" : 0.439435,
-    "activityScore" : 130,
-    "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "online", "recent_login_1d", "alliance_member_confirmed" ],
+    "activityScore" : 100,
+    "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_1d", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "online" ],
-    "lastLoginDaysAgo" : 0
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.01
   }, {
     "uid" : "534209975198",
     "username" : "風魔",
@@ -1574,7 +1574,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.04
+    "lastLoginDaysAgo" : 0.06
   }, {
     "uid" : "615249384770",
     "username" : "Fora포라공일",
@@ -1610,14 +1610,14 @@
     "powerRankInAlliance" : 9,
     "powerPercentileInAlliance" : 0.3103,
     "powerContributionRate" : 0.039229,
-    "cumulativePowerContributionRate" : 0.395134,
+    "cumulativePowerContributionRate" : 0.395133,
     "activityScore" : 110,
     "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.1
+    "lastLoginDaysAgo" : 0.12
   }, {
     "uid" : "490621555674",
     "username" : "Hebo",
@@ -1682,8 +1682,8 @@
     "rank" : 3,
     "isOnline" : 1,
     "joinTime" : 1744600273,
-    "lastShowTime" : 1794658783,
-    "lastLogin" : 1794658783,
+    "lastShowTime" : 1794660136,
+    "lastLogin" : 1794660136,
     "language" : "ko",
     "nationalflag" : 122,
     "gender" : 0,
@@ -1746,7 +1746,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.89
+    "lastLoginDaysAgo" : 0.91
   }, {
     "uid" : "548216099801",
     "username" : "フルスロ",
@@ -1768,8 +1768,8 @@
     "rank" : 4,
     "isOnline" : 0,
     "joinTime" : 1786099252,
-    "lastShowTime" : 1794654419,
-    "lastLogin" : 1794654419,
+    "lastShowTime" : 1794659481,
+    "lastLogin" : 1794659481,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -1789,7 +1789,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.05
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "534294467486",
     "username" : "MiLiTaRy",
@@ -1832,7 +1832,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.25
+    "lastLoginDaysAgo" : 0.27
   }, {
     "uid" : "549078856680",
     "username" : "BangJIN",
@@ -1844,7 +1844,7 @@
     "pointId" : 143570,
     "pointType" : 1,
     "level" : 100,
-    "power" : 66421440,
+    "power" : 66422140,
     "armyPower" : "2,015,213,796,726,381,000,000,000,000,000,000,000",
     "armyPowerText" : "2.02hh",
     "allianceId" : "515433",
@@ -1852,10 +1852,10 @@
     "allianceName" : "ZERO1000",
     "allianceRole" : 3,
     "rank" : 3,
-    "isOnline" : 0,
+    "isOnline" : 1,
     "joinTime" : 1786249761,
-    "lastShowTime" : 1794619300,
-    "lastLogin" : 1794619300,
+    "lastShowTime" : 1794659548,
+    "lastLogin" : 1794659548,
     "language" : "en",
     "nationalflag" : 101,
     "gender" : 0,
@@ -1867,15 +1867,15 @@
     },
     "powerRankInAlliance" : 10,
     "powerPercentileInAlliance" : 0.3226,
-    "powerContributionRate" : 0.039468,
+    "powerContributionRate" : 0.039469,
     "cumulativePowerContributionRate" : 0.450411,
-    "activityScore" : 110,
-    "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityScore" : 140,
+    "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "online", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.46
+    "inactiveReasons" : [ "online" ],
+    "lastLoginDaysAgo" : 0
   }, {
     "uid" : "286491689473",
     "username" : "🅢SOON™2",
@@ -1918,7 +1918,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.05
+    "lastLoginDaysAgo" : 0.07
   }, {
     "uid" : "533618832286",
     "username" : "boyellow",
@@ -1961,7 +1961,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.17
+    "lastLoginDaysAgo" : 0.19
   }, {
     "uid" : "546259813336",
     "username" : "無聊人",
@@ -2004,7 +2004,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "549529461736",
     "username" : "フッチー",
@@ -2040,14 +2040,14 @@
     "powerRankInAlliance" : 11,
     "powerPercentileInAlliance" : 0.3548,
     "powerContributionRate" : 0.038003,
-    "cumulativePowerContributionRate" : 0.488414,
+    "cumulativePowerContributionRate" : 0.488415,
     "activityScore" : 110,
     "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.18
+    "lastLoginDaysAgo" : 0.2
   }, {
     "uid" : "532990620574",
     "username" : "HK2Minh",
@@ -2090,7 +2090,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.81
+    "lastLoginDaysAgo" : 0.84
   }, {
     "uid" : "546936517593",
     "username" : "KABAO",
@@ -2133,7 +2133,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 4.36
+    "lastLoginDaysAgo" : 4.38
   }, {
     "uid" : "627488998434",
     "username" : "R9🌠",
@@ -2155,8 +2155,8 @@
     "rank" : 3,
     "isOnline" : 1,
     "joinTime" : 1785892039,
-    "lastShowTime" : 1794658339,
-    "lastLogin" : 1794658339,
+    "lastShowTime" : 1794659795,
+    "lastLogin" : 1794659795,
     "language" : "ja",
     "nationalflag" : 114,
     "gender" : 0,
@@ -2219,7 +2219,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.07
+    "lastLoginDaysAgo" : 0.1
   }, {
     "uid" : "551904416765",
     "username" : "Aoi🐬あおい",
@@ -2254,7 +2254,7 @@
     },
     "powerRankInAlliance" : 14,
     "powerPercentileInAlliance" : 0.4828,
-    "powerContributionRate" : 0.035731,
+    "powerContributionRate" : 0.03573,
     "cumulativePowerContributionRate" : 0.581584,
     "activityScore" : 110,
     "activityReasons" : [ "map_found", "top_50_power", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
@@ -2262,7 +2262,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.35
+    "lastLoginDaysAgo" : 0.37
   }, {
     "uid" : "546821747673",
     "username" : "my2417",
@@ -2305,7 +2305,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.2
+    "lastLoginDaysAgo" : 0.22
   }, {
     "uid" : "698323911677",
     "username" : "風香🐱Fuka",
@@ -2341,14 +2341,14 @@
     "powerRankInAlliance" : 15,
     "powerPercentileInAlliance" : 0.5172,
     "powerContributionRate" : 0.034798,
-    "cumulativePowerContributionRate" : 0.616383,
+    "cumulativePowerContributionRate" : 0.616382,
     "activityScore" : 85,
     "activityReasons" : [ "map_found", "cumulative_power_80", "recent_login_1d", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.06
+    "lastLoginDaysAgo" : 0.08
   }, {
     "uid" : "471007519698",
     "username" : "Suri",
@@ -2391,7 +2391,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "363446354911",
     "username" : "BaBaCaN",
@@ -2434,7 +2434,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 5.41
+    "lastLoginDaysAgo" : 5.43
   }, {
     "uid" : "490126689246",
     "username" : "善逸",
@@ -2454,10 +2454,10 @@
     "allianceName" : "野鳥を見守る会",
     "allianceRole" : 6,
     "rank" : 6,
-    "isOnline" : 1,
+    "isOnline" : 0,
     "joinTime" : 1786112613,
-    "lastShowTime" : 1794658766,
-    "lastLogin" : 1794658766,
+    "lastShowTime" : 1794659028,
+    "lastLogin" : 1794659028,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -2471,13 +2471,13 @@
     "powerPercentileInAlliance" : 0.8,
     "powerContributionRate" : 0.08353,
     "cumulativePowerContributionRate" : 0.878257,
-    "activityScore" : 90,
-    "activityReasons" : [ "map_found", "online", "recent_login_1d", "alliance_member_confirmed" ],
-    "activityGrade" : "CORE",
+    "activityScore" : 60,
+    "activityReasons" : [ "map_found", "recent_login_1d", "alliance_member_confirmed" ],
+    "activityGrade" : "ACTIVE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "online" ],
-    "lastLoginDaysAgo" : 0
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "468033848222",
     "username" : "Marida",
@@ -2520,7 +2520,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.05
+    "lastLoginDaysAgo" : 0.08
   }, {
     "uid" : "481515946610",
     "username" : "もちもち",
@@ -2556,14 +2556,14 @@
     "powerRankInAlliance" : 17,
     "powerPercentileInAlliance" : 0.5862,
     "powerContributionRate" : 0.034128,
-    "cumulativePowerContributionRate" : 0.684887,
+    "cumulativePowerContributionRate" : 0.684886,
     "activityScore" : 80,
     "activityReasons" : [ "map_found", "cumulative_power_80", "recent_login_7d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 4.07
+    "lastLoginDaysAgo" : 4.1
   }, {
     "uid" : "549047276520",
     "username" : "🐾Myu🐾",
@@ -2606,7 +2606,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.69
+    "lastLoginDaysAgo" : 0.72
   }, {
     "uid" : "548052063193",
     "username" : "ODA",
@@ -2649,7 +2649,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.12
+    "lastLoginDaysAgo" : 0.14
   }, {
     "uid" : "538845864873",
     "username" : "Sinchan",
@@ -2692,7 +2692,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.02
+    "lastLoginDaysAgo" : 0.04
   }, {
     "uid" : "568194708562",
     "username" : "心情開朗",
@@ -2768,7 +2768,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 5.98
+    "lastLoginDaysAgo" : 6.01
   }, {
     "uid" : "545292997592",
     "username" : "Ianneo",
@@ -2811,7 +2811,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "547066561496",
     "username" : "Josie",
@@ -2847,14 +2847,14 @@
     "powerRankInAlliance" : 19,
     "powerPercentileInAlliance" : 0.6552,
     "powerContributionRate" : 0.032471,
-    "cumulativePowerContributionRate" : 0.751125,
+    "cumulativePowerContributionRate" : 0.751124,
     "activityScore" : 95,
     "activityReasons" : [ "map_found", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.05
+    "lastLoginDaysAgo" : 0.07
   }, {
     "uid" : "480165958610",
     "username" : "π",
@@ -2897,7 +2897,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 5.98
+    "lastLoginDaysAgo" : 6
   }, {
     "uid" : "548753462248",
     "username" : "Taro☆",
@@ -2940,7 +2940,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.51
+    "lastLoginDaysAgo" : 0.54
   }, {
     "uid" : "551537550322",
     "username" : "찌니님",
@@ -2952,7 +2952,7 @@
     "pointId" : 214724,
     "pointType" : 1,
     "level" : 100,
-    "power" : 55382354,
+    "power" : 55383234,
     "armyPower" : "1,556,428,509,006,699,800,000,000,000,000,000,000",
     "armyPowerText" : "1.56hh",
     "allianceId" : "512846",
@@ -2960,10 +2960,10 @@
     "allianceName" : "snow and moonflower",
     "allianceRole" : 2,
     "rank" : 2,
-    "isOnline" : 1,
+    "isOnline" : 0,
     "joinTime" : 1759847328,
-    "lastShowTime" : 1794658793,
-    "lastLogin" : 1794658793,
+    "lastShowTime" : 1794659635,
+    "lastLogin" : 1794659635,
     "language" : "ko",
     "nationalflag" : 122,
     "gender" : 0,
@@ -2975,15 +2975,15 @@
     },
     "powerRankInAlliance" : 20,
     "powerPercentileInAlliance" : 0.6897,
-    "powerContributionRate" : 0.031933,
+    "powerContributionRate" : 0.031934,
     "cumulativePowerContributionRate" : 0.783058,
-    "activityScore" : 125,
-    "activityReasons" : [ "map_found", "cumulative_power_80", "online", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityScore" : 95,
+    "activityReasons" : [ "map_found", "cumulative_power_80", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
     "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "online" ],
-    "lastLoginDaysAgo" : 0
+    "inactiveReasons" : [ "lastLoginWithin1Day" ],
+    "lastLoginDaysAgo" : 0.01
   }, {
     "uid" : "537669944233",
     "username" : "nakajyou",
@@ -3026,7 +3026,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "533714920350",
     "username" : "Fin",
@@ -3069,7 +3069,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.63
+    "lastLoginDaysAgo" : 0.66
   }, {
     "uid" : "925037648559",
     "username" : "baghdadi",
@@ -3112,7 +3112,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 6.7
+    "lastLoginDaysAgo" : 6.72
   }, {
     "uid" : "425966932894",
     "username" : "Semar",
@@ -3155,7 +3155,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.12
+    "lastLoginDaysAgo" : 0.15
   }, {
     "uid" : "547700536281",
     "username" : "JonyD",
@@ -3198,7 +3198,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.37
+    "lastLoginDaysAgo" : 0.39
   }, {
     "uid" : "664601756669",
     "username" : "Aoi👶",
@@ -3241,7 +3241,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.35
+    "lastLoginDaysAgo" : 0.37
   }, {
     "uid" : "8007153486179",
     "username" : "炒飯大盛り",
@@ -3284,7 +3284,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "568310797394",
     "username" : "Hao_wei",
@@ -3360,7 +3360,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.85
+    "lastLoginDaysAgo" : 0.87
   }, {
     "uid" : "926375760856",
     "username" : "wy.926375760856",
@@ -3403,7 +3403,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.25
+    "lastLoginDaysAgo" : 0.27
   }, {
     "uid" : "806448276453",
     "username" : "Ruka😺",
@@ -3423,10 +3423,10 @@
     "allianceName" : "snow and moonflower",
     "allianceRole" : 4,
     "rank" : 4,
-    "isOnline" : 0,
+    "isOnline" : 1,
     "joinTime" : 1785770111,
-    "lastShowTime" : 1794653137,
-    "lastLogin" : 1794653137,
+    "lastShowTime" : 1794659366,
+    "lastLogin" : 1794659366,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -3440,13 +3440,13 @@
     "powerPercentileInAlliance" : 0.7931,
     "powerContributionRate" : 0.028981,
     "cumulativePowerContributionRate" : 0.872748,
-    "activityScore" : 70,
-    "activityReasons" : [ "map_found", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
-    "activityGrade" : "ACTIVE",
+    "activityScore" : 100,
+    "activityReasons" : [ "map_found", "online", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.07
+    "inactiveReasons" : [ "online" ],
+    "lastLoginDaysAgo" : 0
   }, {
     "uid" : "724118246829",
     "username" : "れうぅぅぅぅ©︎",
@@ -3489,7 +3489,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.07
+    "lastLoginDaysAgo" : 0.1
   }, {
     "uid" : "439510708850",
     "username" : "bond",
@@ -3532,7 +3532,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.31
+    "lastLoginDaysAgo" : 0.34
   }, {
     "uid" : "581611999752",
     "username" : "푸👌",
@@ -3575,7 +3575,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.89
+    "lastLoginDaysAgo" : 0.91
   }, {
     "uid" : "545993155544",
     "username" : "無限之城",
@@ -3618,7 +3618,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.27
+    "lastLoginDaysAgo" : 0.29
   }, {
     "uid" : "549487018984",
     "username" : "お団子",
@@ -3661,7 +3661,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.03
+    "lastLoginDaysAgo" : 0.05
   }, {
     "uid" : "510331257607",
     "username" : "왜톨이",
@@ -3704,7 +3704,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.14
+    "lastLoginDaysAgo" : 0.16
   }, {
     "uid" : "8287336958221",
     "username" : "domdom",
@@ -3747,7 +3747,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "8355573468618",
     "username" : "暇人マーク2",
@@ -3790,7 +3790,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0
+    "lastLoginDaysAgo" : 0.02
   }, {
     "uid" : "798105707422",
     "username" : "イタチ",
@@ -3833,7 +3833,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.89
+    "lastLoginDaysAgo" : 0.91
   }, {
     "uid" : "538971534249",
     "username" : "たか",
@@ -3909,7 +3909,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 4.37
+    "lastLoginDaysAgo" : 4.4
   }, {
     "uid" : "360261231578",
     "username" : "Duckymo",
@@ -3921,8 +3921,8 @@
     "pointType" : 1,
     "level" : 100,
     "power" : 44237531,
-    "armyPower" : "779,021,124,508,186,200,000,000,000,000,000,000",
-    "armyPowerText" : "779gg",
+    "armyPower" : "789,390,788,818,126,300,000,000,000,000,000,000",
+    "armyPowerText" : "789gg",
     "allianceId" : "505898",
     "allianceTag" : "nfg2",
     "language" : "en",
@@ -4028,7 +4028,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.03
+    "lastLoginDaysAgo" : 0.05
   }, {
     "uid" : "8502530346294",
     "username" : "KN200🍋",
@@ -4071,7 +4071,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.01
+    "lastLoginDaysAgo" : 0.03
   }, {
     "uid" : "548832961512",
     "username" : "もーちゃん",
@@ -4180,7 +4180,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.4
+    "lastLoginDaysAgo" : 0.42
   }, {
     "uid" : "548986225640",
     "username" : "wy.548986225640",
@@ -4256,7 +4256,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.59
+    "lastLoginDaysAgo" : 1.62
   }, {
     "uid" : "546435970008",
     "username" : "«SATAN»",
@@ -4299,7 +4299,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.09
+    "lastLoginDaysAgo" : 0.11
   }, {
     "uid" : "786580830262",
     "username" : "無限之城new",
@@ -4342,7 +4342,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.35
+    "lastLoginDaysAgo" : 0.37
   }, {
     "uid" : "594136506994",
     "username" : "ECHA01",
@@ -4385,7 +4385,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.89
+    "lastLoginDaysAgo" : 1.91
   }, {
     "uid" : "548225287129",
     "username" : "O",
@@ -4428,7 +4428,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.11
+    "lastLoginDaysAgo" : 0.14
   }, {
     "uid" : "589789495922",
     "username" : "ECHA02",
@@ -4471,7 +4471,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.89
+    "lastLoginDaysAgo" : 1.91
   }, {
     "uid" : "8502617804086",
     "username" : "ゆいぃぃ⛄🍋",
@@ -4514,7 +4514,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 4.2
+    "lastLoginDaysAgo" : 4.22
   }, {
     "uid" : "568080876626",
     "username" : "andysun",
@@ -4623,7 +4623,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.5
+    "lastLoginDaysAgo" : 0.52
   }, {
     "uid" : "520889525202",
     "username" : "Snoop",
@@ -4666,7 +4666,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.28
+    "lastLoginDaysAgo" : 0.3
   }, {
     "uid" : "429118472799",
     "username" : "火消しのサブ",
@@ -4709,7 +4709,7 @@
     "userStatus" : "RECENT",
     "inactiveScore" : 10,
     "inactiveReasons" : [ "lastLoginWithin3Days" ],
-    "lastLoginDaysAgo" : 1.6
+    "lastLoginDaysAgo" : 1.62
   }, {
     "uid" : "542573495250",
     "username" : "MJ💫",
@@ -4818,7 +4818,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.44
+    "lastLoginDaysAgo" : 0.46
   }, {
     "uid" : "545328604120",
     "username" : "wy.545328604120",
@@ -4861,7 +4861,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 4.16
+    "lastLoginDaysAgo" : 4.19
   }, {
     "uid" : "876064539564",
     "username" : "イチ",
@@ -4937,7 +4937,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.98
+    "lastLoginDaysAgo" : 1
   }, {
     "uid" : "567050802193",
     "username" : "张伟",
@@ -4992,8 +4992,8 @@
     "rank" : 3,
     "isOnline" : 0,
     "joinTime" : 1786282614,
-    "lastShowTime" : 1794581700,
-    "lastLogin" : 1794581700,
+    "lastShowTime" : 1794660524,
+    "lastLogin" : 1794660524,
     "language" : "jp",
     "nationalflag" : 114,
     "gender" : 0,
@@ -5013,7 +5013,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.89
+    "lastLoginDaysAgo" : 0
   }, {
     "uid" : "537892742057",
     "username" : "wy.537892742057",
@@ -5241,10 +5241,10 @@
     "allianceName" : "LARK ACL",
     "allianceRole" : 3,
     "rank" : 3,
-    "isOnline" : 0,
+    "isOnline" : 1,
     "joinTime" : 1791804100,
-    "lastShowTime" : 1794651806,
-    "lastLogin" : 1794651806,
+    "lastShowTime" : 1794660691,
+    "lastLogin" : 1794660691,
     "language" : "en",
     "nationalflag" : 101,
     "gender" : 0,
@@ -5258,13 +5258,13 @@
     "powerPercentileInAlliance" : 0.973,
     "powerContributionRate" : 0.005546,
     "cumulativePowerContributionRate" : 0.994865,
-    "activityScore" : 70,
-    "activityReasons" : [ "map_found", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
-    "activityGrade" : "ACTIVE",
+    "activityScore" : 100,
+    "activityReasons" : [ "map_found", "online", "recent_login_1d", "high_role", "alliance_member_confirmed" ],
+    "activityGrade" : "CORE",
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
-    "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.08
+    "inactiveReasons" : [ "online" ],
+    "lastLoginDaysAgo" : 0
   }, {
     "uid" : "449907401630",
     "username" : "Gihren",
@@ -5340,7 +5340,7 @@
     "userStatus" : "ACTIVE",
     "inactiveScore" : 0,
     "inactiveReasons" : [ "lastLoginWithin1Day" ],
-    "lastLoginDaysAgo" : 0.58
+    "lastLoginDaysAgo" : 0.61
   }, {
     "uid" : "483739722834",
     "username" : "wy.483739722834",
@@ -5449,7 +5449,7 @@
     "userStatus" : "SLEEPY",
     "inactiveScore" : 35,
     "inactiveReasons" : [ "lastLoginWithin7Days" ],
-    "lastLoginDaysAgo" : 6.08
+    "lastLoginDaysAgo" : 6.1
   }, {
     "uid" : "854059107230",
     "username" : "可爱的小穆",
@@ -5599,15 +5599,15 @@
     "serverId" : 926,
     "activitySummary" : {
       "collectedMapMemberCount" : 37,
-      "coreCount" : 27,
-      "activeCount" : 10,
+      "coreCount" : 28,
+      "activeCount" : 9,
       "watchCount" : 0,
       "lowCount" : 0,
       "activeTotalCount" : 37,
       "totalPower" : 2135533006,
-      "corePowerSum" : 1765810747,
+      "corePowerSum" : 1777655237,
       "activePowerSum" : 2135533006,
-      "corePowerRate" : 0.826871,
+      "corePowerRate" : 0.832418,
       "activePowerRate" : 1,
       "top20PowerCount" : 7,
       "cumulative80PowerCount" : 25,
@@ -5639,9 +5639,9 @@
       "watchCount" : 0,
       "lowCount" : 0,
       "activeTotalCount" : 31,
-      "totalPower" : 1682902970,
-      "corePowerSum" : 1314646396,
-      "activePowerSum" : 1682902970,
+      "totalPower" : 1682903670,
+      "corePowerSum" : 1314647096,
+      "activePowerSum" : 1682903670,
       "corePowerRate" : 0.781178,
       "activePowerRate" : 1,
       "top20PowerCount" : 6,
@@ -5669,15 +5669,15 @@
     "serverId" : 926,
     "activitySummary" : {
       "collectedMapMemberCount" : 29,
-      "coreCount" : 20,
-      "activeCount" : 9,
+      "coreCount" : 21,
+      "activeCount" : 8,
       "watchCount" : 0,
       "lowCount" : 0,
       "activeTotalCount" : 29,
-      "totalPower" : 1734308521,
-      "corePowerSum" : 1358064550,
-      "activePowerSum" : 1734308521,
-      "corePowerRate" : 0.783058,
+      "totalPower" : 1734309451,
+      "corePowerSum" : 1408327097,
+      "activePowerSum" : 1734309451,
+      "corePowerRate" : 0.812039,
       "activePowerRate" : 1,
       "top20PowerCount" : 5,
       "cumulative80PowerCount" : 20,
@@ -5704,15 +5704,15 @@
     "serverId" : 926,
     "activitySummary" : {
       "collectedMapMemberCount" : 10,
-      "coreCount" : 8,
-      "activeCount" : 2,
+      "coreCount" : 7,
+      "activeCount" : 3,
       "watchCount" : 0,
       "lowCount" : 0,
       "activeTotalCount" : 10,
       "totalPower" : 710884326,
-      "corePowerSum" : 624339427,
+      "corePowerSum" : 564959521,
       "activePowerSum" : 710884326,
-      "corePowerRate" : 0.878257,
+      "corePowerRate" : 0.794728,
       "activePowerRate" : 1,
       "top20PowerCount" : 2,
       "cumulative80PowerCount" : 7,
@@ -6230,7 +6230,7 @@
   "movementTracking" : {
     "version" : 1,
     "mode" : "uid-cross-server",
-    "detectedAt" : "2026-11-14T12:22:10.243Z",
+    "detectedAt" : "2026-11-14T12:53:23.025Z",
     "eventCount" : 0
   },
   "movementEvents" : [ ]
